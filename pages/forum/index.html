@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEAN Forum - Connect with the Community</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/forum.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="../../index.html">KEAN</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../../app.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Regions <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="../region/kleve.html">Kleve</a>
+                            <a href="../region/emmerich.html">Emmerich</a>
+                            <a href="../region/arnhem.html">Arnhem</a>
+                            <a href="../region/nijmegen.html">Nijmegen</a>
+                        </div>
+                    </li>
+                    <li><a href="../projects.html">Projects</a></li>
+                    <li><a href="index.html" class="active">Forum</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="#login" class="btn btn-outline">Log In</a>
+                <a href="#signup" class="btn btn-primary">Sign Up</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Forum Header -->
+    <section class="forum-header">
+        <div class="container">
+            <div class="forum-header-content">
+                <h1>Community Forum</h1>
+                <p>Connect with residents, share ideas, and discuss topics about our cross-border region</p>
+                <div class="forum-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search the forum...">
+                        <button class="btn btn-primary"><i class="fas fa-search"></i></button>
+                    </div>
+                    <button class="btn btn-primary" id="new-topic-btn">
+                        <i class="fas fa-plus"></i> New Topic
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Forum Content -->
+    <main class="forum-container">
+        <div class="container">
+            <!-- Categories -->
+            <div class="forum-categories">
+                <div class="category">
+                    <div class="category-header">
+                        <h2>General Discussion</h2>
+                        <span class="topics-count">24 Topics</span>
+                    </div>
+                    <div class="category-topics">
+                        <div class="topic">
+                            <div class="topic-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="topic-content">
+                                <h3><a href="topic.html">Welcome to the KEAN Community Forum!</a></h3>
+                                <div class="topic-meta">
+                                    <span><i class="far fa-user"></i> Admin</span>
+                                    <span><i class="far fa-comment"></i> 12 replies</span>
+                                    <span><i class="far fa-eye"></i> 245 views</span>
+                                    <span><i class="far fa-clock"></i> 2 days ago</span>
+                                </div>
+                            </div>
+                            <div class="topic-latest">
+                                <div class="latest-post">
+                                    <img src="https://i.pravatar.cc/40?img=1" alt="User" class="avatar">
+                                    <div class="post-info">
+                                        <span class="post-author">MariaSchmidt</span>
+                                        <span class="post-time">2 hours ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- More topics... -->
+                    </div>
+                </div>
+                <!-- More categories... -->
+            </div>
+
+            <!-- Popular Topics -->
+            <div class="popular-topics">
+                <h2>Popular Topics</h2>
+                <div class="topics-grid">
+                    <div class="topic-card">
+                        <div class="topic-badge hot">
+                            <i class="fas fa-fire"></i> Hot
+                        </div>
+                        <h3><a href="topic.html">Upcoming Cultural Festival in Kleve</a></h3>
+                        <div class="topic-stats">
+                            <span><i class="far fa-comment"></i> 42</span>
+                            <span><i class="far fa-eye"></i> 1.2k</span>
+                        </div>
+                    </div>
+                    <!-- More topic cards... -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- New Topic Modal -->
+    <div class="modal" id="new-topic-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Create New Topic</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="new-topic-form">
+                    <div class="form-group">
+                        <label for="topic-title">Topic Title</label>
+                        <input type="text" id="topic-title" placeholder="Enter a descriptive title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="topic-category">Category</label>
+                        <select id="topic-category" required>
+                            <option value="">Select a category</option>
+                            <option value="general">General Discussion</option>
+                            <option value="events">Events</option>
+                            <option value="questions">Questions</option>
+                            <option value="suggestions">Suggestions</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Content</label>
+                        <div class="editor-toolbar">
+                            <button type="button" class="toolbar-btn" data-command="bold" title="Bold"><i class="fas fa-bold"></i></button>
+                            <button type="button" class="toolbar-btn" data-command="italic" title="Italic"><i class="fas fa-italic"></i></button>
+                            <button type="button" class="toolbar-btn" data-command="insertUnorderedList" title="Bullet List"><i class="fas fa-list-ul"></i></button>
+                            <button type="button" class="toolbar-btn" data-command="insertOrderedList" title="Numbered List"><i class="fas fa-list-ol"></i></button>
+                            <button type="button" class="toolbar-btn" data-command="createLink" title="Insert Link"><i class="fas fa-link"></i></button>
+                            <button type="button" class="toolbar-btn" data-command="insertImage" title="Insert Image"><i class="fas fa-image"></i></button>
+                        </div>
+                        <div id="topic-content" class="rich-text-editor" contenteditable="true" placeholder="Write your post here..."></div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Post Topic</button>
+                        <button type="button" class="btn btn-outline cancel-btn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About KEAN</h3>
+                    <p>Connecting the cities of Kleve, Emmerich, Arnhem, and Nijmegen through collaboration and community.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../../app.html">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Regions</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 KEAN Platform. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/forum.js"></script>
+</body>
+</html>

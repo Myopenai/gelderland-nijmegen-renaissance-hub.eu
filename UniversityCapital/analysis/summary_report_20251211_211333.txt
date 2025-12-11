@@ -1,0 +1,106 @@
+================================================================================
+PROJECT ANALYSIS SUMMARY REPORT
+================================================================================
+
+Report generated on: 2025-12-11T20:13:33.589778+00:00
+
+OVERVIEW
+--------
+Total files analyzed: 524
+Code files: 423
+Documentation files: 18
+Total dependencies found: 45
+
+
+FILE TYPE DISTRIBUTION
+---------------------
+No extension: 35
+.typed: 14
+.py: 408
+.txt: 13
+.pem: 1
+.exe: 11
+.md: 5
+.apache: 2
+.bsd: 2
+.rst: 1
+.cfg: 1
+.bat: 3
+.fish: 1
+.ps1: 3
+.html: 7
+.css: 1
+.sqlite: 1
+.js: 1
+.json: 2
+.png: 1
+.example: 1
+.conf: 1
+.yml: 1
+.yaml: 4
+.log: 2
+.zip: 2
+
+FACULTY BREAKDOWN
+----------------
+
+Faculty: .venv
+  Code Files: 401
+  Documents: 14
+  Images: 0
+
+Faculty: general
+  Code Files: 6
+  Documents: 2
+  Images: 0
+
+Faculty: css
+  Code Files: 1
+  Documents: 0
+  Images: 0
+
+Faculty: js
+  Code Files: 1
+  Documents: 0
+  Images: 0
+
+Faculty: pages
+  Code Files: 1
+  Documents: 0
+  Images: 0
+
+Faculty: regions
+  Code Files: 4
+  Documents: 0
+  Images: 0
+
+Faculty: src
+  Code Files: 3
+  Documents: 0
+  Images: 0
+
+Faculty: studentsorder
+  Code Files: 2
+  Documents: 2
+  Images: 0
+
+Faculty: University
+  Code Files: 4
+  Documents: 0
+  Images: 0
+
+TOP 10 DEPENDENCIES
+------------------
+- fastapi
+- webpack-dev-server
+- prettier
+- sqlite3
+- Shapely
+- jest
+- numpy
+- @babel/core
+- @babel/preset-env
+- morgan
+
+================================================================================
+END OF REPORT

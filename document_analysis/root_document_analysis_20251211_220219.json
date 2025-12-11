@@ -1,0 +1,287 @@
+{
+  "metadata": {
+    "scan_date": "2025-12-11T22:02:19.764748",
+    "base_directory": "D:\\busineshuboffline CHATGTP\\KEAN",
+    "total_documents": 27,
+    "file_types": {
+      ".html": 7,
+      ".json": 2,
+      ".md": 5,
+      ".txt": 13
+    },
+    "total_word_count": 13002,
+    "total_size_mb": 0.13
+  },
+  "documents": [
+    {
+      "path": "app.html",
+      "name": "app.html",
+      "extension": ".html",
+      "size_kb": 26.7412109375,
+      "modified": "2025-12-11T13:46:35.764913",
+      "word_count": 1525,
+      "char_count": 26827,
+      "content_preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>KEAN - Kleve Emmerich Arnhem Nijmegen</title>\n    <link rel=\"stylesheet\" href=\"css/style.css\">\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css\">\n</head>\n<body>\n    <!-- Header -->\n    <header class=\"site-header\">\n        <div class=\"container\">\n            <div class=\"logo\">\n      ..."
+    },
+    {
+      "path": "index.html",
+      "name": "index.html",
+      "extension": ".html",
+      "size_kb": 8.3330078125,
+      "modified": "2025-12-11T13:09:48.334538",
+      "word_count": 671,
+      "char_count": 8248,
+      "content_preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>KEAN - Loading...</title>\n    <!-- Welcome Modal Styles -->\n    <style>\n        /* Welcome Modal */\n        .welcome-modal {\n            display: none;\n            position: fixed;\n            top: 0;\n            left: 0;\n            width: 100%;\n            height: 100%;\n            background-color: rgba(0, 0, 0, 0.9);\n            z-index: 100..."
+    },
+    {
+      "path": "package.json",
+      "name": "package.json",
+      "extension": ".json",
+      "size_kb": 1.287109375,
+      "modified": "2025-12-11T13:27:53.114125",
+      "word_count": 110,
+      "char_count": 1266,
+      "content_preview": "{\n  \"name\": \"kean-platform\",\n  \"version\": \"1.0.0\",\n  \"description\": \"KEAN Platform - Connecting Communities Across Borders\",\n  \"main\": \"src/server.js\",\n  \"scripts\": {\n    \"start\": \"node src/server.js\",\n    \"dev\": \"nodemon src/server.js\",\n    \"build\": \"webpack --mode production\",\n    \"test\": \"jest\",\n    \"lint\": \"eslint .\",\n    \"format\": \"prettier --write .\",\n    \"generate:regions\": \"node scripts/generateRegions.js\"\n  },\n  \"dependencies\": {\n    \"express\": \"^4.18.2\",\n    \"sqlite3\": \"^5.1.6\",\n    \"c..."
+    },
+    {
+      "path": "README.md",
+      "name": "README.md",
+      "extension": ".md",
+      "size_kb": 2.7353515625,
+      "modified": "2025-12-11T16:04:22.252686",
+      "word_count": 341,
+      "char_count": 2640,
+      "content_preview": "# KEAN Landscape Planning System\n\nA comprehensive landscape planning system for the KEAN region (Kleve, Emmerich, Arnhem, Nijmegen).\n\n## Project Structure\n\n```\nKEAN/\n├── src/\n│   ├── __init__.py\n│   ├── database.py         # Database configuration and session management\n│   └── models/\n│       ├── __init__.py\n│       └── landscape.py    # SQLAlchemy models for the landscape planning system\n├── init_db.py             # Script to initialize the database\n├── requirements.txt       # Python dependen..."
+    },
+    {
+      "path": "requirements.txt",
+      "name": "requirements.txt",
+      "extension": ".txt",
+      "size_kb": 0.501953125,
+      "modified": "2025-12-11T16:04:01.376542",
+      "word_count": 39,
+      "char_count": 479,
+      "content_preview": "# Core\nSQLAlchemy==2.0.23\nalembic==1.12.1\npsycopg2-binary==2.9.9  # For PostgreSQL\ngeoalchemy2==0.14.7\nShapely==2.0.2\npython-dotenv==1.0.0\n\n# API\nfastapi==0.104.1\nuvicorn==0.24.0\npydantic==2.4.2\npydantic-settings==2.0.3\n\n# Geospatial\ngeopandas==0.14.1\nfiona==1.9.5\npyproj==3.6.0\n\n# Data processing\npandas==2.1.3\nnumpy==1.26.1\n\n# Development\nalembic==1.12.1\nblack==23.9.1\nisort==5.12.0\nflake8==6.1.0\nmypy==1.6.1\npytest==7.4.2\n\n# Documentation\nsphinx==7.2.6\nsphinx-rtd-theme==1.3.0"
+    },
+    {
+      "path": ".venv\\Lib\\site-packages\\pip\\_vendor\\vendor.txt",
+      "name": "vendor.txt",
+      "extension": ".txt",
+      "size_kb": 0.3349609375,
+      "modified": "2025-12-11T20:23:33.683996",
+      "word_count": 19,
+      "char_count": 342,
+      "content_preview": "CacheControl==0.14.3\ndistlib==0.4.0\ndistro==1.9.0\nmsgpack==1.1.2\npackaging==25.0\nplatformdirs==4.5.0\npyproject-hooks==1.2.0\nrequests==2.32.5\n    certifi==2025.10.5\n    idna==3.10\n    urllib3==1.26.20\nrich==14.2.0\n    pygments==2.19.2\nresolvelib==1.2.1\nsetuptools==70.3.0\ntomli==2.3.0\ntomli-w==1.2.0\ntruststore==0.10.4\ndependency-groups==1.3.1"
+    },
+    {
+      "path": ".venv\\Lib\\site-packages\\pip\\_vendor\\cachecontrol\\LICENSE.txt",
+      "name": "LICENSE.txt",
+      "extension": ".txt",
+      "size_kb": 0.544921875,
+      "modified": "2025-12-11T20:23:33.683996",
+      "word_count": 82,
+      "char_count": 557,
+      "content_preview": "Copyright 2012-2021  Eric Larson\n\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language..."
+    },
+    {
+      "path": ".venv\\Lib\\site-packages\\pip\\_vendor\\dependency_groups\\LICENSE.txt",
+      "name": "LICENSE.txt",
+      "extension": ".txt",
+      "size_kb": 1.0732421875,
+      "modified": "2025-12-11T20:23:33.696647",
+      "word_count": 170,
+      "char_count": 1098,
+      "content_preview": "MIT License\n\nCopyright (c) 2024-present Stephen Rosen <sirosen0@gmail.com>\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following con..."
+    },
+    {
+      "path": ".venv\\Lib\\site-packages\\pip\\_vendor\\distlib\\LICENSE.txt",
+      "name": "LICENSE.txt",
+      "extension": ".txt",
+      "size_kb": 14.1904296875,
+      "modified": "2025-12-11T20:23:33.699535",
+      "word_count": 1990,
+      "char_count": 14530,
+      "content_preview": "A. HISTORY OF THE SOFTWARE\n==========================\n\nPython was created in the early 1990s by Guido van Rossum at Stichting\nMathematisch Centrum (CWI, see http://www.cwi.nl) in the Netherlands\nas a successor of a language called ABC.  Guido remains Python's\nprincipal author, although it includes many contributions from others.\n\nIn 1995, Guido continued his work on Python at the Corporation for\nNational Research Initiatives (CNRI, see http://www.cnri.reston.va.us)\nin Reston, Virginia where he r..."
+    },
+    {
+      "path": ".venv\\Lib\\site-packages\\pip\\_vendor\\idna\\LICENSE.md",
+      "name": "LICENSE.md",
+      "extension": ".md",
+      "size_kb": 1.5048828125,
+      "modified": "2025-12-11T20:23:33.715214",
+      "word_count": 229,
+      "char_count": 1540,
+      "content_preview": "BSD 3-Clause License\n\nCopyright (c) 2013-2024, Kim Davies and contributors.\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are\nmet:\n\n1. Redistributions of source code must retain the above copyright\n   notice, this list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright\n   notice, this list of conditions and the following disc..."
+    },
+    {
+      "path": ".venv\\Lib\\site-packages\\pip\\_vendor\\urllib3\\LICENSE.txt",
+      "name": "LICENSE.txt",
+      "extension": ".txt",
+      "size_kb": 1.0888671875,
+      "modified": "2025-12-11T20:23:33.841952",
+      "word_count": 173,
+      "char_count": 1114,
+      "content_preview": "MIT License\n\nCopyright (c) 2008-2020 Andrey Petrov and contributors (see CONTRIBUTORS.txt)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to t..."
+    },
+    {
+      "path": ".venv\\Lib\\site-packages\\pip-25.3.dist-info\\entry_points.txt",
+      "name": "entry_points.txt",
+      "extension": ".txt",
+      "size_kb": 0.08203125,
+      "modified": "2025-12-11T20:23:33.865761",
+      "word_count": 3,
+      "char_count": 82,
+      "content_preview": "[console_scripts]\npip=pip._internal.cli.main:main\npip3=pip._internal.cli.main:main"
+    },
+    {
+      "path": ".venv\\Lib\\site-packages\\pip-25.3.dist-info\\licenses\\AUTHORS.txt",
+      "name": "AUTHORS.txt",
+      "extension": ".txt",
+      "size_kb": 11.2333984375,
+      "modified": "2025-12-11T20:23:33.866779",
+      "word_count": 1591,
+      "char_count": 11412,
+      "content_preview": "@Switch01\nA_Rog\nAakanksha Agrawal\nAbhinav Sagar\nABHYUDAY PRATAP SINGH\nabs51295\nAceGentile\nAdam Chainz\nAdam Tse\nAdam Turner\nAdam Wentz\nadmin\nAdolfo Ochagavía\nAdrien Morison\nAgus\nahayrapetyan\nAhilya\nAinsworthK\nAkash Srivastava\nAlan Yee\nAlbert Tugushev\nAlbert-Guan\nalbertg\nAlberto Sottile\nAleks Bunin\nAles Erjavec\nAlessandro Molina\nAlethea Flowers\nAlex Gaynor\nAlex Grönholm\nAlex Hedges\nAlex Loosley\nAlex Morega\nAlex Stachowiak\nAlexander Regueiro\nAlexander Shtyrov\nAlexandre Conrad\nAlexey Popravka\nAleš E..."
+    },
+    {
+      "path": ".venv\\Lib\\site-packages\\pip-25.3.dist-info\\licenses\\LICENSE.txt",
+      "name": "LICENSE.txt",
+      "extension": ".txt",
+      "size_kb": 1.0673828125,
+      "modified": "2025-12-11T20:23:33.866779",
+      "word_count": 171,
+      "char_count": 1092,
+      "content_preview": "Copyright (c) 2008-present The pip developers (see AUTHORS.txt file)\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\"Software\"), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following condition..."
+    },
+    {
+      "path": ".venv\\Lib\\site-packages\\pip-25.3.dist-info\\licenses\\src\\pip\\_vendor\\cachecontrol\\LICENSE.txt",
+      "name": "LICENSE.txt",
+      "extension": ".txt",
+      "size_kb": 0.544921875,
+      "modified": "2025-12-11T20:23:33.867984",
+      "word_count": 82,
+      "char_count": 557,
+      "content_preview": "Copyright 2012-2021  Eric Larson\n\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language..."
+    },
+    {
+      "path": ".venv\\Lib\\site-packages\\pip-25.3.dist-info\\licenses\\src\\pip\\_vendor\\dependency_groups\\LICENSE.txt",
+      "name": "LICENSE.txt",
+      "extension": ".txt",
+      "size_kb": 1.0732421875,
+      "modified": "2025-12-11T20:23:33.869999",
+      "word_count": 170,
+      "char_count": 1098,
+      "content_preview": "MIT License\n\nCopyright (c) 2024-present Stephen Rosen <sirosen0@gmail.com>\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following con..."
+    },
+    {
+      "path": ".venv\\Lib\\site-packages\\pip-25.3.dist-info\\licenses\\src\\pip\\_vendor\\distlib\\LICENSE.txt",
+      "name": "LICENSE.txt",
+      "extension": ".txt",
+      "size_kb": 14.1904296875,
+      "modified": "2025-12-11T20:23:33.870997",
+      "word_count": 1990,
+      "char_count": 14530,
+      "content_preview": "A. HISTORY OF THE SOFTWARE\n==========================\n\nPython was created in the early 1990s by Guido van Rossum at Stichting\nMathematisch Centrum (CWI, see http://www.cwi.nl) in the Netherlands\nas a successor of a language called ABC.  Guido remains Python's\nprincipal author, although it includes many contributions from others.\n\nIn 1995, Guido continued his work on Python at the Corporation for\nNational Research Initiatives (CNRI, see http://www.cnri.reston.va.us)\nin Reston, Virginia where he r..."
+    },
+    {
+      "path": ".venv\\Lib\\site-packages\\pip-25.3.dist-info\\licenses\\src\\pip\\_vendor\\idna\\LICENSE.md",
+      "name": "LICENSE.md",
+      "extension": ".md",
+      "size_kb": 1.5048828125,
+      "modified": "2025-12-11T20:23:33.871997",
+      "word_count": 229,
+      "char_count": 1540,
+      "content_preview": "BSD 3-Clause License\n\nCopyright (c) 2013-2024, Kim Davies and contributors.\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are\nmet:\n\n1. Redistributions of source code must retain the above copyright\n   notice, this list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright\n   notice, this list of conditions and the following disc..."
+    },
+    {
+      "path": ".venv\\Lib\\site-packages\\pip-25.3.dist-info\\licenses\\src\\pip\\_vendor\\urllib3\\LICENSE.txt",
+      "name": "LICENSE.txt",
+      "extension": ".txt",
+      "size_kb": 1.0888671875,
+      "modified": "2025-12-11T20:23:33.883281",
+      "word_count": 173,
+      "char_count": 1114,
+      "content_preview": "MIT License\n\nCopyright (c) 2008-2020 Andrey Petrov and contributors (see CONTRIBUTORS.txt)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to t..."
+    },
+    {
+      "path": "pages\\forum\\index.html",
+      "name": "index.html",
+      "extension": ".html",
+      "size_kb": 10.5361328125,
+      "modified": "2025-12-11T09:45:35.289637",
+      "word_count": 554,
+      "char_count": 10569,
+      "content_preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>KEAN Forum - Connect with the Community</title>\n    <link rel=\"stylesheet\" href=\"../../css/style.css\">\n    <link rel=\"stylesheet\" href=\"../../css/forum.css\">\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css\">\n</head>\n<body>\n    <!-- Header -->\n    <header class=\"site-header\">\n      ..."
+    },
+    {
+      "path": "regions\\areas.html",
+      "name": "areas.html",
+      "extension": ".html",
+      "size_kb": 5.279296875,
+      "modified": "2025-12-11T13:46:21.738282",
+      "word_count": 331,
+      "char_count": 5267,
+      "content_preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>areas - KEAN Platform</title>\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\" rel=\"stylesheet\">\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css\">\n    <style>\n        :root {\n            --primary: #2c3e50;\n            --secondary: #e74c3c;\n       ..."
+    },
+    {
+      "path": "regions\\area_community.html",
+      "name": "area_community.html",
+      "extension": ".html",
+      "size_kb": 5.2041015625,
+      "modified": "2025-12-11T13:46:21.739279",
+      "word_count": 317,
+      "char_count": 5192,
+      "content_preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>area_community - KEAN Platform</title>\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\" rel=\"stylesheet\">\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css\">\n    <style>\n        :root {\n            --primary: #2c3e50;\n            --secondary: #e74c3c..."
+    },
+    {
+      "path": "regions\\communities.html",
+      "name": "communities.html",
+      "extension": ".html",
+      "size_kb": 5.3271484375,
+      "modified": "2025-12-11T13:46:21.739279",
+      "word_count": 323,
+      "char_count": 5318,
+      "content_preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>communities - KEAN Platform</title>\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\" rel=\"stylesheet\">\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css\">\n    <style>\n        :root {\n            --primary: #2c3e50;\n            --secondary: #e74c3c;\n ..."
+    },
+    {
+      "path": "regions\\pages.html",
+      "name": "pages.html",
+      "extension": ".html",
+      "size_kb": 5.58203125,
+      "modified": "2025-12-11T13:46:21.739279",
+      "word_count": 342,
+      "char_count": 5577,
+      "content_preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>pages - KEAN Platform</title>\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\" rel=\"stylesheet\">\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css\">\n    <style>\n        :root {\n            --primary: #2c3e50;\n            --secondary: #e74c3c;\n       ..."
+    },
+    {
+      "path": "studentsorder\\README.md",
+      "name": "README.md",
+      "extension": ".md",
+      "size_kb": 2.251953125,
+      "modified": "2025-12-10T16:20:55.769180",
+      "word_count": 254,
+      "char_count": 2228,
+      "content_preview": "# Startup Systems - Student Deployment Package\n\nThis package contains all the necessary components, configurations, and documentation to set up and run the Startup Systems application in a production environment.\n\n## Table of Contents\n\n1. [System Requirements](#system-requirements)\n2. [Quick Start](#quick-start)\n3. [Detailed Setup](#detailed-setup)\n4. [Configuration](#configuration)\n5. [Deployment](#deployment)\n6. [Maintenance](#maintenance)\n7. [Troubleshooting](#troubleshooting)\n8. [Security](#..."
+    },
+    {
+      "path": "studentsorder\\config\\app\\settings.json",
+      "name": "settings.json",
+      "extension": ".json",
+      "size_kb": 10.3095703125,
+      "modified": "2025-12-10T16:21:58.540060",
+      "word_count": 841,
+      "char_count": 10155,
+      "content_preview": "{\n  \"app\": {\n    \"name\": \"Startup Systems\",\n    \"version\": \"1.0.0\",\n    \"environment\": \"production\",\n    \"port\": 3000,\n    \"apiUrl\": \"/api/v1\",\n    \"logLevel\": \"info\",\n    \"maxRequestSize\": \"10mb\",\n    \"sessionSecret\": \"change-this-in-production\",\n    \"jwtSecret\": \"change-this-in-production\",\n    \"passwordSaltRounds\": 10,\n    \"rateLimit\": {\n      \"windowMs\": 15 * 60 * 1000,\n      \"max\": 100\n    },\n    \"cors\": {\n      \"origin\": [\"http://localhost:3000\", \"https://yourdomain.com\"],\n      \"methods\":..."
+    },
+    {
+      "path": "studentsorder\\docs\\SETUP.md",
+      "name": "SETUP.md",
+      "extension": ".md",
+      "size_kb": 2.232421875,
+      "modified": "2025-12-10T16:21:08.004432",
+      "word_count": 282,
+      "char_count": 2180,
+      "content_preview": "# Startup Systems - Setup Guide\n\nThis guide provides step-by-step instructions for setting up the Startup Systems application.\n\n## Prerequisites\n\n1. **System Requirements**\n   - Windows Server 2019/2022 or Ubuntu 20.04 LTS\n   - Docker 20.10.0 or later\n   - Docker Compose 1.29.0 or later\n   - Git 2.30.0 or later\n   - Node.js 16.x LTS\n   - Python 3.8 or later\n   - PowerShell 7.0 or later (Windows) or Bash (Linux)\n\n2. **Network Requirements**\n   - Port 80 (HTTP)\n   - Port 443 (HTTPS)\n   - Port 2701..."
+    }
+  ]
+}

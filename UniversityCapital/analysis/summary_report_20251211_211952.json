@@ -1,0 +1,111 @@
+{
+  "report_date": "2025-12-11T20:19:52.928282+00:00",
+  "total_files_analyzed": 563,
+  "file_type_distribution": {
+    "": 35,
+    ".typed": 14,
+    ".py": 408,
+    ".txt": 22,
+    ".pem": 1,
+    ".exe": 11,
+    ".md": 5,
+    ".apache": 2,
+    ".bsd": 2,
+    ".rst": 1,
+    ".cfg": 1,
+    ".bat": 3,
+    ".fish": 1,
+    ".ps1": 3,
+    ".html": 7,
+    ".css": 1,
+    ".sqlite": 1,
+    ".js": 1,
+    ".json": 32,
+    ".png": 1,
+    ".example": 1,
+    ".conf": 1,
+    ".yml": 1,
+    ".yaml": 4,
+    ".log": 2,
+    ".zip": 2
+  },
+  "code_analysis": {
+    "total_files": 423,
+    "total_lines": 124864,
+    "languages": {
+      ".py": 408,
+      ".js": 1
+    }
+  },
+  "documentation": {
+    "total_files": 27,
+    "total_words": 9752
+  },
+  "dependencies": {
+    "total": 45,
+    "sample": [
+      "fiona",
+      "geoalchemy2",
+      "pyproj",
+      "sphinx-rtd-theme",
+      "python-dotenv",
+      "webpack",
+      "mypy",
+      "sphinx",
+      "webpack-dev-server",
+      "winston"
+    ]
+  },
+  "faculty_breakdown": {
+    ".venv": {
+      "code_files": 401,
+      "documents": 14,
+      "images": 0
+    },
+    "general": {
+      "code_files": 6,
+      "documents": 2,
+      "images": 0
+    },
+    "css": {
+      "code_files": 1,
+      "documents": 0,
+      "images": 0
+    },
+    "js": {
+      "code_files": 1,
+      "documents": 0,
+      "images": 0
+    },
+    "pages": {
+      "code_files": 1,
+      "documents": 0,
+      "images": 0
+    },
+    "regions": {
+      "code_files": 4,
+      "documents": 0,
+      "images": 0
+    },
+    "src": {
+      "code_files": 3,
+      "documents": 0,
+      "images": 0
+    },
+    "studentsorder": {
+      "code_files": 2,
+      "documents": 2,
+      "images": 0
+    },
+    "University": {
+      "code_files": 4,
+      "documents": 0,
+      "images": 0
+    },
+    "UniversityCapital": {
+      "code_files": 0,
+      "documents": 9,
+      "images": 0
+    }
+  }
+}

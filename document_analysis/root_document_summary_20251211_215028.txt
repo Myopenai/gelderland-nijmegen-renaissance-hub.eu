@@ -1,0 +1,303 @@
+================================================================================
+ROOT DIRECTORY DOCUMENT ANALYSIS REPORT
+Generated on: 2025-12-11 21:50:28
+================================================================================
+
+SUMMARY
+--------------------------------------------------------------------------------
+Base Directory: D:\busineshuboffline CHATGTP\KEAN
+Total Documents: 27
+Total Word Count: 13,002
+Total Size: 0.13 MB
+
+FILE TYPES
+--------------------------------------------------------------------------------
+.txt: 13 files
+.html: 7 files
+.md: 5 files
+.json: 2 files
+
+================================================================================
+DOCUMENT LISTING
+================================================================================
+
+.venv\Lib\site-packages\pip-25.3.dist-info\entry_points.txt
+- Size: 0.1 KB | Words: 3 | Modified: 2025-12-11
+- Content Preview: [console_scripts]
+pip=pip._internal.cli.main:main
+pip3=pip._internal.cli.main:main...
+
+.venv\Lib\site-packages\pip-25.3.dist-info\licenses\AUTHORS.txt
+- Size: 11.2 KB | Words: 1,591 | Modified: 2025-12-11
+- Content Preview: @Switch01
+A_Rog
+Aakanksha Agrawal
+Abhinav Sagar
+ABHYUDAY PRATAP SINGH
+abs51295
+AceGentile
+Adam Chainz
+Adam Tse
+Adam Turner
+Adam Wentz
+admin
+Adolfo Ochagavía
+Adrien Morison
+Agus
+ahayrapetyan
+Ahilya
+Ain...
+
+.venv\Lib\site-packages\pip-25.3.dist-info\licenses\LICENSE.txt
+- Size: 1.1 KB | Words: 171 | Modified: 2025-12-11
+- Content Preview: Copyright (c) 2008-present The pip developers (see AUTHORS.txt file)
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (...
+
+.venv\Lib\site-packages\pip-25.3.dist-info\licenses\src\pip\_vendor\cachecontrol\LICENSE.txt
+- Size: 0.5 KB | Words: 82 | Modified: 2025-12-11
+- Content Preview: Copyright 2012-2021  Eric Larson
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License ...
+
+.venv\Lib\site-packages\pip-25.3.dist-info\licenses\src\pip\_vendor\dependency_groups\LICENSE.txt
+- Size: 1.1 KB | Words: 170 | Modified: 2025-12-11
+- Content Preview: MIT License
+
+Copyright (c) 2024-present Stephen Rosen <sirosen0@gmail.com>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation f...
+
+.venv\Lib\site-packages\pip-25.3.dist-info\licenses\src\pip\_vendor\distlib\LICENSE.txt
+- Size: 14.2 KB | Words: 1,990 | Modified: 2025-12-11
+- Content Preview: A. HISTORY OF THE SOFTWARE
+==========================
+
+Python was created in the early 1990s by Guido van Rossum at Stichting
+Mathematisch Centrum (CWI, see http://www.cwi.nl) in the Netherlands
+as a ...
+
+.venv\Lib\site-packages\pip-25.3.dist-info\licenses\src\pip\_vendor\idna\LICENSE.md
+- Size: 1.5 KB | Words: 229 | Modified: 2025-12-11
+- Content Preview: BSD 3-Clause License
+
+Copyright (c) 2013-2024, Kim Davies and contributors.
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provide...
+
+.venv\Lib\site-packages\pip-25.3.dist-info\licenses\src\pip\_vendor\urllib3\LICENSE.txt
+- Size: 1.1 KB | Words: 173 | Modified: 2025-12-11
+- Content Preview: MIT License
+
+Copyright (c) 2008-2020 Andrey Petrov and contributors (see CONTRIBUTORS.txt)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated...
+
+.venv\Lib\site-packages\pip\_vendor\cachecontrol\LICENSE.txt
+- Size: 0.5 KB | Words: 82 | Modified: 2025-12-11
+- Content Preview: Copyright 2012-2021  Eric Larson
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License ...
+
+.venv\Lib\site-packages\pip\_vendor\dependency_groups\LICENSE.txt
+- Size: 1.1 KB | Words: 170 | Modified: 2025-12-11
+- Content Preview: MIT License
+
+Copyright (c) 2024-present Stephen Rosen <sirosen0@gmail.com>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation f...
+
+.venv\Lib\site-packages\pip\_vendor\distlib\LICENSE.txt
+- Size: 14.2 KB | Words: 1,990 | Modified: 2025-12-11
+- Content Preview: A. HISTORY OF THE SOFTWARE
+==========================
+
+Python was created in the early 1990s by Guido van Rossum at Stichting
+Mathematisch Centrum (CWI, see http://www.cwi.nl) in the Netherlands
+as a ...
+
+.venv\Lib\site-packages\pip\_vendor\idna\LICENSE.md
+- Size: 1.5 KB | Words: 229 | Modified: 2025-12-11
+- Content Preview: BSD 3-Clause License
+
+Copyright (c) 2013-2024, Kim Davies and contributors.
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provide...
+
+.venv\Lib\site-packages\pip\_vendor\urllib3\LICENSE.txt
+- Size: 1.1 KB | Words: 173 | Modified: 2025-12-11
+- Content Preview: MIT License
+
+Copyright (c) 2008-2020 Andrey Petrov and contributors (see CONTRIBUTORS.txt)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated...
+
+.venv\Lib\site-packages\pip\_vendor\vendor.txt
+- Size: 0.3 KB | Words: 19 | Modified: 2025-12-11
+- Content Preview: CacheControl==0.14.3
+distlib==0.4.0
+distro==1.9.0
+msgpack==1.1.2
+packaging==25.0
+platformdirs==4.5.0
+pyproject-hooks==1.2.0
+requests==2.32.5
+    certifi==2025.10.5
+    idna==3.10
+    urllib3==1.26.20
+...
+
+app.html
+- Size: 26.7 KB | Words: 1,525 | Modified: 2025-12-11
+- Content Preview: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEAN - Kleve Emmerich Arnhem Nijmegen</title>
+ ...
+
+index.html
+- Size: 8.3 KB | Words: 671 | Modified: 2025-12-11
+- Content Preview: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEAN - Loading...</title>
+    <!-- Welcome Moda...
+
+package.json
+- Size: 1.3 KB | Words: 110 | Modified: 2025-12-11
+- Content Preview: {
+  "name": "kean-platform",
+  "version": "1.0.0",
+  "description": "KEAN Platform - Connecting Communities Across Borders",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"...
+
+pages\forum\index.html
+- Size: 10.5 KB | Words: 554 | Modified: 2025-12-11
+- Content Preview: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEAN Forum - Connect with the Community</title>...
+
+README.md
+- Size: 2.7 KB | Words: 341 | Modified: 2025-12-11
+- Content Preview: # KEAN Landscape Planning System
+
+A comprehensive landscape planning system for the KEAN region (Kleve, Emmerich, Arnhem, Nijmegen).
+
+## Project Structure
+
+```
+KEAN/
+├── src/
+│   ├── __init__.py
+│   ├...
+
+regions\area_community.html
+- Size: 5.2 KB | Words: 317 | Modified: 2025-12-11
+- Content Preview: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>area_community - KEAN Platform</title>
+    <lin...
+
+regions\areas.html
+- Size: 5.3 KB | Words: 331 | Modified: 2025-12-11
+- Content Preview: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>areas - KEAN Platform</title>
+    <link href="h...
+
+regions\communities.html
+- Size: 5.3 KB | Words: 323 | Modified: 2025-12-11
+- Content Preview: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>communities - KEAN Platform</title>
+    <link h...
+
+regions\pages.html
+- Size: 5.6 KB | Words: 342 | Modified: 2025-12-11
+- Content Preview: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pages - KEAN Platform</title>
+    <link href="h...
+
+requirements.txt
+- Size: 0.5 KB | Words: 39 | Modified: 2025-12-11
+- Content Preview: # Core
+SQLAlchemy==2.0.23
+alembic==1.12.1
+psycopg2-binary==2.9.9  # For PostgreSQL
+geoalchemy2==0.14.7
+Shapely==2.0.2
+python-dotenv==1.0.0
+
+# API
+fastapi==0.104.1
+uvicorn==0.24.0
+pydantic==2.4.2
+pydan...
+
+studentsorder\config\app\settings.json
+- Size: 10.3 KB | Words: 841 | Modified: 2025-12-10
+- Content Preview: {
+  "app": {
+    "name": "Startup Systems",
+    "version": "1.0.0",
+    "environment": "production",
+    "port": 3000,
+    "apiUrl": "/api/v1",
+    "logLevel": "info",
+    "maxRequestSize": "10mb",
+  ...
+
+studentsorder\docs\SETUP.md
+- Size: 2.2 KB | Words: 282 | Modified: 2025-12-10
+- Content Preview: # Startup Systems - Setup Guide
+
+This guide provides step-by-step instructions for setting up the Startup Systems application.
+
+## Prerequisites
+
+1. **System Requirements**
+   - Windows Server 2019/20...
+
+studentsorder\README.md
+- Size: 2.3 KB | Words: 254 | Modified: 2025-12-10
+- Content Preview: # Startup Systems - Student Deployment Package
+
+This package contains all the necessary components, configurations, and documentation to set up and run the Startup Systems application in a production ...
+
+
+================================================================================
+END OF REPORT
+================================================================================

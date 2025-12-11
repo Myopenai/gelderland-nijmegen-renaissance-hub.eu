@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "scan_date": "2025-12-11T21:48:48.554818",
+    "base_directory": "D:\\busineshuboffline CHATGTP\\KEAN\\University",
+    "total_documents": 1,
+    "total_faculties": 1,
+    "total_word_count": 30,
+    "total_size_mb": 0.0
+  },
+  "faculties": {
+    "informatik": {
+      "document_count": 1,
+      "total_size_mb": 0.0,
+      "total_word_count": 30,
+      "file_types": {
+        ".txt": 1
+      },
+      "documents": [
+        "university_documents\\document_analysis\\analysis_report_20251211_214705.txt"
+      ]
+    }
+  },
+  "documents": [
+    {
+      "file": "university_documents\\document_analysis\\analysis_report_20251211_214705.txt",
+      "faculty": "informatik",
+      "size_kb": 0.5859375,
+      "modified": "2025-12-11T21:47:05.105337",
+      "word_count": 30,
+      "char_count": 583
+    }
+  ]
+}

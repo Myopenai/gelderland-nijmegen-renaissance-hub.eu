@@ -1,0 +1,932 @@
+================================================================================
+ENHANCED DOCUMENT ANALYSIS REPORT
+Generated: 2025-12-11T22:08:49.382178
+================================================================================
+
+================================================================================
+SUMMARY
+================================================================================
+
+Base Directory: D:\busineshuboffline CHATGTP\KEAN
+Analysis Time: 2025-12-11 22:08:49
+Total Documents: 99
+Total Size: 17.17 MB
+Total Words: 1,507,044
+Total Characters: 17,607,110
+Average Words/Document: 15,222.67
+
+================================================================================
+FILE TYPE ANALYSIS
+================================================================================
+
+.json: 62 files
+.txt: 20 files
+.html: 12 files
+.md: 5 files
+
+================================================================================
+FACULTY MENTIONS
+================================================================================
+
+- Technology: 62171 mentions
+- Arts: 620 mentions
+- Business: 65 mentions
+
+================================================================================
+DOCUMENT DETAILS
+================================================================================
+
+
+============================================================
+FILE: app.html
+============================================================
+Type: .html | Size: 26.7 KB | Words: 1,525 | Lines: 556
+Modified: 2025-12-11T13:46:35.764913
+Faculty References: Business:1, Technology:64
+
+Preview: <!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>KEAN - Kleve Emmerich Arnhem Nijmegen</title> <link rel="stylesheet" href="css/style.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> </head> <body> <!-- Header --> <header class="site-header"> <div class="container"> <div class="logo"> ...
+
+============================================================
+FILE: index.html
+============================================================
+Type: .html | Size: 8.3 KB | Words: 671 | Lines: 285
+Modified: 2025-12-11T13:09:48.334538
+Faculty References: Technology:40
+
+Preview: <!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>KEAN - Loading...</title> <!-- Welcome Modal Styles --> <style> /* Welcome Modal */ .welcome-modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.9); z-index: 100...
+
+============================================================
+FILE: package.json
+============================================================
+Type: .json | Size: 1.3 KB | Words: 110 | Lines: 52
+Modified: 2025-12-11T13:27:53.114125
+Faculty References: Technology:3
+
+Preview: { "name": "kean-platform", "version": "1.0.0", "description": "KEAN Platform - Connecting Communities Across Borders", "main": "src/server.js", "scripts": { "start": "node src/server.js", "dev": "nodemon src/server.js", "build": "webpack --mode production", "test": "jest", "lint": "eslint .", "format": "prettier --write .", "generate:regions": "node scripts/generateRegions.js" }, "dependencies": { "express": "^4.18.2", "sqlite3": "^5.1.6", "c...
+
+============================================================
+FILE: pages\forum\index.html
+============================================================
+Type: .html | Size: 10.5 KB | Words: 554 | Lines: 220
+Modified: 2025-12-11T09:45:35.289637
+Faculty References: Technology:32
+
+Preview: <!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>KEAN Forum - Connect with the Community</title> <link rel="stylesheet" href="../../css/style.css"> <link rel="stylesheet" href="../../css/forum.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> </head> <body> <!-- Header --> <header class="site-header"> ...
+
+============================================================
+FILE: pages\forum\index.html
+============================================================
+Type: .html | Size: 10.5 KB | Words: 554 | Lines: 220
+Modified: 2025-12-11T09:45:35.289637
+Faculty References: Technology:32
+
+Preview: <!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>KEAN Forum - Connect with the Community</title> <link rel="stylesheet" href="../../css/style.css"> <link rel="stylesheet" href="../../css/forum.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> </head> <body> <!-- Header --> <header class="site-header"> ...
+
+============================================================
+FILE: README.md
+============================================================
+Type: .md | Size: 2.7 KB | Words: 341 | Lines: 97
+Modified: 2025-12-11T16:04:22.252686
+Faculty References: Business:2, Technology:20
+
+Preview: # KEAN Landscape Planning System A comprehensive landscape planning system for the KEAN region (Kleve, Emmerich, Arnhem, Nijmegen). ## Project Structure ``` KEAN/ ├── src/ │ ├── __init__.py │ ├── database.py # Database configuration and session management │ └── models/ │ ├── __init__.py │ └── landscape.py # SQLAlchemy models for...
+
+============================================================
+FILE: regions\area_community.html
+============================================================
+Type: .html | Size: 5.2 KB | Words: 317 | Lines: 137
+Modified: 2025-12-11T13:46:21.739279
+Faculty References: Technology:32
+
+Preview: <!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>area_community - KEAN Platform</title> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <style> :root { --primary: #2c3e50; --secondary: #e74c3c...
+
+============================================================
+FILE: regions\area_community.html
+============================================================
+Type: .html | Size: 5.2 KB | Words: 317 | Lines: 137
+Modified: 2025-12-11T13:46:21.739279
+Faculty References: Technology:32
+
+Preview: <!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>area_community - KEAN Platform</title> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <style> :root { --primary: #2c3e50; --secondary: #e74c3c...
+
+============================================================
+FILE: regions\areas.html
+============================================================
+Type: .html | Size: 5.3 KB | Words: 331 | Lines: 137
+Modified: 2025-12-11T13:46:21.738282
+Faculty References: Technology:23
+
+Preview: <!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>areas - KEAN Platform</title> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <style> :root { --primary: #2c3e50; --secondary: #e74c3c; ...
+
+============================================================
+FILE: regions\areas.html
+============================================================
+Type: .html | Size: 5.3 KB | Words: 331 | Lines: 137
+Modified: 2025-12-11T13:46:21.738282
+Faculty References: Technology:23
+
+Preview: <!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>areas - KEAN Platform</title> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <style> :root { --primary: #2c3e50; --secondary: #e74c3c; ...
+
+============================================================
+FILE: regions\communities.html
+============================================================
+Type: .html | Size: 5.3 KB | Words: 323 | Lines: 137
+Modified: 2025-12-11T13:46:21.739279
+Faculty References: Technology:34
+
+Preview: <!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>communities - KEAN Platform</title> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <style> :root { --primary: #2c3e50; --secondary: #e74c3c; ...
+
+============================================================
+FILE: regions\communities.html
+============================================================
+Type: .html | Size: 5.3 KB | Words: 323 | Lines: 137
+Modified: 2025-12-11T13:46:21.739279
+Faculty References: Technology:34
+
+Preview: <!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>communities - KEAN Platform</title> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <style> :root { --primary: #2c3e50; --secondary: #e74c3c; ...
+
+============================================================
+FILE: regions\pages.html
+============================================================
+Type: .html | Size: 5.6 KB | Words: 342 | Lines: 137
+Modified: 2025-12-11T13:46:21.739279
+Faculty References: Technology:31
+
+Preview: <!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>pages - KEAN Platform</title> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <style> :root { --primary: #2c3e50; --secondary: #e74c3c; ...
+
+============================================================
+FILE: regions\pages.html
+============================================================
+Type: .html | Size: 5.6 KB | Words: 342 | Lines: 137
+Modified: 2025-12-11T13:46:21.739279
+Faculty References: Technology:31
+
+Preview: <!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>pages - KEAN Platform</title> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <style> :root { --primary: #2c3e50; --secondary: #e74c3c; ...
+
+============================================================
+FILE: requirements.txt
+============================================================
+Type: .txt | Size: 0.5 KB | Words: 39 | Lines: 35
+Modified: 2025-12-11T16:04:01.376542
+
+Preview: # Core SQLAlchemy==2.0.23 alembic==1.12.1 psycopg2-binary==2.9.9 # For PostgreSQL geoalchemy2==0.14.7 Shapely==2.0.2 python-dotenv==1.0.0 # API fastapi==0.104.1 uvicorn==0.24.0 pydantic==2.4.2 pydantic-settings==2.0.3 # Geospatial geopandas==0.14.1 fiona==1.9.5 pyproj==3.6.0 # Data processing pandas==2.1.3 numpy==1.26.1 # Development alembic==1.12.1 black==23.9.1 isort==5.12.0 flake8==6.1.0 mypy==1.6.1 pytest==7.4.2 # Documentation sphinx==7.2.6 sphinx-rtd-theme==1.3.0
+
+============================================================
+FILE: studentsorder\config\app\settings.json
+============================================================
+Type: .json | Size: 10.3 KB | Words: 841 | Lines: 402
+Modified: 2025-12-10T16:21:58.540060
+Faculty References: Technology:18
+
+Preview: { "app": { "name": "Startup Systems", "version": "1.0.0", "environment": "production", "port": 3000, "apiUrl": "/api/v1", "logLevel": "info", "maxRequestSize": "10mb", "sessionSecret": "change-this-in-production", "jwtSecret": "change-this-in-production", "passwordSaltRounds": 10, "rateLimit": { "windowMs": 15 * 60 * 1000, "max": 100 }, "cors": { "origin": ["http://localhost:3000", "https://yourdomain.com"], "methods":...
+
+============================================================
+FILE: studentsorder\config\app\settings.json
+============================================================
+Type: .json | Size: 10.3 KB | Words: 841 | Lines: 402
+Modified: 2025-12-10T16:21:58.540060
+Faculty References: Technology:18
+
+Preview: { "app": { "name": "Startup Systems", "version": "1.0.0", "environment": "production", "port": 3000, "apiUrl": "/api/v1", "logLevel": "info", "maxRequestSize": "10mb", "sessionSecret": "change-this-in-production", "jwtSecret": "change-this-in-production", "passwordSaltRounds": 10, "rateLimit": { "windowMs": 15 * 60 * 1000, "max": 100 }, "cors": { "origin": ["http://localhost:3000", "https://yourdomain.com"], "methods":...
+
+============================================================
+FILE: studentsorder\docs\SETUP.md
+============================================================
+Type: .md | Size: 2.2 KB | Words: 282 | Lines: 106
+Modified: 2025-12-10T16:21:08.004432
+Faculty References: Technology:17
+
+Preview: # Startup Systems - Setup Guide This guide provides step-by-step instructions for setting up the Startup Systems application. ## Prerequisites 1. **System Requirements** - Windows Server 2019/2022 or Ubuntu 20.04 LTS - Docker 20.10.0 or later - Docker Compose 1.29.0 or later - Git 2.30.0 or later - Node.js 16.x...
+
+============================================================
+FILE: studentsorder\docs\SETUP.md
+============================================================
+Type: .md | Size: 2.2 KB | Words: 282 | Lines: 106
+Modified: 2025-12-10T16:21:08.004432
+Faculty References: Technology:17
+
+Preview: # Startup Systems - Setup Guide This guide provides step-by-step instructions for setting up the Startup Systems application. ## Prerequisites 1. **System Requirements** - Windows Server 2019/2022 or Ubuntu 20.04 LTS - Docker 20.10.0 or later - Docker Compose 1.29.0 or later - Git 2.30.0 or later - Node.js 16.x...
+
+============================================================
+FILE: studentsorder\README.md
+============================================================
+Type: .md | Size: 2.3 KB | Words: 254 | Lines: 78
+Modified: 2025-12-10T16:20:55.769180
+Faculty References: Technology:9
+
+Preview: # Startup Systems - Student Deployment Package This package contains all the necessary components, configurations, and documentation to set up and run the Startup Systems application in a production environment. ## Table of Contents 1. [System Requirements](#system-requirements) 2. [Quick Start](#quick-start) 3. [Detailed Setup](#detailed-setup) 4. [Configuration](#configuration) 5. [Deployment](#deployment) 6. [Maintenance](#maintenance) 7....
+
+============================================================
+FILE: studentsorder\README.md
+============================================================
+Type: .md | Size: 2.3 KB | Words: 254 | Lines: 78
+Modified: 2025-12-10T16:20:55.769180
+Faculty References: Technology:9
+
+Preview: # Startup Systems - Student Deployment Package This package contains all the necessary components, configurations, and documentation to set up and run the Startup Systems application in a production environment. ## Table of Contents 1. [System Requirements](#system-requirements) 2. [Quick Start](#quick-start) 3. [Detailed Setup](#detailed-setup) 4. [Configuration](#configuration) 5. [Deployment](#deployment) 6. [Maintenance](#maintenance) 7....
+
+============================================================
+FILE: University\university_documents\University\Universitycapital\future_roadmap\future_roadmap.json
+============================================================
+Type: .json | Size: 0.7 KB | Words: 63 | Lines: 32
+Modified: 2025-12-11T21:47:05.093926
+Faculty References: Technology:2
+
+Preview: { "timeline": { "short_term": [ "Optimize API performance", "Enhance security features", "Add user analytics" ], "mid_term": [ "Implement AI/ML capabilities", "Expand to mobile platforms", "Develop partner integrations" ], "long_term": [ "Blockchain integration", "AR/VR features", "Global expansion" ] }, "potential_valuation_increase": { "short_term": "15-25%", "mid_term": "50-75%", "long_term": "150-...
+
+============================================================
+FILE: University\university_documents\University\Universitycapital\market_analysis\market_analysis.json
+============================================================
+Type: .json | Size: 0.6 KB | Words: 55 | Lines: 27
+Modified: 2025-12-11T21:47:05.096983
+Faculty References: Technology:3
+
+Preview: { "analysis_date": "2025-12-11T20:45:58.511266", "comparable_companies": [ { "name": "Competitor A", "valuation": 5000000, "employees": 25, "revenue": 2000000 }, { "name": "Competitor B", "valuation": 12000000, "employees": 50, "revenue": 5000000 } ], "market_trends": { "ai_ml_adoption": "High growth (15% YoY)", "cloud_services": "Mature market (8% YoY)", "edge_computing": "Emerging (25% YoY)" }, "valuation_m...
+
+============================================================
+FILE: University\university_documents\Universitycapital\future_roadmap\future_roadmap.json
+============================================================
+Type: .json | Size: 0.7 KB | Words: 63 | Lines: 32
+Modified: 2025-12-11T21:47:05.098601
+Faculty References: Technology:2
+
+Preview: { "timeline": { "short_term": [ "Optimize API performance", "Enhance security features", "Add user analytics" ], "mid_term": [ "Implement AI/ML capabilities", "Expand to mobile platforms", "Develop partner integrations" ], "long_term": [ "Blockchain integration", "AR/VR features", "Global expansion" ] }, "potential_valuation_increase": { "short_term": "15-25%", "mid_term": "50-75%", "long_term": "150-...
+
+============================================================
+FILE: University\university_documents\Universitycapital\market_analysis\market_analysis.json
+============================================================
+Type: .json | Size: 0.6 KB | Words: 55 | Lines: 27
+Modified: 2025-12-11T21:47:05.098601
+Faculty References: Technology:3
+
+Preview: { "analysis_date": "2025-12-11T20:45:58.511266", "comparable_companies": [ { "name": "Competitor A", "valuation": 5000000, "employees": 25, "revenue": 2000000 }, { "name": "Competitor B", "valuation": 12000000, "employees": 50, "revenue": 5000000 } ], "market_trends": { "ai_ml_adoption": "High growth (15% YoY)", "cloud_services": "Mature market (8% YoY)", "edge_computing": "Emerging (25% YoY)" }, "valuation_m...
+
+============================================================
+FILE: University\Universitycapital\future_roadmap\future_roadmap.json
+============================================================
+Type: .json | Size: 0.7 KB | Words: 63 | Lines: 32
+Modified: 2025-12-11T21:25:53.920056
+Faculty References: Technology:2
+
+Preview: { "timeline": { "short_term": [ "Optimize API performance", "Enhance security features", "Add user analytics" ], "mid_term": [ "Implement AI/ML capabilities", "Expand to mobile platforms", "Develop partner integrations" ], "long_term": [ "Blockchain integration", "AR/VR features", "Global expansion" ] }, "potential_valuation_increase": { "short_term": "15-25%", "mid_term": "50-75%", "long_term": "150-...
+
+============================================================
+FILE: University\Universitycapital\market_analysis\market_analysis.json
+============================================================
+Type: .json | Size: 0.6 KB | Words: 55 | Lines: 27
+Modified: 2025-12-11T21:25:53.920056
+Faculty References: Technology:3
+
+Preview: { "analysis_date": "2025-12-11T21:25:53.921608", "comparable_companies": [ { "name": "Competitor A", "valuation": 5000000, "employees": 25, "revenue": 2000000 }, { "name": "Competitor B", "valuation": 12000000, "employees": 50, "revenue": 5000000 } ], "market_trends": { "ai_ml_adoption": "High growth (15% YoY)", "cloud_services": "Mature market (8% YoY)", "edge_computing": "Emerging (25% YoY)" }, "valuation_m...
+
+============================================================
+FILE: UniversityCapital\analysis\full_analysis_20251211_203054.json
+============================================================
+Type: .json | Size: 554.3 KB | Words: 47,583 | Lines: 12,331
+Modified: 2025-12-11T20:30:54.888103
+Faculty References: Business:2, Technology:1969, Arts:20
+
+Preview: { "metadata": { "analysis_date": "2025-12-11T20:30:54.504623", "total_files": 522, "file_types": { "": 35, ".typed": 14, ".py": 408, ".txt": 13, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 2, ".png": 1, ".example":...
+
+============================================================
+FILE: UniversityCapital\analysis\full_analysis_20251211_203340.json
+============================================================
+Type: .json | Size: 554.3 KB | Words: 47,583 | Lines: 12,331
+Modified: 2025-12-11T20:33:40.307998
+Faculty References: Business:2, Technology:1969, Arts:20
+
+Preview: { "metadata": { "analysis_date": "2025-12-11T20:33:40.104144", "total_files": 522, "file_types": { "": 35, ".typed": 14, ".py": 408, ".txt": 13, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 2, ".png": 1, ".example":...
+
+============================================================
+FILE: UniversityCapital\analysis\full_analysis_20251211_203442.json
+============================================================
+Type: .json | Size: 554.3 KB | Words: 47,583 | Lines: 12,331
+Modified: 2025-12-11T20:34:42.638017
+Faculty References: Business:2, Technology:1969, Arts:20
+
+Preview: { "metadata": { "analysis_date": "2025-12-11T20:34:42.429953", "total_files": 522, "file_types": { "": 35, ".typed": 14, ".py": 408, ".txt": 13, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 2, ".png": 1, ".example":...
+
+============================================================
+FILE: UniversityCapital\analysis\full_analysis_20251211_203625.json
+============================================================
+Type: .json | Size: 554.3 KB | Words: 47,583 | Lines: 12,331
+Modified: 2025-12-11T20:36:25.469593
+Faculty References: Business:2, Technology:1969, Arts:20
+
+Preview: { "metadata": { "analysis_date": "2025-12-11T20:36:25.268959", "total_files": 522, "file_types": { "": 35, ".typed": 14, ".py": 408, ".txt": 13, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 2, ".png": 1, ".example":...
+
+============================================================
+FILE: UniversityCapital\analysis\full_analysis_20251211_203815.json
+============================================================
+Type: .json | Size: 554.3 KB | Words: 47,583 | Lines: 12,331
+Modified: 2025-12-11T20:38:15.891132
+Faculty References: Business:2, Technology:1969, Arts:20
+
+Preview: { "metadata": { "analysis_date": "2025-12-11T20:38:15.682815", "total_files": 522, "file_types": { "": 35, ".typed": 14, ".py": 408, ".txt": 13, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 2, ".png": 1, ".example":...
+
+============================================================
+FILE: UniversityCapital\analysis\full_analysis_20251211_204151.json
+============================================================
+Type: .json | Size: 554.3 KB | Words: 47,583 | Lines: 12,331
+Modified: 2025-12-11T20:41:51.858255
+Faculty References: Business:2, Technology:1969, Arts:20
+
+Preview: { "metadata": { "analysis_date": "2025-12-11T20:41:51.653587", "total_files": 522, "file_types": { "": 35, ".typed": 14, ".py": 408, ".txt": 13, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 2, ".png": 1, ".example":...
+
+============================================================
+FILE: UniversityCapital\analysis\full_analysis_20251211_204239.json
+============================================================
+Type: .json | Size: 554.3 KB | Words: 47,583 | Lines: 12,331
+Modified: 2025-12-11T20:42:39.226766
+Faculty References: Business:2, Technology:1969, Arts:20
+
+Preview: { "metadata": { "analysis_date": "2025-12-11T20:42:39.004060", "total_files": 522, "file_types": { "": 35, ".typed": 14, ".py": 408, ".txt": 13, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 2, ".png": 1, ".example":...
+
+============================================================
+FILE: UniversityCapital\analysis\full_analysis_20251211_204444.json
+============================================================
+Type: .json | Size: 554.4 KB | Words: 47,585 | Lines: 12,331
+Modified: 2025-12-11T20:44:44.224517
+Faculty References: Business:2, Technology:1969, Arts:20
+
+Preview: { "metadata": { "analysis_date": "2025-12-11T20:44:44.025031", "total_files": 522, "file_types": { "": 35, ".typed": 14, ".py": 408, ".txt": 13, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 2, ".png": 1, ".example":...
+
+============================================================
+FILE: UniversityCapital\analysis\full_analysis_20251211_204555.json
+============================================================
+Type: .json | Size: 554.4 KB | Words: 47,585 | Lines: 12,331
+Modified: 2025-12-11T20:45:55.179381
+Faculty References: Business:2, Technology:1969, Arts:20
+
+Preview: { "metadata": { "analysis_date": "2025-12-11T20:45:54.974158", "total_files": 522, "file_types": { "": 35, ".typed": 14, ".py": 408, ".txt": 13, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 2, ".png": 1, ".example":...
+
+============================================================
+FILE: UniversityCapital\analysis\full_analysis_20251211_210812.json
+============================================================
+Type: .json | Size: 554.4 KB | Words: 47,593 | Lines: 12,333
+Modified: 2025-12-11T21:08:12.546824
+Faculty References: Business:2, Technology:1969, Arts:20
+
+Preview: { "metadata": { "analysis_date": "2025-12-11T21:08:12.329936", "total_files": 524, "file_types": { "": 35, ".typed": 14, ".py": 408, ".txt": 13, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 2, ".png": 1, ".example":...
+
+============================================================
+FILE: UniversityCapital\analysis\full_analysis_20251211_210928.json
+============================================================
+Type: .json | Size: 554.4 KB | Words: 47,593 | Lines: 12,333
+Modified: 2025-12-11T21:09:28.895561
+Faculty References: Business:2, Technology:1969, Arts:20
+
+Preview: { "metadata": { "analysis_date": "2025-12-11T21:09:28.672635", "total_files": 524, "file_types": { "": 35, ".typed": 14, ".py": 408, ".txt": 13, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 2, ".png": 1, ".example":...
+
+============================================================
+FILE: UniversityCapital\analysis\full_analysis_20251211_211025.json
+============================================================
+Type: .json | Size: 554.4 KB | Words: 47,591 | Lines: 12,332
+Modified: 2025-12-11T21:10:25.979088
+Faculty References: Business:2, Technology:1969, Arts:20
+
+Preview: { "metadata": { "analysis_date": "2025-12-11T21:10:25.748270", "total_files": 524, "file_types": { "": 35, ".typed": 14, ".py": 408, ".txt": 13, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 2, ".png": 1, ".example":...
+
+============================================================
+FILE: UniversityCapital\analysis\full_analysis_20251211_211044.json
+============================================================
+Type: .json | Size: 554.4 KB | Words: 47,593 | Lines: 12,333
+Modified: 2025-12-11T21:10:44.136805
+Faculty References: Business:2, Technology:1969, Arts:20
+
+Preview: { "metadata": { "analysis_date": "2025-12-11T21:10:43.919277", "total_files": 524, "file_types": { "": 35, ".typed": 14, ".py": 408, ".txt": 13, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 2, ".png": 1, ".example":...
+
+============================================================
+FILE: UniversityCapital\analysis\full_analysis_20251211_211223.json
+============================================================
+Type: .json | Size: 554.4 KB | Words: 47,593 | Lines: 12,333
+Modified: 2025-12-11T21:12:23.567227
+Faculty References: Business:2, Technology:1969, Arts:20
+
+Preview: { "metadata": { "analysis_date": "2025-12-11T21:12:23.353393", "total_files": 524, "file_types": { "": 35, ".typed": 14, ".py": 408, ".txt": 13, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 2, ".png": 1, ".example":...
+
+============================================================
+FILE: UniversityCapital\analysis\full_analysis_20251211_211333.json
+============================================================
+Type: .json | Size: 554.4 KB | Words: 47,593 | Lines: 12,333
+Modified: 2025-12-11T21:13:33.589604
+Faculty References: Business:2, Technology:1969, Arts:20
+
+Preview: { "metadata": { "analysis_date": "2025-12-11T21:13:33.375941", "total_files": 524, "file_types": { "": 35, ".typed": 14, ".py": 408, ".txt": 13, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 2, ".png": 1, ".example":...
+
+============================================================
+FILE: UniversityCapital\analysis\full_analysis_20251211_211436.json
+============================================================
+Type: .json | Size: 554.4 KB | Words: 47,593 | Lines: 12,333
+Modified: 2025-12-11T21:14:36.181211
+Faculty References: Business:2, Technology:1969, Arts:20
+
+Preview: { "metadata": { "analysis_date": "2025-12-11T21:14:35.968096", "total_files": 524, "file_types": { "": 35, ".typed": 14, ".py": 408, ".txt": 13, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 2, ".png": 1, ".example":...
+
+============================================================
+FILE: UniversityCapital\analysis\full_analysis_20251211_211517.json
+============================================================
+Type: .json | Size: 554.4 KB | Words: 47,593 | Lines: 12,333
+Modified: 2025-12-11T21:15:17.470850
+Faculty References: Business:2, Technology:1969, Arts:20
+
+Preview: { "metadata": { "analysis_date": "2025-12-11T21:15:17.254492", "total_files": 524, "file_types": { "": 35, ".typed": 14, ".py": 408, ".txt": 13, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 2, ".png": 1, ".example":...
+
+============================================================
+FILE: UniversityCapital\analysis\full_analysis_20251211_211544.json
+============================================================
+Type: .json | Size: 554.4 KB | Words: 47,593 | Lines: 12,333
+Modified: 2025-12-11T21:15:44.228544
+Faculty References: Business:2, Technology:1969, Arts:20
+
+Preview: { "metadata": { "analysis_date": "2025-12-11T21:15:44.028851", "total_files": 524, "file_types": { "": 35, ".typed": 14, ".py": 408, ".txt": 13, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 2, ".png": 1, ".example":...
+
+============================================================
+FILE: UniversityCapital\analysis\full_analysis_20251211_211637.json
+============================================================
+Type: .json | Size: 554.4 KB | Words: 47,593 | Lines: 12,333
+Modified: 2025-12-11T21:16:37.559877
+Faculty References: Business:2, Technology:1969, Arts:20
+
+Preview: { "metadata": { "analysis_date": "2025-12-11T21:16:37.354069", "total_files": 524, "file_types": { "": 35, ".typed": 14, ".py": 408, ".txt": 13, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 2, ".png": 1, ".example":...
+
+============================================================
+FILE: UniversityCapital\analysis\full_analysis_20251211_211754.json
+============================================================
+Type: .json | Size: 554.4 KB | Words: 47,593 | Lines: 12,333
+Modified: 2025-12-11T21:17:54.102483
+Faculty References: Business:2, Technology:1969, Arts:20
+
+Preview: { "metadata": { "analysis_date": "2025-12-11T21:17:53.909475", "total_files": 524, "file_types": { "": 35, ".typed": 14, ".py": 408, ".txt": 13, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 2, ".png": 1, ".example":...
+
+============================================================
+FILE: UniversityCapital\analysis\full_analysis_20251211_211833.json
+============================================================
+Type: .json | Size: 564.8 KB | Words: 48,406 | Lines: 12,392
+Modified: 2025-12-11T21:18:33.621873
+Faculty References: Business:2, Technology:1995, Arts:20
+
+Preview: { "metadata": { "analysis_date": "2025-12-11T21:18:33.410505", "total_files": 560, "file_types": { "": 35, ".typed": 14, ".py": 408, ".txt": 21, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 30, ".png": 1, ".example":...
+
+============================================================
+FILE: UniversityCapital\analysis\full_analysis_20251211_211952.json
+============================================================
+Type: .json | Size: 566.1 KB | Words: 48,507 | Lines: 12,399
+Modified: 2025-12-11T21:19:52.926662
+Faculty References: Business:2, Technology:1998, Arts:20
+
+Preview: { "metadata": { "analysis_date": "2025-12-11T21:19:52.721319", "total_files": 563, "file_types": { "": 35, ".typed": 14, ".py": 408, ".txt": 22, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 32, ".png": 1, ".example":...
+
+============================================================
+FILE: UniversityCapital\analysis\full_analysis_20251211_212023.json
+============================================================
+Type: .json | Size: 567.4 KB | Words: 48,608 | Lines: 12,406
+Modified: 2025-12-11T21:20:23.958356
+Faculty References: Business:2, Technology:2001, Arts:20
+
+Preview: { "metadata": { "analysis_date": "2025-12-11T21:20:23.752818", "total_files": 566, "file_types": { "": 35, ".typed": 14, ".py": 408, ".txt": 23, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 34, ".png": 1, ".example":...
+
+============================================================
+FILE: UniversityCapital\analysis\full_analysis_20251211_212107.json
+============================================================
+Type: .json | Size: 568.7 KB | Words: 48,709 | Lines: 12,413
+Modified: 2025-12-11T21:21:07.945976
+Faculty References: Business:2, Technology:2004, Arts:20
+
+Preview: { "metadata": { "analysis_date": "2025-12-11T21:21:07.737938", "total_files": 569, "file_types": { "": 35, ".typed": 14, ".py": 408, ".txt": 24, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 36, ".png": 1, ".example":...
+
+============================================================
+FILE: UniversityCapital\analysis\full_analysis_20251211_212202.json
+============================================================
+Type: .json | Size: 570.0 KB | Words: 48,810 | Lines: 12,420
+Modified: 2025-12-11T21:22:02.518263
+Faculty References: Business:2, Technology:2007, Arts:20
+
+Preview: { "metadata": { "analysis_date": "2025-12-11T21:22:02.309215", "total_files": 572, "file_types": { "": 35, ".typed": 14, ".py": 408, ".txt": 25, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 38, ".png": 1, ".example":...
+
+============================================================
+FILE: UniversityCapital\analysis\full_analysis_20251211_212323.json
+============================================================
+Type: .json | Size: 571.3 KB | Words: 48,911 | Lines: 12,427
+Modified: 2025-12-11T21:23:23.796890
+Faculty References: Business:2, Technology:2010, Arts:20
+
+Preview: { "metadata": { "analysis_date": "2025-12-11T21:23:23.587251", "total_files": 575, "file_types": { "": 35, ".typed": 14, ".py": 408, ".txt": 26, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 40, ".png": 1, ".example":...
+
+============================================================
+FILE: UniversityCapital\analysis\full_analysis_20251211_212408.json
+============================================================
+Type: .json | Size: 572.5 KB | Words: 49,012 | Lines: 12,434
+Modified: 2025-12-11T21:24:08.286146
+Faculty References: Business:2, Technology:2013, Arts:20
+
+Preview: { "metadata": { "analysis_date": "2025-12-11T21:24:08.061710", "total_files": 578, "file_types": { "": 35, ".typed": 14, ".py": 408, ".txt": 27, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 42, ".png": 1, ".example":...
+
+============================================================
+FILE: UniversityCapital\analysis\full_analysis_20251211_212518.json
+============================================================
+Type: .json | Size: 573.8 KB | Words: 49,113 | Lines: 12,441
+Modified: 2025-12-11T21:25:18.852563
+Faculty References: Business:2, Technology:2016, Arts:20
+
+Preview: { "metadata": { "analysis_date": "2025-12-11T21:25:18.646992", "total_files": 581, "file_types": { "": 35, ".typed": 14, ".py": 408, ".txt": 28, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 44, ".png": 1, ".example":...
+
+============================================================
+FILE: UniversityCapital\analysis\full_analysis_20251211_212534.json
+============================================================
+Type: .json | Size: 575.1 KB | Words: 49,214 | Lines: 12,448
+Modified: 2025-12-11T21:25:34.024660
+Faculty References: Business:2, Technology:2019, Arts:20
+
+Preview: { "metadata": { "analysis_date": "2025-12-11T21:25:33.816137", "total_files": 584, "file_types": { "": 35, ".typed": 14, ".py": 408, ".txt": 29, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 46, ".png": 1, ".example":...
+
+============================================================
+FILE: UniversityCapital\analysis\full_analysis_20251211_212550.json
+============================================================
+Type: .json | Size: 576.4 KB | Words: 49,315 | Lines: 12,455
+Modified: 2025-12-11T21:25:50.726479
+Faculty References: Business:2, Technology:2022, Arts:20
+
+Preview: { "metadata": { "analysis_date": "2025-12-11T21:25:50.516411", "total_files": 587, "file_types": { "": 35, ".typed": 14, ".py": 408, ".txt": 30, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 48, ".png": 1, ".example":...
+
+============================================================
+FILE: UniversityCapital\analysis\full_analysis_20251211_212750.json
+============================================================
+Type: .json | Size: 577.7 KB | Words: 49,416 | Lines: 12,462
+Modified: 2025-12-11T21:27:50.339136
+Faculty References: Business:2, Technology:2025, Arts:20
+
+Preview: { "metadata": { "analysis_date": "2025-12-11T21:27:50.117913", "total_files": 590, "file_types": { "": 35, ".typed": 14, ".py": 408, ".txt": 31, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 50, ".png": 1, ".example":...
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_211044.json
+============================================================
+Type: .json | Size: 1.9 KB | Words: 184 | Lines: 106
+Modified: 2025-12-11T21:10:44.137780
+Faculty References: Technology:3
+
+Preview: { "report_date": "2025-12-11T20:10:44.137126+00:00", "total_files_analyzed": 524, "file_type_distribution": { "": 35, ".typed": 14, ".py": 408, ".txt": 13, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 2, ".png": 1, ".example": 1, ".conf":...
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_211044.txt
+============================================================
+Type: .txt | Size: 1.6 KB | Words: 195 | Lines: 107
+Modified: 2025-12-11T21:10:44.137780
+Faculty References: Technology:3
+
+Preview: ================================================================================ PROJECT ANALYSIS SUMMARY REPORT ================================================================================ Report generated on: 2025-12-11T20:10:44.137126+00:00 OVERVIEW -------- Total files analyzed: 524 Code files: 423 Documentation files: 18 Total dependencies found: 45 FILE TYPE DISTRIBUTION --------------------- No extension: 35 .typed: 14 .py: 408 .txt: 13 .pem: 1 .exe: 11 .md: 5 .apache: 2 .bsd: 2 ....
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_211223.json
+============================================================
+Type: .json | Size: 1.9 KB | Words: 184 | Lines: 106
+Modified: 2025-12-11T21:12:23.568241
+Faculty References: Technology:2
+
+Preview: { "report_date": "2025-12-11T20:12:23.567830+00:00", "total_files_analyzed": 524, "file_type_distribution": { "": 35, ".typed": 14, ".py": 408, ".txt": 13, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 2, ".png": 1, ".example": 1, ".conf":...
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_211223.txt
+============================================================
+Type: .txt | Size: 1.6 KB | Words: 195 | Lines: 107
+Modified: 2025-12-11T21:12:23.568241
+Faculty References: Technology:2
+
+Preview: ================================================================================ PROJECT ANALYSIS SUMMARY REPORT ================================================================================ Report generated on: 2025-12-11T20:12:23.567830+00:00 OVERVIEW -------- Total files analyzed: 524 Code files: 423 Documentation files: 18 Total dependencies found: 45 FILE TYPE DISTRIBUTION --------------------- No extension: 35 .typed: 14 .py: 408 .txt: 13 .pem: 1 .exe: 11 .md: 5 .apache: 2 .bsd: 2 ....
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_211333.json
+============================================================
+Type: .json | Size: 1.9 KB | Words: 184 | Lines: 106
+Modified: 2025-12-11T21:13:33.589604
+Faculty References: Technology:3
+
+Preview: { "report_date": "2025-12-11T20:13:33.589778+00:00", "total_files_analyzed": 524, "file_type_distribution": { "": 35, ".typed": 14, ".py": 408, ".txt": 13, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 2, ".png": 1, ".example": 1, ".conf":...
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_211333.txt
+============================================================
+Type: .txt | Size: 1.6 KB | Words: 195 | Lines: 107
+Modified: 2025-12-11T21:13:33.589604
+Faculty References: Technology:3
+
+Preview: ================================================================================ PROJECT ANALYSIS SUMMARY REPORT ================================================================================ Report generated on: 2025-12-11T20:13:33.589778+00:00 OVERVIEW -------- Total files analyzed: 524 Code files: 423 Documentation files: 18 Total dependencies found: 45 FILE TYPE DISTRIBUTION --------------------- No extension: 35 .typed: 14 .py: 408 .txt: 13 .pem: 1 .exe: 11 .md: 5 .apache: 2 .bsd: 2 ....
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_211436.json
+============================================================
+Type: .json | Size: 1.9 KB | Words: 184 | Lines: 106
+Modified: 2025-12-11T21:14:36.182219
+Faculty References: Technology:3
+
+Preview: { "report_date": "2025-12-11T20:14:36.181547+00:00", "total_files_analyzed": 524, "file_type_distribution": { "": 35, ".typed": 14, ".py": 408, ".txt": 13, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 2, ".png": 1, ".example": 1, ".conf":...
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_211436.txt
+============================================================
+Type: .txt | Size: 1.6 KB | Words: 195 | Lines: 107
+Modified: 2025-12-11T21:14:36.182219
+Faculty References: Technology:3
+
+Preview: ================================================================================ PROJECT ANALYSIS SUMMARY REPORT ================================================================================ Report generated on: 2025-12-11T20:14:36.181547+00:00 OVERVIEW -------- Total files analyzed: 524 Code files: 423 Documentation files: 18 Total dependencies found: 45 FILE TYPE DISTRIBUTION --------------------- No extension: 35 .typed: 14 .py: 408 .txt: 13 .pem: 1 .exe: 11 .md: 5 .apache: 2 .bsd: 2 ....
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_211517.json
+============================================================
+Type: .json | Size: 1.9 KB | Words: 184 | Lines: 106
+Modified: 2025-12-11T21:15:17.471861
+Faculty References: Technology:3
+
+Preview: { "report_date": "2025-12-11T20:15:17.471432+00:00", "total_files_analyzed": 524, "file_type_distribution": { "": 35, ".typed": 14, ".py": 408, ".txt": 13, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 2, ".png": 1, ".example": 1, ".conf":...
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_211517.txt
+============================================================
+Type: .txt | Size: 1.6 KB | Words: 195 | Lines: 107
+Modified: 2025-12-11T21:15:17.474346
+Faculty References: Technology:3
+
+Preview: ================================================================================ PROJECT ANALYSIS SUMMARY REPORT ================================================================================ Report generated on: 2025-12-11T20:15:17.471432+00:00 OVERVIEW -------- Total files analyzed: 524 Code files: 423 Documentation files: 18 Total dependencies found: 45 FILE TYPE DISTRIBUTION --------------------- No extension: 35 .typed: 14 .py: 408 .txt: 13 .pem: 1 .exe: 11 .md: 5 .apache: 2 .bsd: 2 ....
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_211544.json
+============================================================
+Type: .json | Size: 1.9 KB | Words: 184 | Lines: 106
+Modified: 2025-12-11T21:15:44.228544
+Faculty References: Technology:2
+
+Preview: { "report_date": "2025-12-11T20:15:44.233426+00:00", "total_files_analyzed": 524, "file_type_distribution": { "": 35, ".typed": 14, ".py": 408, ".txt": 13, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 2, ".png": 1, ".example": 1, ".conf":...
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_211544.txt
+============================================================
+Type: .txt | Size: 1.6 KB | Words: 195 | Lines: 107
+Modified: 2025-12-11T21:15:44.228544
+Faculty References: Technology:2
+
+Preview: ================================================================================ PROJECT ANALYSIS SUMMARY REPORT ================================================================================ Report generated on: 2025-12-11T20:15:44.233426+00:00 OVERVIEW -------- Total files analyzed: 524 Code files: 423 Documentation files: 18 Total dependencies found: 45 FILE TYPE DISTRIBUTION --------------------- No extension: 35 .typed: 14 .py: 408 .txt: 13 .pem: 1 .exe: 11 .md: 5 .apache: 2 .bsd: 2 ....
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_211637.json
+============================================================
+Type: .json | Size: 1.8 KB | Words: 184 | Lines: 106
+Modified: 2025-12-11T21:16:37.560892
+Faculty References: Technology:2
+
+Preview: { "report_date": "2025-12-11T20:16:37.560964+00:00", "total_files_analyzed": 524, "file_type_distribution": { "": 35, ".typed": 14, ".py": 408, ".txt": 13, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 2, ".png": 1, ".example": 1, ".conf":...
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_211637.txt
+============================================================
+Type: .txt | Size: 1.5 KB | Words: 195 | Lines: 107
+Modified: 2025-12-11T21:16:37.560892
+Faculty References: Technology:2
+
+Preview: ================================================================================ PROJECT ANALYSIS SUMMARY REPORT ================================================================================ Report generated on: 2025-12-11T20:16:37.560964+00:00 OVERVIEW -------- Total files analyzed: 524 Code files: 423 Documentation files: 18 Total dependencies found: 45 FILE TYPE DISTRIBUTION --------------------- No extension: 35 .typed: 14 .py: 408 .txt: 13 .pem: 1 .exe: 11 .md: 5 .apache: 2 .bsd: 2 ....
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_211754.json
+============================================================
+Type: .json | Size: 1.9 KB | Words: 184 | Lines: 106
+Modified: 2025-12-11T21:17:54.102483
+Faculty References: Technology:2
+
+Preview: { "report_date": "2025-12-11T20:17:54.110839+00:00", "total_files_analyzed": 524, "file_type_distribution": { "": 35, ".typed": 14, ".py": 408, ".txt": 13, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 2, ".png": 1, ".example": 1, ".conf":...
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_211754.txt
+============================================================
+Type: .txt | Size: 1.6 KB | Words: 195 | Lines: 107
+Modified: 2025-12-11T21:17:54.102483
+Faculty References: Technology:2
+
+Preview: ================================================================================ PROJECT ANALYSIS SUMMARY REPORT ================================================================================ Report generated on: 2025-12-11T20:17:54.110839+00:00 OVERVIEW -------- Total files analyzed: 524 Code files: 423 Documentation files: 18 Total dependencies found: 45 FILE TYPE DISTRIBUTION --------------------- No extension: 35 .typed: 14 .py: 408 .txt: 13 .pem: 1 .exe: 11 .md: 5 .apache: 2 .bsd: 2 ....
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_211833.json
+============================================================
+Type: .json | Size: 2.0 KB | Words: 193 | Lines: 111
+Modified: 2025-12-11T21:18:33.622873
+Faculty References: Technology:4
+
+Preview: { "report_date": "2025-12-11T20:18:33.622985+00:00", "total_files_analyzed": 560, "file_type_distribution": { "": 35, ".typed": 14, ".py": 408, ".txt": 21, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 30, ".png": 1, ".example": 1, ".conf":...
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_211833.txt
+============================================================
+Type: .txt | Size: 1.6 KB | Words: 204 | Lines: 112
+Modified: 2025-12-11T21:18:33.623833
+Faculty References: Technology:4
+
+Preview: ================================================================================ PROJECT ANALYSIS SUMMARY REPORT ================================================================================ Report generated on: 2025-12-11T20:18:33.622985+00:00 OVERVIEW -------- Total files analyzed: 560 Code files: 423 Documentation files: 26 Total dependencies found: 45 FILE TYPE DISTRIBUTION --------------------- No extension: 35 .typed: 14 .py: 408 .txt: 21 .pem: 1 .exe: 11 .md: 5 .apache: 2 .bsd: 2 ....
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_211952.json
+============================================================
+Type: .json | Size: 2.0 KB | Words: 193 | Lines: 111
+Modified: 2025-12-11T21:19:52.926662
+Faculty References: Technology:4
+
+Preview: { "report_date": "2025-12-11T20:19:52.928282+00:00", "total_files_analyzed": 563, "file_type_distribution": { "": 35, ".typed": 14, ".py": 408, ".txt": 22, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 32, ".png": 1, ".example": 1, ".conf":...
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_211952.txt
+============================================================
+Type: .txt | Size: 1.6 KB | Words: 204 | Lines: 112
+Modified: 2025-12-11T21:19:52.926662
+Faculty References: Technology:4
+
+Preview: ================================================================================ PROJECT ANALYSIS SUMMARY REPORT ================================================================================ Report generated on: 2025-12-11T20:19:52.928282+00:00 OVERVIEW -------- Total files analyzed: 563 Code files: 423 Documentation files: 27 Total dependencies found: 45 FILE TYPE DISTRIBUTION --------------------- No extension: 35 .typed: 14 .py: 408 .txt: 22 .pem: 1 .exe: 11 .md: 5 .apache: 2 .bsd: 2 ....
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_212023.json
+============================================================
+Type: .json | Size: 2.0 KB | Words: 193 | Lines: 111
+Modified: 2025-12-11T21:20:23.958356
+Faculty References: Technology:5
+
+Preview: { "report_date": "2025-12-11T20:20:23.962274+00:00", "total_files_analyzed": 566, "file_type_distribution": { "": 35, ".typed": 14, ".py": 408, ".txt": 23, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 34, ".png": 1, ".example": 1, ".conf":...
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_212023.txt
+============================================================
+Type: .txt | Size: 1.6 KB | Words: 204 | Lines: 112
+Modified: 2025-12-11T21:20:23.958356
+Faculty References: Technology:5
+
+Preview: ================================================================================ PROJECT ANALYSIS SUMMARY REPORT ================================================================================ Report generated on: 2025-12-11T20:20:23.962274+00:00 OVERVIEW -------- Total files analyzed: 566 Code files: 423 Documentation files: 28 Total dependencies found: 45 FILE TYPE DISTRIBUTION --------------------- No extension: 35 .typed: 14 .py: 408 .txt: 23 .pem: 1 .exe: 11 .md: 5 .apache: 2 .bsd: 2 ....
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_212107.json
+============================================================
+Type: .json | Size: 2.0 KB | Words: 193 | Lines: 111
+Modified: 2025-12-11T21:21:07.946979
+Faculty References: Technology:5
+
+Preview: { "report_date": "2025-12-11T20:21:07.946663+00:00", "total_files_analyzed": 569, "file_type_distribution": { "": 35, ".typed": 14, ".py": 408, ".txt": 24, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 36, ".png": 1, ".example": 1, ".conf":...
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_212107.txt
+============================================================
+Type: .txt | Size: 1.6 KB | Words: 204 | Lines: 112
+Modified: 2025-12-11T21:21:07.946979
+Faculty References: Technology:5
+
+Preview: ================================================================================ PROJECT ANALYSIS SUMMARY REPORT ================================================================================ Report generated on: 2025-12-11T20:21:07.946663+00:00 OVERVIEW -------- Total files analyzed: 569 Code files: 423 Documentation files: 29 Total dependencies found: 45 FILE TYPE DISTRIBUTION --------------------- No extension: 35 .typed: 14 .py: 408 .txt: 24 .pem: 1 .exe: 11 .md: 5 .apache: 2 .bsd: 2 ....
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_212202.json
+============================================================
+Type: .json | Size: 2.0 KB | Words: 193 | Lines: 111
+Modified: 2025-12-11T21:22:02.518263
+Faculty References: Technology:4
+
+Preview: { "report_date": "2025-12-11T20:22:02.518534+00:00", "total_files_analyzed": 572, "file_type_distribution": { "": 35, ".typed": 14, ".py": 408, ".txt": 25, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 38, ".png": 1, ".example": 1, ".conf":...
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_212202.txt
+============================================================
+Type: .txt | Size: 1.6 KB | Words: 204 | Lines: 112
+Modified: 2025-12-11T21:22:02.519221
+Faculty References: Technology:4
+
+Preview: ================================================================================ PROJECT ANALYSIS SUMMARY REPORT ================================================================================ Report generated on: 2025-12-11T20:22:02.518534+00:00 OVERVIEW -------- Total files analyzed: 572 Code files: 423 Documentation files: 30 Total dependencies found: 45 FILE TYPE DISTRIBUTION --------------------- No extension: 35 .typed: 14 .py: 408 .txt: 25 .pem: 1 .exe: 11 .md: 5 .apache: 2 .bsd: 2 ....
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_212323.json
+============================================================
+Type: .json | Size: 2.0 KB | Words: 193 | Lines: 111
+Modified: 2025-12-11T21:23:23.796890
+Faculty References: Technology:4
+
+Preview: { "report_date": "2025-12-11T20:23:23.797561+00:00", "total_files_analyzed": 575, "file_type_distribution": { "": 35, ".typed": 14, ".py": 408, ".txt": 26, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 40, ".png": 1, ".example": 1, ".conf":...
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_212323.txt
+============================================================
+Type: .txt | Size: 1.6 KB | Words: 204 | Lines: 112
+Modified: 2025-12-11T21:23:23.796890
+Faculty References: Technology:4
+
+Preview: ================================================================================ PROJECT ANALYSIS SUMMARY REPORT ================================================================================ Report generated on: 2025-12-11T20:23:23.797561+00:00 OVERVIEW -------- Total files analyzed: 575 Code files: 423 Documentation files: 31 Total dependencies found: 45 FILE TYPE DISTRIBUTION --------------------- No extension: 35 .typed: 14 .py: 408 .txt: 26 .pem: 1 .exe: 11 .md: 5 .apache: 2 .bsd: 2 ....
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_212408.json
+============================================================
+Type: .json | Size: 2.0 KB | Words: 193 | Lines: 111
+Modified: 2025-12-11T21:24:08.288998
+Faculty References: Technology:4
+
+Preview: { "report_date": "2025-12-11T20:24:08.288109+00:00", "total_files_analyzed": 578, "file_type_distribution": { "": 35, ".typed": 14, ".py": 408, ".txt": 27, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 42, ".png": 1, ".example": 1, ".conf":...
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_212408.txt
+============================================================
+Type: .txt | Size: 1.6 KB | Words: 204 | Lines: 112
+Modified: 2025-12-11T21:24:08.288998
+Faculty References: Technology:4
+
+Preview: ================================================================================ PROJECT ANALYSIS SUMMARY REPORT ================================================================================ Report generated on: 2025-12-11T20:24:08.288109+00:00 OVERVIEW -------- Total files analyzed: 578 Code files: 423 Documentation files: 32 Total dependencies found: 45 FILE TYPE DISTRIBUTION --------------------- No extension: 35 .typed: 14 .py: 408 .txt: 27 .pem: 1 .exe: 11 .md: 5 .apache: 2 .bsd: 2 ....
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_212518.json
+============================================================
+Type: .json | Size: 1.9 KB | Words: 193 | Lines: 111
+Modified: 2025-12-11T21:25:18.852563
+Faculty References: Technology:5
+
+Preview: { "report_date": "2025-12-11T20:25:18.856395+00:00", "total_files_analyzed": 581, "file_type_distribution": { "": 35, ".typed": 14, ".py": 408, ".txt": 28, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 44, ".png": 1, ".example": 1, ".conf":...
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_212518.txt
+============================================================
+Type: .txt | Size: 1.6 KB | Words: 204 | Lines: 112
+Modified: 2025-12-11T21:25:18.852563
+Faculty References: Technology:5
+
+Preview: ================================================================================ PROJECT ANALYSIS SUMMARY REPORT ================================================================================ Report generated on: 2025-12-11T20:25:18.856395+00:00 OVERVIEW -------- Total files analyzed: 581 Code files: 423 Documentation files: 33 Total dependencies found: 45 FILE TYPE DISTRIBUTION --------------------- No extension: 35 .typed: 14 .py: 408 .txt: 28 .pem: 1 .exe: 11 .md: 5 .apache: 2 .bsd: 2 ....
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_212534.json
+============================================================
+Type: .json | Size: 1.9 KB | Words: 193 | Lines: 111
+Modified: 2025-12-11T21:25:34.026687
+Faculty References: Technology:4
+
+Preview: { "report_date": "2025-12-11T20:25:34.025633+00:00", "total_files_analyzed": 584, "file_type_distribution": { "": 35, ".typed": 14, ".py": 408, ".txt": 29, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 46, ".png": 1, ".example": 1, ".conf":...
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_212534.txt
+============================================================
+Type: .txt | Size: 1.6 KB | Words: 204 | Lines: 112
+Modified: 2025-12-11T21:25:34.026687
+Faculty References: Technology:4
+
+Preview: ================================================================================ PROJECT ANALYSIS SUMMARY REPORT ================================================================================ Report generated on: 2025-12-11T20:25:34.025633+00:00 OVERVIEW -------- Total files analyzed: 584 Code files: 423 Documentation files: 34 Total dependencies found: 45 FILE TYPE DISTRIBUTION --------------------- No extension: 35 .typed: 14 .py: 408 .txt: 29 .pem: 1 .exe: 11 .md: 5 .apache: 2 .bsd: 2 ....
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_212550.json
+============================================================
+Type: .json | Size: 2.0 KB | Words: 193 | Lines: 111
+Modified: 2025-12-11T21:25:50.726479
+Faculty References: Technology:4
+
+Preview: { "report_date": "2025-12-11T20:25:50.732880+00:00", "total_files_analyzed": 587, "file_type_distribution": { "": 35, ".typed": 14, ".py": 408, ".txt": 30, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 48, ".png": 1, ".example": 1, ".conf":...
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_212550.txt
+============================================================
+Type: .txt | Size: 1.6 KB | Words: 204 | Lines: 112
+Modified: 2025-12-11T21:25:50.726479
+Faculty References: Technology:4
+
+Preview: ================================================================================ PROJECT ANALYSIS SUMMARY REPORT ================================================================================ Report generated on: 2025-12-11T20:25:50.732880+00:00 OVERVIEW -------- Total files analyzed: 587 Code files: 423 Documentation files: 35 Total dependencies found: 45 FILE TYPE DISTRIBUTION --------------------- No extension: 35 .typed: 14 .py: 408 .txt: 30 .pem: 1 .exe: 11 .md: 5 .apache: 2 .bsd: 2 ....
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_212750.json
+============================================================
+Type: .json | Size: 2.0 KB | Words: 193 | Lines: 111
+Modified: 2025-12-11T21:27:50.339136
+Faculty References: Technology:4
+
+Preview: { "report_date": "2025-12-11T20:27:50.340165+00:00", "total_files_analyzed": 590, "file_type_distribution": { "": 35, ".typed": 14, ".py": 408, ".txt": 31, ".pem": 1, ".exe": 11, ".md": 5, ".apache": 2, ".bsd": 2, ".rst": 1, ".cfg": 1, ".bat": 3, ".fish": 1, ".ps1": 3, ".html": 7, ".css": 1, ".sqlite": 1, ".js": 1, ".json": 50, ".png": 1, ".example": 1, ".conf":...
+
+============================================================
+FILE: UniversityCapital\analysis\summary_report_20251211_212750.txt
+============================================================
+Type: .txt | Size: 1.6 KB | Words: 204 | Lines: 112
+Modified: 2025-12-11T21:27:50.341387
+Faculty References: Technology:4
+
+Preview: ================================================================================ PROJECT ANALYSIS SUMMARY REPORT ================================================================================ Report generated on: 2025-12-11T20:27:50.340165+00:00 OVERVIEW -------- Total files analyzed: 590 Code files: 423 Documentation files: 36 Total dependencies found: 45 FILE TYPE DISTRIBUTION --------------------- No extension: 35 .typed: 14 .py: 408 .txt: 31 .pem: 1 .exe: 11 .md: 5 .apache: 2 .bsd: 2 ....
+
+============================================================
+FILE: UniversityCapital\future_roadmap\future_roadmap.json
+============================================================
+Type: .json | Size: 0.7 KB | Words: 63 | Lines: 32
+Modified: 2025-12-11T21:30:43.450527
+Faculty References: Technology:2
+
+Preview: { "timeline": { "short_term": [ "Optimize API performance", "Enhance security features", "Add user analytics" ], "mid_term": [ "Implement AI/ML capabilities", "Expand to mobile platforms", "Develop partner integrations" ], "long_term": [ "Blockchain integration", "AR/VR features", "Global expansion" ] }, "potential_valuation_increase": { "short_term": "15-25%", "mid_term": "50-75%", "long_term": "150-...
+
+============================================================
+FILE: UniversityCapital\market_analysis\market_analysis.json
+============================================================
+Type: .json | Size: 0.6 KB | Words: 55 | Lines: 27
+Modified: 2025-12-11T21:30:43.448299
+Faculty References: Technology:3
+
+Preview: { "analysis_date": "2025-12-11T21:30:43.449262", "comparable_companies": [ { "name": "Competitor A", "valuation": 5000000, "employees": 25, "revenue": 2000000 }, { "name": "Competitor B", "valuation": 12000000, "employees": 50, "revenue": 5000000 } ], "market_trends": { "ai_ml_adoption": "High growth (15% YoY)", "cloud_services": "Mature market (8% YoY)", "edge_computing": "Emerging (25% YoY)" }, "valuation_m...
+
+============================================================
+FILE: UniversityCapital\valuations\valuation_report.json
+============================================================
+Type: .json | Size: 2.5 KB | Words: 206 | Lines: 98
+Modified: 2025-12-11T21:30:43.450527
+Faculty References: Technology:8
+
+Preview: { "valuation_date": "2025-12-11T21:30:43.450814", "current_valuation": { "cost_approach": 891310.77, "market_approach": 4000000.0, "income_approach": 18000000, "weighted_average": 7267393.231 }, "development_costs": { "total_hours": 2061.94, "total_cost": 594207.18, "cost_breakdown": { "development": 245370.74, "documentation": 2160.0, "setup": 7800, "testing": 37918.83, "devops": 36865.53 }, "hourly_rate": 288.18, "te...
+
+================================================================================
+END OF REPORT
+================================================================================

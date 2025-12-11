@@ -1,0 +1,401 @@
+{
+  "app": {
+    "name": "Startup Systems",
+    "version": "1.0.0",
+    "environment": "production",
+    "port": 3000,
+    "apiUrl": "/api/v1",
+    "logLevel": "info",
+    "maxRequestSize": "10mb",
+    "sessionSecret": "change-this-in-production",
+    "jwtSecret": "change-this-in-production",
+    "passwordSaltRounds": 10,
+    "rateLimit": {
+      "windowMs": 15 * 60 * 1000,
+      "max": 100
+    },
+    "cors": {
+      "origin": ["http://localhost:3000", "https://yourdomain.com"],
+      "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+      "allowedHeaders": ["Content-Type", "Authorization"],
+      "credentials": true
+    },
+    "security": {
+      "enableHSTS": true,
+      "enableCSP": true,
+      "enableXSSProtection": true,
+      "enableNoSniff": true,
+      "enableXFrameOptions": true,
+      "enableDNSPrefetchControl": true,
+      "permittedCrossDomainPolicies": true
+    }
+  },
+  "database": {
+    "mongo": {
+      "uri": "mongodb://localhost:27017/startup-systems",
+      "options": {
+        "useNewUrlParser": true,
+        "useUnifiedTopology": true,
+        "serverSelectionTimeoutMS": 5000,
+        "socketTimeoutMS": 45000,
+        "connectTimeoutMS": 30000,
+        "retryWrites": true,
+        "w": "majority"
+      },
+      "poolSize": 10,
+      "autoIndex": false,
+      "debug": false
+    },
+    "redis": {
+      "host": "localhost",
+      "port": 6379,
+      "password": "",
+      "db": 0,
+      "keyPrefix": "startup-systems:",
+      "enableOfflineQueue": true,
+      "retryStrategy": {
+        "times": 3,
+        "delay": 1000
+      }
+    }
+  },
+  "mqtt": {
+    "enabled": true,
+    "brokerUrl": "mqtt://localhost:1883",
+    "username": "",
+    "password": "",
+    "qos": 1,
+    "retain": false,
+    "clean": true,
+    "reconnectPeriod": 1000,
+    "keepalive": 60,
+    "resubscribe": true,
+    "queueQoSZero": true
+  },
+  "opcua": {
+    "enabled": false,
+    "endpointUrl": "opc.tcp://localhost:4840",
+    "securityMode": "None",
+    "securityPolicy": "None",
+    "defaultSubscriptionOptions": {
+      "requestedPublishingInterval": 1000,
+      "requestedLifetimeCount": 1000,
+      "requestedMaxKeepAliveCount": 10,
+      "maxNotificationsPerPublish": 1000,
+      "publishingEnabled": true,
+      "priority": 10
+    }
+  },
+  "email": {
+    "enabled": false,
+    "provider": "smtp",
+    "smtp": {
+      "host": "smtp.example.com",
+      "port": 587,
+      "secure": false,
+      "auth": {
+        "user": "user@example.com",
+        "pass": "password"
+      },
+      "tls": {
+        "rejectUnauthorized": false
+      }
+    },
+    "from": "noreply@yourdomain.com",
+    "templates": {
+      "welcome": "templates/emails/welcome.html",
+      "passwordReset": "templates/emails/password-reset.html",
+      "notification": "templates/emails/notification.html"
+    }
+  },
+  "storage": {
+    "provider": "local",
+    "local": {
+      "directory": "./data/storage"
+    },
+    "s3": {
+      "accessKeyId": "",
+      "secretAccessKey": "",
+      "region": "us-east-1",
+      "bucket": "your-bucket-name",
+      "endpoint": ""
+    },
+    "maxFileSize": 50 * 1024 * 1024, // 50MB
+    "allowedMimeTypes": [
+      "image/jpeg",
+      "image/png",
+      "application/pdf",
+      "application/msword",
+      "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "application/vnd.ms-excel",
+      "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    ]
+  },
+  "monitoring": {
+    "enabled": true,
+    "prometheus": {
+      "enabled": true,
+      "endpoint": "/metrics",
+      "collectDefaultMetrics": true,
+      "timeout": 10000
+    },
+    "healthCheck": {
+      "enabled": true,
+      "endpoint": "/health",
+      "timeout": 3000,
+      "healthyThreshold": 3,
+      "unhealthyThreshold": 2
+    },
+    "logging": {
+      "level": "info",
+      "format": "json",
+      "transports": ["console", "file"],
+      "file": {
+        "filename": "logs/app.log",
+        "maxsize": 10485760,
+        "maxFiles": 10,
+        "zippedArchive": true
+      },
+      "sentry": {
+        "enabled": false,
+        "dsn": ""
+      }
+    }
+  },
+  "features": {
+    "authentication": {
+      "enabled": true,
+      "jwt": {
+        "secret": "change-this-in-production",
+        "expiresIn": "24h",
+        "refreshTokenExpiresIn": "7d"
+      },
+      "local": {
+        "enabled": true,
+        "usernameField": "email",
+        "passwordField": "password"
+      },
+      "ldap": {
+        "enabled": false,
+        "url": "ldap://ldap.example.com:389",
+        "bindDN": "",
+        "bindCredentials": "",
+        "searchBase": "ou=users,dc=example,dc=com",
+        "searchFilter": "(uid={{username}})",
+        "searchAttributes": ["displayName", "mail"]
+      }
+    },
+    "authorization": {
+      "enabled": true,
+      "defaultRole": "user",
+      "roles": ["admin", "operator", "user", "guest"],
+      "permissions": {
+        "admin": ["*"]
+      }
+    },
+    "auditLog": {
+      "enabled": true,
+      "level": "info",
+      "excludePaths": ["/health", "/metrics", "/favicon.ico"]
+    },
+    "rateLimiting": {
+      "enabled": true,
+      "windowMs": 15 * 60 * 1000,
+      "max": 100,
+      "message": "Too many requests, please try again later.",
+      "statusCode": 429,
+      "skip": ["/health", "/metrics"]
+    },
+    "caching": {
+      "enabled": true,
+      "ttl": 300,
+      "excludePaths": ["/api/*/sensitive-data"]
+    },
+    "compression": {
+      "enabled": true,
+      "threshold": 1024,
+      "level": 6
+    },
+    "cors": {
+      "enabled": true,
+      "origin": ["http://localhost:3000"],
+      "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+      "allowedHeaders": ["Content-Type", "Authorization"],
+      "exposedHeaders": ["Content-Range", "X-Total-Count"],
+      "credentials": true,
+      "maxAge": 86400
+    },
+    "helmet": {
+      "enabled": true,
+      "options": {
+        "contentSecurityPolicy": {
+          "directives": {
+            "defaultSrc": ["'self'"],
+            "scriptSrc": ["'self'", "'unsafe-inline'", "'unsafe-eval'"],
+            "styleSrc": ["'self'", "'unsafe-inline'"],
+            "imgSrc": ["'self'", "data:", "blob:"],
+            "fontSrc": ["'self'", "data:"],
+            "connectSrc": ["'self'"],
+            "frameSrc": ["'none'"],
+            "objectSrc": ["'none'"],
+            "mediaSrc": ["'self'"],
+            "childSrc": ["'self'"]
+          }
+        },
+        "crossOriginEmbedderPolicy": false,
+        "crossOriginOpenerPolicy": false,
+        "crossOriginResourcePolicy": false,
+        "dnsPrefetchControl": { "allow": false },
+        "expectCt": false,
+        "frameguard": { "action": "sameorigin" },
+        "hidePoweredBy": true,
+        "hsts": { "maxAge": 15552000, "includeSubDomains": true },
+        "ieNoOpen": true,
+        "noSniff": true,
+        "permittedCrossDomainPolicies": { "permittedPolicies": "none" },
+        "referrerPolicy": { "policy": "same-origin" },
+        "xssFilter": true
+      }
+    }
+  },
+  "externalServices": {
+    "weather": {
+      "enabled": false,
+      "apiKey": "",
+      "baseUrl": "https://api.openweathermap.org/data/2.5"
+    },
+    "maps": {
+      "enabled": false,
+      "apiKey": "",
+      "provider": "google",
+      "google": {
+        "apiKey": "",
+        "clientId": "",
+        "channel": ""
+      },
+      "mapbox": {
+        "accessToken": ""
+      }
+    },
+    "payment": {
+      "enabled": false,
+      "provider": "stripe",
+      "stripe": {
+        "secretKey": "",
+        "publishableKey": "",
+        "webhookSecret": ""
+      },
+      "paypal": {
+        "clientId": "",
+        "clientSecret": "",
+        "environment": "sandbox"
+      }
+    },
+    "sms": {
+      "enabled": false,
+      "provider": "twilio",
+      "twilio": {
+        "accountSid": "",
+        "authToken": "",
+        "fromNumber": ""
+      },
+      "nexmo": {
+        "apiKey": "",
+        "apiSecret": "",
+        "fromNumber": ""
+      }
+    }
+  },
+  "scheduledTasks": {
+    "cleanupTempFiles": {
+      "enabled": true,
+      "schedule": "0 0 * * *",
+      "options": {
+        "age": { "days": 1 },
+        "extensions": [".tmp", ".temp", "_temp", "~"],
+        "folders": ["temp", "tmp", "uploads/temp"]
+      }
+    },
+    "backupDatabase": {
+      "enabled": true,
+      "schedule": "0 3 * * *",
+      "options": {
+        "retentionDays": 30,
+        "backupPath": "./backups",
+        "gzip": true
+      }
+    },
+    "generateReports": {
+      "enabled": true,
+      "schedule": "0 2 * * *",
+      "options": {
+        "types": ["daily", "weekly", "monthly"],
+        "outputPath": "./reports"
+      }
+    }
+  },
+  "notifications": {
+    "enabled": true,
+    "providers": ["email", "in-app", "push"],
+    "defaultProvider": "in-app",
+    "templates": {
+      "welcome": "Welcome to Startup Systems!",
+      "passwordReset": "Your password reset link: {resetLink}",
+      "accountLocked": "Your account has been locked due to multiple failed login attempts.",
+      "newLogin": "New login detected from {ip} at {time}.",
+      "systemAlert": "ALERT: {message}"
+    },
+    "inApp": {
+      "retentionDays": 30,
+      "maxPerUser": 100
+    },
+    "push": {
+      "enabled": false,
+      "vapid": {
+        "subject": "mailto:admin@yourdomain.com",
+        "publicKey": "",
+        "privateKey": ""
+      }
+    }
+  },
+  "analytics": {
+    "enabled": true,
+    "provider": "mixpanel",
+    "mixpanel": {
+      "token": "",
+      "apiSecret": ""
+    },
+    "googleAnalytics": {
+      "trackingId": ""
+    },
+    "amplitude": {
+      "apiKey": ""
+    },
+    "logLevel": "info",
+    "trackPageViews": true,
+    "trackClicks": true,
+    "trackForms": true,
+    "trackOutboundLinks": true
+  },
+  "maintenance": {
+    "enabled": false,
+    "message": "We're currently performing scheduled maintenance. We'll be back shortly.",
+    "allowedIps": ["127.0.0.1", "::1"],
+    "endTime": ""
+  },
+  "versionControl": {
+    "branch": "main",
+    "commit": "",
+    "tag": ""
+  },
+  "deployment": {
+    "environment": "production",
+    "region": "us-east-1",
+    "version": "1.0.0",
+    "deployedAt": "",
+    "deployedBy": "",
+    "commitHash": "",
+    "buildNumber": ""
+  },
+  "custom": {}
+}

@@ -1,0 +1,1610 @@
+{
+  "metadata": {
+    "generated_at": "2025-12-11T22:08:49.382178",
+    "base_directory": "D:\\busineshuboffline CHATGTP\\KEAN",
+    "total_documents": 99,
+    "total_size": 18000784,
+    "total_words": 1507044,
+    "total_chars": 17607110,
+    "avg_words_per_doc": 15222.67,
+    "file_types": {
+      ".json": 62,
+      ".txt": 20,
+      ".html": 12,
+      ".md": 5
+    },
+    "faculty_mentions": {
+      "technology": 62171,
+      "arts": 620,
+      "business": 65,
+      "science": 0
+    },
+    "analysis_time": "2025-12-11 22:08:49"
+  },
+  "documents": [
+    {
+      "path": "app.html",
+      "size": 27383,
+      "words": 1525,
+      "chars": 26828,
+      "lines": 556,
+      "modified": "2025-12-11T13:46:35.764913",
+      "extension": ".html",
+      "faculty_mentions": {
+        "business": 1,
+        "technology": 64,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>KEAN - Kleve Emmerich Arnhem Nijmegen</title>\n    <link rel=\"stylesheet\" href=\"css/style.css\">\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css\">\n</head>\n<body>\n    <!-- Header -->\n    <header class=\"site-header\">\n        <div class=\"container\">\n            <div class=\"logo\">\n      ..."
+    },
+    {
+      "path": "index.html",
+      "size": 8533,
+      "words": 671,
+      "chars": 8249,
+      "lines": 285,
+      "modified": "2025-12-11T13:09:48.334538",
+      "extension": ".html",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 40,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>KEAN - Loading...</title>\n    <!-- Welcome Modal Styles -->\n    <style>\n        /* Welcome Modal */\n        .welcome-modal {\n            display: none;\n            position: fixed;\n            top: 0;\n            left: 0;\n            width: 100%;\n            height: 100%;\n            background-color: rgba(0, 0, 0, 0.9);\n            z-index: 100..."
+    },
+    {
+      "path": "package.json",
+      "size": 1318,
+      "words": 110,
+      "chars": 1267,
+      "lines": 52,
+      "modified": "2025-12-11T13:27:53.114125",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 3,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "{\n  \"name\": \"kean-platform\",\n  \"version\": \"1.0.0\",\n  \"description\": \"KEAN Platform - Connecting Communities Across Borders\",\n  \"main\": \"src/server.js\",\n  \"scripts\": {\n    \"start\": \"node src/server.js\",\n    \"dev\": \"nodemon src/server.js\",\n    \"build\": \"webpack --mode production\",\n    \"test\": \"jest\",\n    \"lint\": \"eslint .\",\n    \"format\": \"prettier --write .\",\n    \"generate:regions\": \"node scripts/generateRegions.js\"\n  },\n  \"dependencies\": {\n    \"express\": \"^4.18.2\",\n    \"sqlite3\": \"^5.1.6\",\n    \"c..."
+    },
+    {
+      "path": "README.md",
+      "size": 2801,
+      "words": 341,
+      "chars": 2641,
+      "lines": 97,
+      "modified": "2025-12-11T16:04:22.252686",
+      "extension": ".md",
+      "faculty_mentions": {
+        "business": 2,
+        "technology": 20,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "# KEAN Landscape Planning System\n\nA comprehensive landscape planning system for the KEAN region (Kleve, Emmerich, Arnhem, Nijmegen).\n\n## Project Structure\n\n```\nKEAN/\n├── src/\n│   ├── __init__.py\n│   ├── database.py         # Database configuration and session management\n│   └── models/\n│       ├── __init__.py\n│       └── landscape.py    # SQLAlchemy models for the landscape planning system\n├── init_db.py             # Script to initialize the database\n├── requirements.txt       # Python dependen..."
+    },
+    {
+      "path": "requirements.txt",
+      "size": 514,
+      "words": 39,
+      "chars": 480,
+      "lines": 35,
+      "modified": "2025-12-11T16:04:01.376542",
+      "extension": ".txt",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 0,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "# Core\nSQLAlchemy==2.0.23\nalembic==1.12.1\npsycopg2-binary==2.9.9  # For PostgreSQL\ngeoalchemy2==0.14.7\nShapely==2.0.2\npython-dotenv==1.0.0\n\n# API\nfastapi==0.104.1\nuvicorn==0.24.0\npydantic==2.4.2\npydantic-settings==2.0.3\n\n# Geospatial\ngeopandas==0.14.1\nfiona==1.9.5\npyproj==3.6.0\n\n# Data processing\npandas==2.1.3\nnumpy==1.26.1\n\n# Development\nalembic==1.12.1\nblack==23.9.1\nisort==5.12.0\nflake8==6.1.0\nmypy==1.6.1\npytest==7.4.2\n\n# Documentation\nsphinx==7.2.6\nsphinx-rtd-theme==1.3.0\n"
+    },
+    {
+      "path": "pages\\forum\\index.html",
+      "size": 10789,
+      "words": 554,
+      "chars": 10570,
+      "lines": 220,
+      "modified": "2025-12-11T09:45:35.289637",
+      "extension": ".html",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 32,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>KEAN Forum - Connect with the Community</title>\n    <link rel=\"stylesheet\" href=\"../../css/style.css\">\n    <link rel=\"stylesheet\" href=\"../../css/forum.css\">\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css\">\n</head>\n<body>\n    <!-- Header -->\n    <header class=\"site-header\">\n      ..."
+    },
+    {
+      "path": "regions\\areas.html",
+      "size": 5406,
+      "words": 331,
+      "chars": 5268,
+      "lines": 137,
+      "modified": "2025-12-11T13:46:21.738282",
+      "extension": ".html",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 23,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>areas - KEAN Platform</title>\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\" rel=\"stylesheet\">\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css\">\n    <style>\n        :root {\n            --primary: #2c3e50;\n            --secondary: #e74c3c;\n       ..."
+    },
+    {
+      "path": "regions\\area_community.html",
+      "size": 5329,
+      "words": 317,
+      "chars": 5193,
+      "lines": 137,
+      "modified": "2025-12-11T13:46:21.739279",
+      "extension": ".html",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 32,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>area_community - KEAN Platform</title>\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\" rel=\"stylesheet\">\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css\">\n    <style>\n        :root {\n            --primary: #2c3e50;\n            --secondary: #e74c3c..."
+    },
+    {
+      "path": "regions\\communities.html",
+      "size": 5455,
+      "words": 323,
+      "chars": 5319,
+      "lines": 137,
+      "modified": "2025-12-11T13:46:21.739279",
+      "extension": ".html",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 34,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>communities - KEAN Platform</title>\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\" rel=\"stylesheet\">\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css\">\n    <style>\n        :root {\n            --primary: #2c3e50;\n            --secondary: #e74c3c;\n ..."
+    },
+    {
+      "path": "regions\\pages.html",
+      "size": 5716,
+      "words": 342,
+      "chars": 5578,
+      "lines": 137,
+      "modified": "2025-12-11T13:46:21.739279",
+      "extension": ".html",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 31,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>pages - KEAN Platform</title>\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\" rel=\"stylesheet\">\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css\">\n    <style>\n        :root {\n            --primary: #2c3e50;\n            --secondary: #e74c3c;\n       ..."
+    },
+    {
+      "path": "studentsorder\\README.md",
+      "size": 2306,
+      "words": 254,
+      "chars": 2229,
+      "lines": 78,
+      "modified": "2025-12-10T16:20:55.769180",
+      "extension": ".md",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 9,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "# Startup Systems - Student Deployment Package\n\nThis package contains all the necessary components, configurations, and documentation to set up and run the Startup Systems application in a production environment.\n\n## Table of Contents\n\n1. [System Requirements](#system-requirements)\n2. [Quick Start](#quick-start)\n3. [Detailed Setup](#detailed-setup)\n4. [Configuration](#configuration)\n5. [Deployment](#deployment)\n6. [Maintenance](#maintenance)\n7. [Troubleshooting](#troubleshooting)\n8. [Security](#..."
+    },
+    {
+      "path": "studentsorder\\config\\app\\settings.json",
+      "size": 10557,
+      "words": 841,
+      "chars": 10156,
+      "lines": 402,
+      "modified": "2025-12-10T16:21:58.540060",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 18,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "{\n  \"app\": {\n    \"name\": \"Startup Systems\",\n    \"version\": \"1.0.0\",\n    \"environment\": \"production\",\n    \"port\": 3000,\n    \"apiUrl\": \"/api/v1\",\n    \"logLevel\": \"info\",\n    \"maxRequestSize\": \"10mb\",\n    \"sessionSecret\": \"change-this-in-production\",\n    \"jwtSecret\": \"change-this-in-production\",\n    \"passwordSaltRounds\": 10,\n    \"rateLimit\": {\n      \"windowMs\": 15 * 60 * 1000,\n      \"max\": 100\n    },\n    \"cors\": {\n      \"origin\": [\"http://localhost:3000\", \"https://yourdomain.com\"],\n      \"methods\":..."
+    },
+    {
+      "path": "studentsorder\\docs\\SETUP.md",
+      "size": 2286,
+      "words": 282,
+      "chars": 2181,
+      "lines": 106,
+      "modified": "2025-12-10T16:21:08.004432",
+      "extension": ".md",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 17,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "# Startup Systems - Setup Guide\n\nThis guide provides step-by-step instructions for setting up the Startup Systems application.\n\n## Prerequisites\n\n1. **System Requirements**\n   - Windows Server 2019/2022 or Ubuntu 20.04 LTS\n   - Docker 20.10.0 or later\n   - Docker Compose 1.29.0 or later\n   - Git 2.30.0 or later\n   - Node.js 16.x LTS\n   - Python 3.8 or later\n   - PowerShell 7.0 or later (Windows) or Bash (Linux)\n\n2. **Network Requirements**\n   - Port 80 (HTTP)\n   - Port 443 (HTTPS)\n   - Port 2701..."
+    },
+    {
+      "path": "University\\Universitycapital\\future_roadmap\\future_roadmap.json",
+      "size": 746,
+      "words": 63,
+      "chars": 715,
+      "lines": 32,
+      "modified": "2025-12-11T21:25:53.920056",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 2,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "{\n  \"timeline\": {\n    \"short_term\": [\n      \"Optimize API performance\",\n      \"Enhance security features\",\n      \"Add user analytics\"\n    ],\n    \"mid_term\": [\n      \"Implement AI/ML capabilities\",\n      \"Expand to mobile platforms\",\n      \"Develop partner integrations\"\n    ],\n    \"long_term\": [\n      \"Blockchain integration\",\n      \"AR/VR features\",\n      \"Global expansion\"\n    ]\n  },\n  \"potential_valuation_increase\": {\n    \"short_term\": \"15-25%\",\n    \"mid_term\": \"50-75%\",\n    \"long_term\": \"150-..."
+    },
+    {
+      "path": "University\\Universitycapital\\market_analysis\\market_analysis.json",
+      "size": 603,
+      "words": 55,
+      "chars": 577,
+      "lines": 27,
+      "modified": "2025-12-11T21:25:53.920056",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 3,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "{\n  \"analysis_date\": \"2025-12-11T21:25:53.921608\",\n  \"comparable_companies\": [\n    {\n      \"name\": \"Competitor A\",\n      \"valuation\": 5000000,\n      \"employees\": 25,\n      \"revenue\": 2000000\n    },\n    {\n      \"name\": \"Competitor B\",\n      \"valuation\": 12000000,\n      \"employees\": 50,\n      \"revenue\": 5000000\n    }\n  ],\n  \"market_trends\": {\n    \"ai_ml_adoption\": \"High growth (15% YoY)\",\n    \"cloud_services\": \"Mature market (8% YoY)\",\n    \"edge_computing\": \"Emerging (25% YoY)\"\n  },\n  \"valuation_m..."
+    },
+    {
+      "path": "University\\university_documents\\University\\Universitycapital\\future_roadmap\\future_roadmap.json",
+      "size": 746,
+      "words": 63,
+      "chars": 715,
+      "lines": 32,
+      "modified": "2025-12-11T21:47:05.093926",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 2,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "{\n  \"timeline\": {\n    \"short_term\": [\n      \"Optimize API performance\",\n      \"Enhance security features\",\n      \"Add user analytics\"\n    ],\n    \"mid_term\": [\n      \"Implement AI/ML capabilities\",\n      \"Expand to mobile platforms\",\n      \"Develop partner integrations\"\n    ],\n    \"long_term\": [\n      \"Blockchain integration\",\n      \"AR/VR features\",\n      \"Global expansion\"\n    ]\n  },\n  \"potential_valuation_increase\": {\n    \"short_term\": \"15-25%\",\n    \"mid_term\": \"50-75%\",\n    \"long_term\": \"150-..."
+    },
+    {
+      "path": "University\\university_documents\\University\\Universitycapital\\market_analysis\\market_analysis.json",
+      "size": 603,
+      "words": 55,
+      "chars": 577,
+      "lines": 27,
+      "modified": "2025-12-11T21:47:05.096983",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 3,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "{\n  \"analysis_date\": \"2025-12-11T20:45:58.511266\",\n  \"comparable_companies\": [\n    {\n      \"name\": \"Competitor A\",\n      \"valuation\": 5000000,\n      \"employees\": 25,\n      \"revenue\": 2000000\n    },\n    {\n      \"name\": \"Competitor B\",\n      \"valuation\": 12000000,\n      \"employees\": 50,\n      \"revenue\": 5000000\n    }\n  ],\n  \"market_trends\": {\n    \"ai_ml_adoption\": \"High growth (15% YoY)\",\n    \"cloud_services\": \"Mature market (8% YoY)\",\n    \"edge_computing\": \"Emerging (25% YoY)\"\n  },\n  \"valuation_m..."
+    },
+    {
+      "path": "University\\university_documents\\Universitycapital\\future_roadmap\\future_roadmap.json",
+      "size": 746,
+      "words": 63,
+      "chars": 715,
+      "lines": 32,
+      "modified": "2025-12-11T21:47:05.098601",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 2,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "{\n  \"timeline\": {\n    \"short_term\": [\n      \"Optimize API performance\",\n      \"Enhance security features\",\n      \"Add user analytics\"\n    ],\n    \"mid_term\": [\n      \"Implement AI/ML capabilities\",\n      \"Expand to mobile platforms\",\n      \"Develop partner integrations\"\n    ],\n    \"long_term\": [\n      \"Blockchain integration\",\n      \"AR/VR features\",\n      \"Global expansion\"\n    ]\n  },\n  \"potential_valuation_increase\": {\n    \"short_term\": \"15-25%\",\n    \"mid_term\": \"50-75%\",\n    \"long_term\": \"150-..."
+    },
+    {
+      "path": "University\\university_documents\\Universitycapital\\market_analysis\\market_analysis.json",
+      "size": 603,
+      "words": 55,
+      "chars": 577,
+      "lines": 27,
+      "modified": "2025-12-11T21:47:05.098601",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 3,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "{\n  \"analysis_date\": \"2025-12-11T20:45:58.511266\",\n  \"comparable_companies\": [\n    {\n      \"name\": \"Competitor A\",\n      \"valuation\": 5000000,\n      \"employees\": 25,\n      \"revenue\": 2000000\n    },\n    {\n      \"name\": \"Competitor B\",\n      \"valuation\": 12000000,\n      \"employees\": 50,\n      \"revenue\": 5000000\n    }\n  ],\n  \"market_trends\": {\n    \"ai_ml_adoption\": \"High growth (15% YoY)\",\n    \"cloud_services\": \"Mature market (8% YoY)\",\n    \"edge_computing\": \"Emerging (25% YoY)\"\n  },\n  \"valuation_m..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\full_analysis_20251211_203054.json",
+      "size": 567620,
+      "words": 47583,
+      "chars": 555221,
+      "lines": 12331,
+      "modified": "2025-12-11T20:30:54.888103",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 2,
+        "technology": 1969,
+        "arts": 20,
+        "science": 0
+      },
+      "content_preview": "{\n  \"metadata\": {\n    \"analysis_date\": \"2025-12-11T20:30:54.504623\",\n    \"total_files\": 522,\n    \"file_types\": {\n      \"\": 35,\n      \".typed\": 14,\n      \".py\": 408,\n      \".txt\": 13,\n      \".pem\": 1,\n      \".exe\": 11,\n      \".md\": 5,\n      \".apache\": 2,\n      \".bsd\": 2,\n      \".rst\": 1,\n      \".cfg\": 1,\n      \".bat\": 3,\n      \".fish\": 1,\n      \".ps1\": 3,\n      \".html\": 7,\n      \".css\": 1,\n      \".sqlite\": 1,\n      \".js\": 1,\n      \".json\": 2,\n      \".png\": 1,\n      \".example\": 1,\n      \".conf\": 1..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\full_analysis_20251211_203340.json",
+      "size": 567620,
+      "words": 47583,
+      "chars": 555221,
+      "lines": 12331,
+      "modified": "2025-12-11T20:33:40.307998",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 2,
+        "technology": 1969,
+        "arts": 20,
+        "science": 0
+      },
+      "content_preview": "{\n  \"metadata\": {\n    \"analysis_date\": \"2025-12-11T20:33:40.104144\",\n    \"total_files\": 522,\n    \"file_types\": {\n      \"\": 35,\n      \".typed\": 14,\n      \".py\": 408,\n      \".txt\": 13,\n      \".pem\": 1,\n      \".exe\": 11,\n      \".md\": 5,\n      \".apache\": 2,\n      \".bsd\": 2,\n      \".rst\": 1,\n      \".cfg\": 1,\n      \".bat\": 3,\n      \".fish\": 1,\n      \".ps1\": 3,\n      \".html\": 7,\n      \".css\": 1,\n      \".sqlite\": 1,\n      \".js\": 1,\n      \".json\": 2,\n      \".png\": 1,\n      \".example\": 1,\n      \".conf\": 1..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\full_analysis_20251211_203442.json",
+      "size": 567620,
+      "words": 47583,
+      "chars": 555221,
+      "lines": 12331,
+      "modified": "2025-12-11T20:34:42.638017",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 2,
+        "technology": 1969,
+        "arts": 20,
+        "science": 0
+      },
+      "content_preview": "{\n  \"metadata\": {\n    \"analysis_date\": \"2025-12-11T20:34:42.429953\",\n    \"total_files\": 522,\n    \"file_types\": {\n      \"\": 35,\n      \".typed\": 14,\n      \".py\": 408,\n      \".txt\": 13,\n      \".pem\": 1,\n      \".exe\": 11,\n      \".md\": 5,\n      \".apache\": 2,\n      \".bsd\": 2,\n      \".rst\": 1,\n      \".cfg\": 1,\n      \".bat\": 3,\n      \".fish\": 1,\n      \".ps1\": 3,\n      \".html\": 7,\n      \".css\": 1,\n      \".sqlite\": 1,\n      \".js\": 1,\n      \".json\": 2,\n      \".png\": 1,\n      \".example\": 1,\n      \".conf\": 1..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\full_analysis_20251211_203625.json",
+      "size": 567620,
+      "words": 47583,
+      "chars": 555221,
+      "lines": 12331,
+      "modified": "2025-12-11T20:36:25.469593",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 2,
+        "technology": 1969,
+        "arts": 20,
+        "science": 0
+      },
+      "content_preview": "{\n  \"metadata\": {\n    \"analysis_date\": \"2025-12-11T20:36:25.268959\",\n    \"total_files\": 522,\n    \"file_types\": {\n      \"\": 35,\n      \".typed\": 14,\n      \".py\": 408,\n      \".txt\": 13,\n      \".pem\": 1,\n      \".exe\": 11,\n      \".md\": 5,\n      \".apache\": 2,\n      \".bsd\": 2,\n      \".rst\": 1,\n      \".cfg\": 1,\n      \".bat\": 3,\n      \".fish\": 1,\n      \".ps1\": 3,\n      \".html\": 7,\n      \".css\": 1,\n      \".sqlite\": 1,\n      \".js\": 1,\n      \".json\": 2,\n      \".png\": 1,\n      \".example\": 1,\n      \".conf\": 1..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\full_analysis_20251211_203815.json",
+      "size": 567620,
+      "words": 47583,
+      "chars": 555221,
+      "lines": 12331,
+      "modified": "2025-12-11T20:38:15.891132",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 2,
+        "technology": 1969,
+        "arts": 20,
+        "science": 0
+      },
+      "content_preview": "{\n  \"metadata\": {\n    \"analysis_date\": \"2025-12-11T20:38:15.682815\",\n    \"total_files\": 522,\n    \"file_types\": {\n      \"\": 35,\n      \".typed\": 14,\n      \".py\": 408,\n      \".txt\": 13,\n      \".pem\": 1,\n      \".exe\": 11,\n      \".md\": 5,\n      \".apache\": 2,\n      \".bsd\": 2,\n      \".rst\": 1,\n      \".cfg\": 1,\n      \".bat\": 3,\n      \".fish\": 1,\n      \".ps1\": 3,\n      \".html\": 7,\n      \".css\": 1,\n      \".sqlite\": 1,\n      \".js\": 1,\n      \".json\": 2,\n      \".png\": 1,\n      \".example\": 1,\n      \".conf\": 1..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\full_analysis_20251211_204151.json",
+      "size": 567620,
+      "words": 47583,
+      "chars": 555221,
+      "lines": 12331,
+      "modified": "2025-12-11T20:41:51.858255",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 2,
+        "technology": 1969,
+        "arts": 20,
+        "science": 0
+      },
+      "content_preview": "{\n  \"metadata\": {\n    \"analysis_date\": \"2025-12-11T20:41:51.653587\",\n    \"total_files\": 522,\n    \"file_types\": {\n      \"\": 35,\n      \".typed\": 14,\n      \".py\": 408,\n      \".txt\": 13,\n      \".pem\": 1,\n      \".exe\": 11,\n      \".md\": 5,\n      \".apache\": 2,\n      \".bsd\": 2,\n      \".rst\": 1,\n      \".cfg\": 1,\n      \".bat\": 3,\n      \".fish\": 1,\n      \".ps1\": 3,\n      \".html\": 7,\n      \".css\": 1,\n      \".sqlite\": 1,\n      \".js\": 1,\n      \".json\": 2,\n      \".png\": 1,\n      \".example\": 1,\n      \".conf\": 1..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\full_analysis_20251211_204239.json",
+      "size": 567620,
+      "words": 47583,
+      "chars": 555221,
+      "lines": 12331,
+      "modified": "2025-12-11T20:42:39.226766",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 2,
+        "technology": 1969,
+        "arts": 20,
+        "science": 0
+      },
+      "content_preview": "{\n  \"metadata\": {\n    \"analysis_date\": \"2025-12-11T20:42:39.004060\",\n    \"total_files\": 522,\n    \"file_types\": {\n      \"\": 35,\n      \".typed\": 14,\n      \".py\": 408,\n      \".txt\": 13,\n      \".pem\": 1,\n      \".exe\": 11,\n      \".md\": 5,\n      \".apache\": 2,\n      \".bsd\": 2,\n      \".rst\": 1,\n      \".cfg\": 1,\n      \".bat\": 3,\n      \".fish\": 1,\n      \".ps1\": 3,\n      \".html\": 7,\n      \".css\": 1,\n      \".sqlite\": 1,\n      \".js\": 1,\n      \".json\": 2,\n      \".png\": 1,\n      \".example\": 1,\n      \".conf\": 1..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\full_analysis_20251211_204444.json",
+      "size": 567668,
+      "words": 47585,
+      "chars": 555269,
+      "lines": 12331,
+      "modified": "2025-12-11T20:44:44.224517",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 2,
+        "technology": 1969,
+        "arts": 20,
+        "science": 0
+      },
+      "content_preview": "{\n  \"metadata\": {\n    \"analysis_date\": \"2025-12-11T20:44:44.025031\",\n    \"total_files\": 522,\n    \"file_types\": {\n      \"\": 35,\n      \".typed\": 14,\n      \".py\": 408,\n      \".txt\": 13,\n      \".pem\": 1,\n      \".exe\": 11,\n      \".md\": 5,\n      \".apache\": 2,\n      \".bsd\": 2,\n      \".rst\": 1,\n      \".cfg\": 1,\n      \".bat\": 3,\n      \".fish\": 1,\n      \".ps1\": 3,\n      \".html\": 7,\n      \".css\": 1,\n      \".sqlite\": 1,\n      \".js\": 1,\n      \".json\": 2,\n      \".png\": 1,\n      \".example\": 1,\n      \".conf\": 1..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\full_analysis_20251211_204555.json",
+      "size": 567668,
+      "words": 47585,
+      "chars": 555269,
+      "lines": 12331,
+      "modified": "2025-12-11T20:45:55.179381",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 2,
+        "technology": 1969,
+        "arts": 20,
+        "science": 0
+      },
+      "content_preview": "{\n  \"metadata\": {\n    \"analysis_date\": \"2025-12-11T20:45:54.974158\",\n    \"total_files\": 522,\n    \"file_types\": {\n      \"\": 35,\n      \".typed\": 14,\n      \".py\": 408,\n      \".txt\": 13,\n      \".pem\": 1,\n      \".exe\": 11,\n      \".md\": 5,\n      \".apache\": 2,\n      \".bsd\": 2,\n      \".rst\": 1,\n      \".cfg\": 1,\n      \".bat\": 3,\n      \".fish\": 1,\n      \".ps1\": 3,\n      \".html\": 7,\n      \".css\": 1,\n      \".sqlite\": 1,\n      \".js\": 1,\n      \".json\": 2,\n      \".png\": 1,\n      \".example\": 1,\n      \".conf\": 1..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\full_analysis_20251211_210812.json",
+      "size": 567751,
+      "words": 47593,
+      "chars": 555350,
+      "lines": 12333,
+      "modified": "2025-12-11T21:08:12.546824",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 2,
+        "technology": 1969,
+        "arts": 20,
+        "science": 0
+      },
+      "content_preview": "{\n  \"metadata\": {\n    \"analysis_date\": \"2025-12-11T21:08:12.329936\",\n    \"total_files\": 524,\n    \"file_types\": {\n      \"\": 35,\n      \".typed\": 14,\n      \".py\": 408,\n      \".txt\": 13,\n      \".pem\": 1,\n      \".exe\": 11,\n      \".md\": 5,\n      \".apache\": 2,\n      \".bsd\": 2,\n      \".rst\": 1,\n      \".cfg\": 1,\n      \".bat\": 3,\n      \".fish\": 1,\n      \".ps1\": 3,\n      \".html\": 7,\n      \".css\": 1,\n      \".sqlite\": 1,\n      \".js\": 1,\n      \".json\": 2,\n      \".png\": 1,\n      \".example\": 1,\n      \".conf\": 1..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\full_analysis_20251211_210928.json",
+      "size": 567751,
+      "words": 47593,
+      "chars": 555350,
+      "lines": 12333,
+      "modified": "2025-12-11T21:09:28.895561",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 2,
+        "technology": 1969,
+        "arts": 20,
+        "science": 0
+      },
+      "content_preview": "{\n  \"metadata\": {\n    \"analysis_date\": \"2025-12-11T21:09:28.672635\",\n    \"total_files\": 524,\n    \"file_types\": {\n      \"\": 35,\n      \".typed\": 14,\n      \".py\": 408,\n      \".txt\": 13,\n      \".pem\": 1,\n      \".exe\": 11,\n      \".md\": 5,\n      \".apache\": 2,\n      \".bsd\": 2,\n      \".rst\": 1,\n      \".cfg\": 1,\n      \".bat\": 3,\n      \".fish\": 1,\n      \".ps1\": 3,\n      \".html\": 7,\n      \".css\": 1,\n      \".sqlite\": 1,\n      \".js\": 1,\n      \".json\": 2,\n      \".png\": 1,\n      \".example\": 1,\n      \".conf\": 1..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\full_analysis_20251211_211025.json",
+      "size": 567699,
+      "words": 47591,
+      "chars": 555299,
+      "lines": 12332,
+      "modified": "2025-12-11T21:10:25.979088",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 2,
+        "technology": 1969,
+        "arts": 20,
+        "science": 0
+      },
+      "content_preview": "{\n  \"metadata\": {\n    \"analysis_date\": \"2025-12-11T21:10:25.748270\",\n    \"total_files\": 524,\n    \"file_types\": {\n      \"\": 35,\n      \".typed\": 14,\n      \".py\": 408,\n      \".txt\": 13,\n      \".pem\": 1,\n      \".exe\": 11,\n      \".md\": 5,\n      \".apache\": 2,\n      \".bsd\": 2,\n      \".rst\": 1,\n      \".cfg\": 1,\n      \".bat\": 3,\n      \".fish\": 1,\n      \".ps1\": 3,\n      \".html\": 7,\n      \".css\": 1,\n      \".sqlite\": 1,\n      \".js\": 1,\n      \".json\": 2,\n      \".png\": 1,\n      \".example\": 1,\n      \".conf\": 1..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\full_analysis_20251211_211044.json",
+      "size": 567727,
+      "words": 47593,
+      "chars": 555326,
+      "lines": 12333,
+      "modified": "2025-12-11T21:10:44.136805",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 2,
+        "technology": 1969,
+        "arts": 20,
+        "science": 0
+      },
+      "content_preview": "{\n  \"metadata\": {\n    \"analysis_date\": \"2025-12-11T21:10:43.919277\",\n    \"total_files\": 524,\n    \"file_types\": {\n      \"\": 35,\n      \".typed\": 14,\n      \".py\": 408,\n      \".txt\": 13,\n      \".pem\": 1,\n      \".exe\": 11,\n      \".md\": 5,\n      \".apache\": 2,\n      \".bsd\": 2,\n      \".rst\": 1,\n      \".cfg\": 1,\n      \".bat\": 3,\n      \".fish\": 1,\n      \".ps1\": 3,\n      \".html\": 7,\n      \".css\": 1,\n      \".sqlite\": 1,\n      \".js\": 1,\n      \".json\": 2,\n      \".png\": 1,\n      \".example\": 1,\n      \".conf\": 1..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\full_analysis_20251211_211223.json",
+      "size": 567727,
+      "words": 47593,
+      "chars": 555326,
+      "lines": 12333,
+      "modified": "2025-12-11T21:12:23.567227",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 2,
+        "technology": 1969,
+        "arts": 20,
+        "science": 0
+      },
+      "content_preview": "{\n  \"metadata\": {\n    \"analysis_date\": \"2025-12-11T21:12:23.353393\",\n    \"total_files\": 524,\n    \"file_types\": {\n      \"\": 35,\n      \".typed\": 14,\n      \".py\": 408,\n      \".txt\": 13,\n      \".pem\": 1,\n      \".exe\": 11,\n      \".md\": 5,\n      \".apache\": 2,\n      \".bsd\": 2,\n      \".rst\": 1,\n      \".cfg\": 1,\n      \".bat\": 3,\n      \".fish\": 1,\n      \".ps1\": 3,\n      \".html\": 7,\n      \".css\": 1,\n      \".sqlite\": 1,\n      \".js\": 1,\n      \".json\": 2,\n      \".png\": 1,\n      \".example\": 1,\n      \".conf\": 1..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\full_analysis_20251211_211333.json",
+      "size": 567727,
+      "words": 47593,
+      "chars": 555326,
+      "lines": 12333,
+      "modified": "2025-12-11T21:13:33.589604",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 2,
+        "technology": 1969,
+        "arts": 20,
+        "science": 0
+      },
+      "content_preview": "{\n  \"metadata\": {\n    \"analysis_date\": \"2025-12-11T21:13:33.375941\",\n    \"total_files\": 524,\n    \"file_types\": {\n      \"\": 35,\n      \".typed\": 14,\n      \".py\": 408,\n      \".txt\": 13,\n      \".pem\": 1,\n      \".exe\": 11,\n      \".md\": 5,\n      \".apache\": 2,\n      \".bsd\": 2,\n      \".rst\": 1,\n      \".cfg\": 1,\n      \".bat\": 3,\n      \".fish\": 1,\n      \".ps1\": 3,\n      \".html\": 7,\n      \".css\": 1,\n      \".sqlite\": 1,\n      \".js\": 1,\n      \".json\": 2,\n      \".png\": 1,\n      \".example\": 1,\n      \".conf\": 1..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\full_analysis_20251211_211436.json",
+      "size": 567727,
+      "words": 47593,
+      "chars": 555326,
+      "lines": 12333,
+      "modified": "2025-12-11T21:14:36.181211",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 2,
+        "technology": 1969,
+        "arts": 20,
+        "science": 0
+      },
+      "content_preview": "{\n  \"metadata\": {\n    \"analysis_date\": \"2025-12-11T21:14:35.968096\",\n    \"total_files\": 524,\n    \"file_types\": {\n      \"\": 35,\n      \".typed\": 14,\n      \".py\": 408,\n      \".txt\": 13,\n      \".pem\": 1,\n      \".exe\": 11,\n      \".md\": 5,\n      \".apache\": 2,\n      \".bsd\": 2,\n      \".rst\": 1,\n      \".cfg\": 1,\n      \".bat\": 3,\n      \".fish\": 1,\n      \".ps1\": 3,\n      \".html\": 7,\n      \".css\": 1,\n      \".sqlite\": 1,\n      \".js\": 1,\n      \".json\": 2,\n      \".png\": 1,\n      \".example\": 1,\n      \".conf\": 1..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\full_analysis_20251211_211517.json",
+      "size": 567727,
+      "words": 47593,
+      "chars": 555326,
+      "lines": 12333,
+      "modified": "2025-12-11T21:15:17.470850",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 2,
+        "technology": 1969,
+        "arts": 20,
+        "science": 0
+      },
+      "content_preview": "{\n  \"metadata\": {\n    \"analysis_date\": \"2025-12-11T21:15:17.254492\",\n    \"total_files\": 524,\n    \"file_types\": {\n      \"\": 35,\n      \".typed\": 14,\n      \".py\": 408,\n      \".txt\": 13,\n      \".pem\": 1,\n      \".exe\": 11,\n      \".md\": 5,\n      \".apache\": 2,\n      \".bsd\": 2,\n      \".rst\": 1,\n      \".cfg\": 1,\n      \".bat\": 3,\n      \".fish\": 1,\n      \".ps1\": 3,\n      \".html\": 7,\n      \".css\": 1,\n      \".sqlite\": 1,\n      \".js\": 1,\n      \".json\": 2,\n      \".png\": 1,\n      \".example\": 1,\n      \".conf\": 1..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\full_analysis_20251211_211544.json",
+      "size": 567727,
+      "words": 47593,
+      "chars": 555326,
+      "lines": 12333,
+      "modified": "2025-12-11T21:15:44.228544",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 2,
+        "technology": 1969,
+        "arts": 20,
+        "science": 0
+      },
+      "content_preview": "{\n  \"metadata\": {\n    \"analysis_date\": \"2025-12-11T21:15:44.028851\",\n    \"total_files\": 524,\n    \"file_types\": {\n      \"\": 35,\n      \".typed\": 14,\n      \".py\": 408,\n      \".txt\": 13,\n      \".pem\": 1,\n      \".exe\": 11,\n      \".md\": 5,\n      \".apache\": 2,\n      \".bsd\": 2,\n      \".rst\": 1,\n      \".cfg\": 1,\n      \".bat\": 3,\n      \".fish\": 1,\n      \".ps1\": 3,\n      \".html\": 7,\n      \".css\": 1,\n      \".sqlite\": 1,\n      \".js\": 1,\n      \".json\": 2,\n      \".png\": 1,\n      \".example\": 1,\n      \".conf\": 1..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\full_analysis_20251211_211637.json",
+      "size": 567727,
+      "words": 47593,
+      "chars": 555326,
+      "lines": 12333,
+      "modified": "2025-12-11T21:16:37.559877",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 2,
+        "technology": 1969,
+        "arts": 20,
+        "science": 0
+      },
+      "content_preview": "{\n  \"metadata\": {\n    \"analysis_date\": \"2025-12-11T21:16:37.354069\",\n    \"total_files\": 524,\n    \"file_types\": {\n      \"\": 35,\n      \".typed\": 14,\n      \".py\": 408,\n      \".txt\": 13,\n      \".pem\": 1,\n      \".exe\": 11,\n      \".md\": 5,\n      \".apache\": 2,\n      \".bsd\": 2,\n      \".rst\": 1,\n      \".cfg\": 1,\n      \".bat\": 3,\n      \".fish\": 1,\n      \".ps1\": 3,\n      \".html\": 7,\n      \".css\": 1,\n      \".sqlite\": 1,\n      \".js\": 1,\n      \".json\": 2,\n      \".png\": 1,\n      \".example\": 1,\n      \".conf\": 1..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\full_analysis_20251211_211754.json",
+      "size": 567727,
+      "words": 47593,
+      "chars": 555326,
+      "lines": 12333,
+      "modified": "2025-12-11T21:17:54.102483",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 2,
+        "technology": 1969,
+        "arts": 20,
+        "science": 0
+      },
+      "content_preview": "{\n  \"metadata\": {\n    \"analysis_date\": \"2025-12-11T21:17:53.909475\",\n    \"total_files\": 524,\n    \"file_types\": {\n      \"\": 35,\n      \".typed\": 14,\n      \".py\": 408,\n      \".txt\": 13,\n      \".pem\": 1,\n      \".exe\": 11,\n      \".md\": 5,\n      \".apache\": 2,\n      \".bsd\": 2,\n      \".rst\": 1,\n      \".cfg\": 1,\n      \".bat\": 3,\n      \".fish\": 1,\n      \".ps1\": 3,\n      \".html\": 7,\n      \".css\": 1,\n      \".sqlite\": 1,\n      \".js\": 1,\n      \".json\": 2,\n      \".png\": 1,\n      \".example\": 1,\n      \".conf\": 1..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\full_analysis_20251211_211833.json",
+      "size": 578357,
+      "words": 48406,
+      "chars": 565897,
+      "lines": 12392,
+      "modified": "2025-12-11T21:18:33.621873",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 2,
+        "technology": 1995,
+        "arts": 20,
+        "science": 0
+      },
+      "content_preview": "{\n  \"metadata\": {\n    \"analysis_date\": \"2025-12-11T21:18:33.410505\",\n    \"total_files\": 560,\n    \"file_types\": {\n      \"\": 35,\n      \".typed\": 14,\n      \".py\": 408,\n      \".txt\": 21,\n      \".pem\": 1,\n      \".exe\": 11,\n      \".md\": 5,\n      \".apache\": 2,\n      \".bsd\": 2,\n      \".rst\": 1,\n      \".cfg\": 1,\n      \".bat\": 3,\n      \".fish\": 1,\n      \".ps1\": 3,\n      \".html\": 7,\n      \".css\": 1,\n      \".sqlite\": 1,\n      \".js\": 1,\n      \".json\": 30,\n      \".png\": 1,\n      \".example\": 1,\n      \".conf\": ..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\full_analysis_20251211_211952.json",
+      "size": 579677,
+      "words": 48507,
+      "chars": 567210,
+      "lines": 12399,
+      "modified": "2025-12-11T21:19:52.926662",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 2,
+        "technology": 1998,
+        "arts": 20,
+        "science": 0
+      },
+      "content_preview": "{\n  \"metadata\": {\n    \"analysis_date\": \"2025-12-11T21:19:52.721319\",\n    \"total_files\": 563,\n    \"file_types\": {\n      \"\": 35,\n      \".typed\": 14,\n      \".py\": 408,\n      \".txt\": 22,\n      \".pem\": 1,\n      \".exe\": 11,\n      \".md\": 5,\n      \".apache\": 2,\n      \".bsd\": 2,\n      \".rst\": 1,\n      \".cfg\": 1,\n      \".bat\": 3,\n      \".fish\": 1,\n      \".ps1\": 3,\n      \".html\": 7,\n      \".css\": 1,\n      \".sqlite\": 1,\n      \".js\": 1,\n      \".json\": 32,\n      \".png\": 1,\n      \".example\": 1,\n      \".conf\": ..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\full_analysis_20251211_212023.json",
+      "size": 580998,
+      "words": 48608,
+      "chars": 568524,
+      "lines": 12406,
+      "modified": "2025-12-11T21:20:23.958356",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 2,
+        "technology": 2001,
+        "arts": 20,
+        "science": 0
+      },
+      "content_preview": "{\n  \"metadata\": {\n    \"analysis_date\": \"2025-12-11T21:20:23.752818\",\n    \"total_files\": 566,\n    \"file_types\": {\n      \"\": 35,\n      \".typed\": 14,\n      \".py\": 408,\n      \".txt\": 23,\n      \".pem\": 1,\n      \".exe\": 11,\n      \".md\": 5,\n      \".apache\": 2,\n      \".bsd\": 2,\n      \".rst\": 1,\n      \".cfg\": 1,\n      \".bat\": 3,\n      \".fish\": 1,\n      \".ps1\": 3,\n      \".html\": 7,\n      \".css\": 1,\n      \".sqlite\": 1,\n      \".js\": 1,\n      \".json\": 34,\n      \".png\": 1,\n      \".example\": 1,\n      \".conf\": ..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\full_analysis_20251211_212107.json",
+      "size": 582319,
+      "words": 48709,
+      "chars": 569838,
+      "lines": 12413,
+      "modified": "2025-12-11T21:21:07.945976",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 2,
+        "technology": 2004,
+        "arts": 20,
+        "science": 0
+      },
+      "content_preview": "{\n  \"metadata\": {\n    \"analysis_date\": \"2025-12-11T21:21:07.737938\",\n    \"total_files\": 569,\n    \"file_types\": {\n      \"\": 35,\n      \".typed\": 14,\n      \".py\": 408,\n      \".txt\": 24,\n      \".pem\": 1,\n      \".exe\": 11,\n      \".md\": 5,\n      \".apache\": 2,\n      \".bsd\": 2,\n      \".rst\": 1,\n      \".cfg\": 1,\n      \".bat\": 3,\n      \".fish\": 1,\n      \".ps1\": 3,\n      \".html\": 7,\n      \".css\": 1,\n      \".sqlite\": 1,\n      \".js\": 1,\n      \".json\": 36,\n      \".png\": 1,\n      \".example\": 1,\n      \".conf\": ..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\full_analysis_20251211_212202.json",
+      "size": 583640,
+      "words": 48810,
+      "chars": 571152,
+      "lines": 12420,
+      "modified": "2025-12-11T21:22:02.518263",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 2,
+        "technology": 2007,
+        "arts": 20,
+        "science": 0
+      },
+      "content_preview": "{\n  \"metadata\": {\n    \"analysis_date\": \"2025-12-11T21:22:02.309215\",\n    \"total_files\": 572,\n    \"file_types\": {\n      \"\": 35,\n      \".typed\": 14,\n      \".py\": 408,\n      \".txt\": 25,\n      \".pem\": 1,\n      \".exe\": 11,\n      \".md\": 5,\n      \".apache\": 2,\n      \".bsd\": 2,\n      \".rst\": 1,\n      \".cfg\": 1,\n      \".bat\": 3,\n      \".fish\": 1,\n      \".ps1\": 3,\n      \".html\": 7,\n      \".css\": 1,\n      \".sqlite\": 1,\n      \".js\": 1,\n      \".json\": 38,\n      \".png\": 1,\n      \".example\": 1,\n      \".conf\": ..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\full_analysis_20251211_212323.json",
+      "size": 584961,
+      "words": 48911,
+      "chars": 572466,
+      "lines": 12427,
+      "modified": "2025-12-11T21:23:23.796890",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 2,
+        "technology": 2010,
+        "arts": 20,
+        "science": 0
+      },
+      "content_preview": "{\n  \"metadata\": {\n    \"analysis_date\": \"2025-12-11T21:23:23.587251\",\n    \"total_files\": 575,\n    \"file_types\": {\n      \"\": 35,\n      \".typed\": 14,\n      \".py\": 408,\n      \".txt\": 26,\n      \".pem\": 1,\n      \".exe\": 11,\n      \".md\": 5,\n      \".apache\": 2,\n      \".bsd\": 2,\n      \".rst\": 1,\n      \".cfg\": 1,\n      \".bat\": 3,\n      \".fish\": 1,\n      \".ps1\": 3,\n      \".html\": 7,\n      \".css\": 1,\n      \".sqlite\": 1,\n      \".js\": 1,\n      \".json\": 40,\n      \".png\": 1,\n      \".example\": 1,\n      \".conf\": ..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\full_analysis_20251211_212408.json",
+      "size": 586283,
+      "words": 49012,
+      "chars": 573781,
+      "lines": 12434,
+      "modified": "2025-12-11T21:24:08.286146",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 2,
+        "technology": 2013,
+        "arts": 20,
+        "science": 0
+      },
+      "content_preview": "{\n  \"metadata\": {\n    \"analysis_date\": \"2025-12-11T21:24:08.061710\",\n    \"total_files\": 578,\n    \"file_types\": {\n      \"\": 35,\n      \".typed\": 14,\n      \".py\": 408,\n      \".txt\": 27,\n      \".pem\": 1,\n      \".exe\": 11,\n      \".md\": 5,\n      \".apache\": 2,\n      \".bsd\": 2,\n      \".rst\": 1,\n      \".cfg\": 1,\n      \".bat\": 3,\n      \".fish\": 1,\n      \".ps1\": 3,\n      \".html\": 7,\n      \".css\": 1,\n      \".sqlite\": 1,\n      \".js\": 1,\n      \".json\": 42,\n      \".png\": 1,\n      \".example\": 1,\n      \".conf\": ..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\full_analysis_20251211_212518.json",
+      "size": 587605,
+      "words": 49113,
+      "chars": 575096,
+      "lines": 12441,
+      "modified": "2025-12-11T21:25:18.852563",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 2,
+        "technology": 2016,
+        "arts": 20,
+        "science": 0
+      },
+      "content_preview": "{\n  \"metadata\": {\n    \"analysis_date\": \"2025-12-11T21:25:18.646992\",\n    \"total_files\": 581,\n    \"file_types\": {\n      \"\": 35,\n      \".typed\": 14,\n      \".py\": 408,\n      \".txt\": 28,\n      \".pem\": 1,\n      \".exe\": 11,\n      \".md\": 5,\n      \".apache\": 2,\n      \".bsd\": 2,\n      \".rst\": 1,\n      \".cfg\": 1,\n      \".bat\": 3,\n      \".fish\": 1,\n      \".ps1\": 3,\n      \".html\": 7,\n      \".css\": 1,\n      \".sqlite\": 1,\n      \".js\": 1,\n      \".json\": 44,\n      \".png\": 1,\n      \".example\": 1,\n      \".conf\": ..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\full_analysis_20251211_212534.json",
+      "size": 588927,
+      "words": 49214,
+      "chars": 576411,
+      "lines": 12448,
+      "modified": "2025-12-11T21:25:34.024660",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 2,
+        "technology": 2019,
+        "arts": 20,
+        "science": 0
+      },
+      "content_preview": "{\n  \"metadata\": {\n    \"analysis_date\": \"2025-12-11T21:25:33.816137\",\n    \"total_files\": 584,\n    \"file_types\": {\n      \"\": 35,\n      \".typed\": 14,\n      \".py\": 408,\n      \".txt\": 29,\n      \".pem\": 1,\n      \".exe\": 11,\n      \".md\": 5,\n      \".apache\": 2,\n      \".bsd\": 2,\n      \".rst\": 1,\n      \".cfg\": 1,\n      \".bat\": 3,\n      \".fish\": 1,\n      \".ps1\": 3,\n      \".html\": 7,\n      \".css\": 1,\n      \".sqlite\": 1,\n      \".js\": 1,\n      \".json\": 46,\n      \".png\": 1,\n      \".example\": 1,\n      \".conf\": ..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\full_analysis_20251211_212550.json",
+      "size": 590248,
+      "words": 49315,
+      "chars": 577725,
+      "lines": 12455,
+      "modified": "2025-12-11T21:25:50.726479",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 2,
+        "technology": 2022,
+        "arts": 20,
+        "science": 0
+      },
+      "content_preview": "{\n  \"metadata\": {\n    \"analysis_date\": \"2025-12-11T21:25:50.516411\",\n    \"total_files\": 587,\n    \"file_types\": {\n      \"\": 35,\n      \".typed\": 14,\n      \".py\": 408,\n      \".txt\": 30,\n      \".pem\": 1,\n      \".exe\": 11,\n      \".md\": 5,\n      \".apache\": 2,\n      \".bsd\": 2,\n      \".rst\": 1,\n      \".cfg\": 1,\n      \".bat\": 3,\n      \".fish\": 1,\n      \".ps1\": 3,\n      \".html\": 7,\n      \".css\": 1,\n      \".sqlite\": 1,\n      \".js\": 1,\n      \".json\": 48,\n      \".png\": 1,\n      \".example\": 1,\n      \".conf\": ..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\full_analysis_20251211_212750.json",
+      "size": 591572,
+      "words": 49416,
+      "chars": 579042,
+      "lines": 12462,
+      "modified": "2025-12-11T21:27:50.339136",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 2,
+        "technology": 2025,
+        "arts": 20,
+        "science": 0
+      },
+      "content_preview": "{\n  \"metadata\": {\n    \"analysis_date\": \"2025-12-11T21:27:50.117913\",\n    \"total_files\": 590,\n    \"file_types\": {\n      \"\": 35,\n      \".typed\": 14,\n      \".py\": 408,\n      \".txt\": 31,\n      \".pem\": 1,\n      \".exe\": 11,\n      \".md\": 5,\n      \".apache\": 2,\n      \".bsd\": 2,\n      \".rst\": 1,\n      \".cfg\": 1,\n      \".bat\": 3,\n      \".fish\": 1,\n      \".ps1\": 3,\n      \".html\": 7,\n      \".css\": 1,\n      \".sqlite\": 1,\n      \".js\": 1,\n      \".json\": 50,\n      \".png\": 1,\n      \".example\": 1,\n      \".conf\": ..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_211044.json",
+      "size": 1902,
+      "words": 184,
+      "chars": 1797,
+      "lines": 106,
+      "modified": "2025-12-11T21:10:44.137780",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 3,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "{\n  \"report_date\": \"2025-12-11T20:10:44.137126+00:00\",\n  \"total_files_analyzed\": 524,\n  \"file_type_distribution\": {\n    \"\": 35,\n    \".typed\": 14,\n    \".py\": 408,\n    \".txt\": 13,\n    \".pem\": 1,\n    \".exe\": 11,\n    \".md\": 5,\n    \".apache\": 2,\n    \".bsd\": 2,\n    \".rst\": 1,\n    \".cfg\": 1,\n    \".bat\": 3,\n    \".fish\": 1,\n    \".ps1\": 3,\n    \".html\": 7,\n    \".css\": 1,\n    \".sqlite\": 1,\n    \".js\": 1,\n    \".json\": 2,\n    \".png\": 1,\n    \".example\": 1,\n    \".conf\": 1,\n    \".yml\": 1,\n    \".yaml\": 4,\n    \".lo..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_211044.txt",
+      "size": 1591,
+      "words": 195,
+      "chars": 1485,
+      "lines": 107,
+      "modified": "2025-12-11T21:10:44.137780",
+      "extension": ".txt",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 3,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "================================================================================\nPROJECT ANALYSIS SUMMARY REPORT\n================================================================================\n\nReport generated on: 2025-12-11T20:10:44.137126+00:00\n\nOVERVIEW\n--------\nTotal files analyzed: 524\nCode files: 423\nDocumentation files: 18\nTotal dependencies found: 45\n\n\nFILE TYPE DISTRIBUTION\n---------------------\nNo extension: 35\n.typed: 14\n.py: 408\n.txt: 13\n.pem: 1\n.exe: 11\n.md: 5\n.apache: 2\n.bsd: 2\n...."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_211223.json",
+      "size": 1909,
+      "words": 184,
+      "chars": 1804,
+      "lines": 106,
+      "modified": "2025-12-11T21:12:23.568241",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 2,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "{\n  \"report_date\": \"2025-12-11T20:12:23.567830+00:00\",\n  \"total_files_analyzed\": 524,\n  \"file_type_distribution\": {\n    \"\": 35,\n    \".typed\": 14,\n    \".py\": 408,\n    \".txt\": 13,\n    \".pem\": 1,\n    \".exe\": 11,\n    \".md\": 5,\n    \".apache\": 2,\n    \".bsd\": 2,\n    \".rst\": 1,\n    \".cfg\": 1,\n    \".bat\": 3,\n    \".fish\": 1,\n    \".ps1\": 3,\n    \".html\": 7,\n    \".css\": 1,\n    \".sqlite\": 1,\n    \".js\": 1,\n    \".json\": 2,\n    \".png\": 1,\n    \".example\": 1,\n    \".conf\": 1,\n    \".yml\": 1,\n    \".yaml\": 4,\n    \".lo..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_211223.txt",
+      "size": 1598,
+      "words": 195,
+      "chars": 1492,
+      "lines": 107,
+      "modified": "2025-12-11T21:12:23.568241",
+      "extension": ".txt",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 2,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "================================================================================\nPROJECT ANALYSIS SUMMARY REPORT\n================================================================================\n\nReport generated on: 2025-12-11T20:12:23.567830+00:00\n\nOVERVIEW\n--------\nTotal files analyzed: 524\nCode files: 423\nDocumentation files: 18\nTotal dependencies found: 45\n\n\nFILE TYPE DISTRIBUTION\n---------------------\nNo extension: 35\n.typed: 14\n.py: 408\n.txt: 13\n.pem: 1\n.exe: 11\n.md: 5\n.apache: 2\n.bsd: 2\n...."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_211333.json",
+      "size": 1899,
+      "words": 184,
+      "chars": 1794,
+      "lines": 106,
+      "modified": "2025-12-11T21:13:33.589604",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 3,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "{\n  \"report_date\": \"2025-12-11T20:13:33.589778+00:00\",\n  \"total_files_analyzed\": 524,\n  \"file_type_distribution\": {\n    \"\": 35,\n    \".typed\": 14,\n    \".py\": 408,\n    \".txt\": 13,\n    \".pem\": 1,\n    \".exe\": 11,\n    \".md\": 5,\n    \".apache\": 2,\n    \".bsd\": 2,\n    \".rst\": 1,\n    \".cfg\": 1,\n    \".bat\": 3,\n    \".fish\": 1,\n    \".ps1\": 3,\n    \".html\": 7,\n    \".css\": 1,\n    \".sqlite\": 1,\n    \".js\": 1,\n    \".json\": 2,\n    \".png\": 1,\n    \".example\": 1,\n    \".conf\": 1,\n    \".yml\": 1,\n    \".yaml\": 4,\n    \".lo..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_211333.txt",
+      "size": 1588,
+      "words": 195,
+      "chars": 1482,
+      "lines": 107,
+      "modified": "2025-12-11T21:13:33.589604",
+      "extension": ".txt",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 3,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "================================================================================\nPROJECT ANALYSIS SUMMARY REPORT\n================================================================================\n\nReport generated on: 2025-12-11T20:13:33.589778+00:00\n\nOVERVIEW\n--------\nTotal files analyzed: 524\nCode files: 423\nDocumentation files: 18\nTotal dependencies found: 45\n\n\nFILE TYPE DISTRIBUTION\n---------------------\nNo extension: 35\n.typed: 14\n.py: 408\n.txt: 13\n.pem: 1\n.exe: 11\n.md: 5\n.apache: 2\n.bsd: 2\n...."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_211436.json",
+      "size": 1900,
+      "words": 184,
+      "chars": 1795,
+      "lines": 106,
+      "modified": "2025-12-11T21:14:36.182219",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 3,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "{\n  \"report_date\": \"2025-12-11T20:14:36.181547+00:00\",\n  \"total_files_analyzed\": 524,\n  \"file_type_distribution\": {\n    \"\": 35,\n    \".typed\": 14,\n    \".py\": 408,\n    \".txt\": 13,\n    \".pem\": 1,\n    \".exe\": 11,\n    \".md\": 5,\n    \".apache\": 2,\n    \".bsd\": 2,\n    \".rst\": 1,\n    \".cfg\": 1,\n    \".bat\": 3,\n    \".fish\": 1,\n    \".ps1\": 3,\n    \".html\": 7,\n    \".css\": 1,\n    \".sqlite\": 1,\n    \".js\": 1,\n    \".json\": 2,\n    \".png\": 1,\n    \".example\": 1,\n    \".conf\": 1,\n    \".yml\": 1,\n    \".yaml\": 4,\n    \".lo..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_211436.txt",
+      "size": 1589,
+      "words": 195,
+      "chars": 1483,
+      "lines": 107,
+      "modified": "2025-12-11T21:14:36.182219",
+      "extension": ".txt",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 3,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "================================================================================\nPROJECT ANALYSIS SUMMARY REPORT\n================================================================================\n\nReport generated on: 2025-12-11T20:14:36.181547+00:00\n\nOVERVIEW\n--------\nTotal files analyzed: 524\nCode files: 423\nDocumentation files: 18\nTotal dependencies found: 45\n\n\nFILE TYPE DISTRIBUTION\n---------------------\nNo extension: 35\n.typed: 14\n.py: 408\n.txt: 13\n.pem: 1\n.exe: 11\n.md: 5\n.apache: 2\n.bsd: 2\n...."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_211517.json",
+      "size": 1910,
+      "words": 184,
+      "chars": 1805,
+      "lines": 106,
+      "modified": "2025-12-11T21:15:17.471861",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 3,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "{\n  \"report_date\": \"2025-12-11T20:15:17.471432+00:00\",\n  \"total_files_analyzed\": 524,\n  \"file_type_distribution\": {\n    \"\": 35,\n    \".typed\": 14,\n    \".py\": 408,\n    \".txt\": 13,\n    \".pem\": 1,\n    \".exe\": 11,\n    \".md\": 5,\n    \".apache\": 2,\n    \".bsd\": 2,\n    \".rst\": 1,\n    \".cfg\": 1,\n    \".bat\": 3,\n    \".fish\": 1,\n    \".ps1\": 3,\n    \".html\": 7,\n    \".css\": 1,\n    \".sqlite\": 1,\n    \".js\": 1,\n    \".json\": 2,\n    \".png\": 1,\n    \".example\": 1,\n    \".conf\": 1,\n    \".yml\": 1,\n    \".yaml\": 4,\n    \".lo..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_211517.txt",
+      "size": 1599,
+      "words": 195,
+      "chars": 1493,
+      "lines": 107,
+      "modified": "2025-12-11T21:15:17.474346",
+      "extension": ".txt",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 3,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "================================================================================\nPROJECT ANALYSIS SUMMARY REPORT\n================================================================================\n\nReport generated on: 2025-12-11T20:15:17.471432+00:00\n\nOVERVIEW\n--------\nTotal files analyzed: 524\nCode files: 423\nDocumentation files: 18\nTotal dependencies found: 45\n\n\nFILE TYPE DISTRIBUTION\n---------------------\nNo extension: 35\n.typed: 14\n.py: 408\n.txt: 13\n.pem: 1\n.exe: 11\n.md: 5\n.apache: 2\n.bsd: 2\n...."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_211544.json",
+      "size": 1899,
+      "words": 184,
+      "chars": 1794,
+      "lines": 106,
+      "modified": "2025-12-11T21:15:44.228544",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 2,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "{\n  \"report_date\": \"2025-12-11T20:15:44.233426+00:00\",\n  \"total_files_analyzed\": 524,\n  \"file_type_distribution\": {\n    \"\": 35,\n    \".typed\": 14,\n    \".py\": 408,\n    \".txt\": 13,\n    \".pem\": 1,\n    \".exe\": 11,\n    \".md\": 5,\n    \".apache\": 2,\n    \".bsd\": 2,\n    \".rst\": 1,\n    \".cfg\": 1,\n    \".bat\": 3,\n    \".fish\": 1,\n    \".ps1\": 3,\n    \".html\": 7,\n    \".css\": 1,\n    \".sqlite\": 1,\n    \".js\": 1,\n    \".json\": 2,\n    \".png\": 1,\n    \".example\": 1,\n    \".conf\": 1,\n    \".yml\": 1,\n    \".yaml\": 4,\n    \".lo..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_211544.txt",
+      "size": 1588,
+      "words": 195,
+      "chars": 1482,
+      "lines": 107,
+      "modified": "2025-12-11T21:15:44.228544",
+      "extension": ".txt",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 2,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "================================================================================\nPROJECT ANALYSIS SUMMARY REPORT\n================================================================================\n\nReport generated on: 2025-12-11T20:15:44.233426+00:00\n\nOVERVIEW\n--------\nTotal files analyzed: 524\nCode files: 423\nDocumentation files: 18\nTotal dependencies found: 45\n\n\nFILE TYPE DISTRIBUTION\n---------------------\nNo extension: 35\n.typed: 14\n.py: 408\n.txt: 13\n.pem: 1\n.exe: 11\n.md: 5\n.apache: 2\n.bsd: 2\n...."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_211637.json",
+      "size": 1874,
+      "words": 184,
+      "chars": 1769,
+      "lines": 106,
+      "modified": "2025-12-11T21:16:37.560892",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 2,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "{\n  \"report_date\": \"2025-12-11T20:16:37.560964+00:00\",\n  \"total_files_analyzed\": 524,\n  \"file_type_distribution\": {\n    \"\": 35,\n    \".typed\": 14,\n    \".py\": 408,\n    \".txt\": 13,\n    \".pem\": 1,\n    \".exe\": 11,\n    \".md\": 5,\n    \".apache\": 2,\n    \".bsd\": 2,\n    \".rst\": 1,\n    \".cfg\": 1,\n    \".bat\": 3,\n    \".fish\": 1,\n    \".ps1\": 3,\n    \".html\": 7,\n    \".css\": 1,\n    \".sqlite\": 1,\n    \".js\": 1,\n    \".json\": 2,\n    \".png\": 1,\n    \".example\": 1,\n    \".conf\": 1,\n    \".yml\": 1,\n    \".yaml\": 4,\n    \".lo..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_211637.txt",
+      "size": 1563,
+      "words": 195,
+      "chars": 1457,
+      "lines": 107,
+      "modified": "2025-12-11T21:16:37.560892",
+      "extension": ".txt",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 2,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "================================================================================\nPROJECT ANALYSIS SUMMARY REPORT\n================================================================================\n\nReport generated on: 2025-12-11T20:16:37.560964+00:00\n\nOVERVIEW\n--------\nTotal files analyzed: 524\nCode files: 423\nDocumentation files: 18\nTotal dependencies found: 45\n\n\nFILE TYPE DISTRIBUTION\n---------------------\nNo extension: 35\n.typed: 14\n.py: 408\n.txt: 13\n.pem: 1\n.exe: 11\n.md: 5\n.apache: 2\n.bsd: 2\n...."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_211754.json",
+      "size": 1901,
+      "words": 184,
+      "chars": 1796,
+      "lines": 106,
+      "modified": "2025-12-11T21:17:54.102483",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 2,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "{\n  \"report_date\": \"2025-12-11T20:17:54.110839+00:00\",\n  \"total_files_analyzed\": 524,\n  \"file_type_distribution\": {\n    \"\": 35,\n    \".typed\": 14,\n    \".py\": 408,\n    \".txt\": 13,\n    \".pem\": 1,\n    \".exe\": 11,\n    \".md\": 5,\n    \".apache\": 2,\n    \".bsd\": 2,\n    \".rst\": 1,\n    \".cfg\": 1,\n    \".bat\": 3,\n    \".fish\": 1,\n    \".ps1\": 3,\n    \".html\": 7,\n    \".css\": 1,\n    \".sqlite\": 1,\n    \".js\": 1,\n    \".json\": 2,\n    \".png\": 1,\n    \".example\": 1,\n    \".conf\": 1,\n    \".yml\": 1,\n    \".yaml\": 4,\n    \".lo..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_211754.txt",
+      "size": 1590,
+      "words": 195,
+      "chars": 1484,
+      "lines": 107,
+      "modified": "2025-12-11T21:17:54.102483",
+      "extension": ".txt",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 2,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "================================================================================\nPROJECT ANALYSIS SUMMARY REPORT\n================================================================================\n\nReport generated on: 2025-12-11T20:17:54.110839+00:00\n\nOVERVIEW\n--------\nTotal files analyzed: 524\nCode files: 423\nDocumentation files: 18\nTotal dependencies found: 45\n\n\nFILE TYPE DISTRIBUTION\n---------------------\nNo extension: 35\n.typed: 14\n.py: 408\n.txt: 13\n.pem: 1\n.exe: 11\n.md: 5\n.apache: 2\n.bsd: 2\n...."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_211833.json",
+      "size": 2005,
+      "words": 193,
+      "chars": 1895,
+      "lines": 111,
+      "modified": "2025-12-11T21:18:33.622873",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 4,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "{\n  \"report_date\": \"2025-12-11T20:18:33.622985+00:00\",\n  \"total_files_analyzed\": 560,\n  \"file_type_distribution\": {\n    \"\": 35,\n    \".typed\": 14,\n    \".py\": 408,\n    \".txt\": 21,\n    \".pem\": 1,\n    \".exe\": 11,\n    \".md\": 5,\n    \".apache\": 2,\n    \".bsd\": 2,\n    \".rst\": 1,\n    \".cfg\": 1,\n    \".bat\": 3,\n    \".fish\": 1,\n    \".ps1\": 3,\n    \".html\": 7,\n    \".css\": 1,\n    \".sqlite\": 1,\n    \".js\": 1,\n    \".json\": 30,\n    \".png\": 1,\n    \".example\": 1,\n    \".conf\": 1,\n    \".yml\": 1,\n    \".yaml\": 4,\n    \".l..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_211833.txt",
+      "size": 1668,
+      "words": 204,
+      "chars": 1557,
+      "lines": 112,
+      "modified": "2025-12-11T21:18:33.623833",
+      "extension": ".txt",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 4,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "================================================================================\nPROJECT ANALYSIS SUMMARY REPORT\n================================================================================\n\nReport generated on: 2025-12-11T20:18:33.622985+00:00\n\nOVERVIEW\n--------\nTotal files analyzed: 560\nCode files: 423\nDocumentation files: 26\nTotal dependencies found: 45\n\n\nFILE TYPE DISTRIBUTION\n---------------------\nNo extension: 35\n.typed: 14\n.py: 408\n.txt: 21\n.pem: 1\n.exe: 11\n.md: 5\n.apache: 2\n.bsd: 2\n...."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_211952.json",
+      "size": 2005,
+      "words": 193,
+      "chars": 1895,
+      "lines": 111,
+      "modified": "2025-12-11T21:19:52.926662",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 4,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "{\n  \"report_date\": \"2025-12-11T20:19:52.928282+00:00\",\n  \"total_files_analyzed\": 563,\n  \"file_type_distribution\": {\n    \"\": 35,\n    \".typed\": 14,\n    \".py\": 408,\n    \".txt\": 22,\n    \".pem\": 1,\n    \".exe\": 11,\n    \".md\": 5,\n    \".apache\": 2,\n    \".bsd\": 2,\n    \".rst\": 1,\n    \".cfg\": 1,\n    \".bat\": 3,\n    \".fish\": 1,\n    \".ps1\": 3,\n    \".html\": 7,\n    \".css\": 1,\n    \".sqlite\": 1,\n    \".js\": 1,\n    \".json\": 32,\n    \".png\": 1,\n    \".example\": 1,\n    \".conf\": 1,\n    \".yml\": 1,\n    \".yaml\": 4,\n    \".l..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_211952.txt",
+      "size": 1668,
+      "words": 204,
+      "chars": 1557,
+      "lines": 112,
+      "modified": "2025-12-11T21:19:52.926662",
+      "extension": ".txt",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 4,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "================================================================================\nPROJECT ANALYSIS SUMMARY REPORT\n================================================================================\n\nReport generated on: 2025-12-11T20:19:52.928282+00:00\n\nOVERVIEW\n--------\nTotal files analyzed: 563\nCode files: 423\nDocumentation files: 27\nTotal dependencies found: 45\n\n\nFILE TYPE DISTRIBUTION\n---------------------\nNo extension: 35\n.typed: 14\n.py: 408\n.txt: 22\n.pem: 1\n.exe: 11\n.md: 5\n.apache: 2\n.bsd: 2\n...."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_212023.json",
+      "size": 2019,
+      "words": 193,
+      "chars": 1909,
+      "lines": 111,
+      "modified": "2025-12-11T21:20:23.958356",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 5,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "{\n  \"report_date\": \"2025-12-11T20:20:23.962274+00:00\",\n  \"total_files_analyzed\": 566,\n  \"file_type_distribution\": {\n    \"\": 35,\n    \".typed\": 14,\n    \".py\": 408,\n    \".txt\": 23,\n    \".pem\": 1,\n    \".exe\": 11,\n    \".md\": 5,\n    \".apache\": 2,\n    \".bsd\": 2,\n    \".rst\": 1,\n    \".cfg\": 1,\n    \".bat\": 3,\n    \".fish\": 1,\n    \".ps1\": 3,\n    \".html\": 7,\n    \".css\": 1,\n    \".sqlite\": 1,\n    \".js\": 1,\n    \".json\": 34,\n    \".png\": 1,\n    \".example\": 1,\n    \".conf\": 1,\n    \".yml\": 1,\n    \".yaml\": 4,\n    \".l..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_212023.txt",
+      "size": 1682,
+      "words": 204,
+      "chars": 1571,
+      "lines": 112,
+      "modified": "2025-12-11T21:20:23.958356",
+      "extension": ".txt",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 5,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "================================================================================\nPROJECT ANALYSIS SUMMARY REPORT\n================================================================================\n\nReport generated on: 2025-12-11T20:20:23.962274+00:00\n\nOVERVIEW\n--------\nTotal files analyzed: 566\nCode files: 423\nDocumentation files: 28\nTotal dependencies found: 45\n\n\nFILE TYPE DISTRIBUTION\n---------------------\nNo extension: 35\n.typed: 14\n.py: 408\n.txt: 23\n.pem: 1\n.exe: 11\n.md: 5\n.apache: 2\n.bsd: 2\n...."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_212107.json",
+      "size": 2000,
+      "words": 193,
+      "chars": 1890,
+      "lines": 111,
+      "modified": "2025-12-11T21:21:07.946979",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 5,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "{\n  \"report_date\": \"2025-12-11T20:21:07.946663+00:00\",\n  \"total_files_analyzed\": 569,\n  \"file_type_distribution\": {\n    \"\": 35,\n    \".typed\": 14,\n    \".py\": 408,\n    \".txt\": 24,\n    \".pem\": 1,\n    \".exe\": 11,\n    \".md\": 5,\n    \".apache\": 2,\n    \".bsd\": 2,\n    \".rst\": 1,\n    \".cfg\": 1,\n    \".bat\": 3,\n    \".fish\": 1,\n    \".ps1\": 3,\n    \".html\": 7,\n    \".css\": 1,\n    \".sqlite\": 1,\n    \".js\": 1,\n    \".json\": 36,\n    \".png\": 1,\n    \".example\": 1,\n    \".conf\": 1,\n    \".yml\": 1,\n    \".yaml\": 4,\n    \".l..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_212107.txt",
+      "size": 1662,
+      "words": 204,
+      "chars": 1551,
+      "lines": 112,
+      "modified": "2025-12-11T21:21:07.946979",
+      "extension": ".txt",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 5,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "================================================================================\nPROJECT ANALYSIS SUMMARY REPORT\n================================================================================\n\nReport generated on: 2025-12-11T20:21:07.946663+00:00\n\nOVERVIEW\n--------\nTotal files analyzed: 569\nCode files: 423\nDocumentation files: 29\nTotal dependencies found: 45\n\n\nFILE TYPE DISTRIBUTION\n---------------------\nNo extension: 35\n.typed: 14\n.py: 408\n.txt: 24\n.pem: 1\n.exe: 11\n.md: 5\n.apache: 2\n.bsd: 2\n...."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_212202.json",
+      "size": 2016,
+      "words": 193,
+      "chars": 1906,
+      "lines": 111,
+      "modified": "2025-12-11T21:22:02.518263",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 4,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "{\n  \"report_date\": \"2025-12-11T20:22:02.518534+00:00\",\n  \"total_files_analyzed\": 572,\n  \"file_type_distribution\": {\n    \"\": 35,\n    \".typed\": 14,\n    \".py\": 408,\n    \".txt\": 25,\n    \".pem\": 1,\n    \".exe\": 11,\n    \".md\": 5,\n    \".apache\": 2,\n    \".bsd\": 2,\n    \".rst\": 1,\n    \".cfg\": 1,\n    \".bat\": 3,\n    \".fish\": 1,\n    \".ps1\": 3,\n    \".html\": 7,\n    \".css\": 1,\n    \".sqlite\": 1,\n    \".js\": 1,\n    \".json\": 38,\n    \".png\": 1,\n    \".example\": 1,\n    \".conf\": 1,\n    \".yml\": 1,\n    \".yaml\": 4,\n    \".l..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_212202.txt",
+      "size": 1678,
+      "words": 204,
+      "chars": 1567,
+      "lines": 112,
+      "modified": "2025-12-11T21:22:02.519221",
+      "extension": ".txt",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 4,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "================================================================================\nPROJECT ANALYSIS SUMMARY REPORT\n================================================================================\n\nReport generated on: 2025-12-11T20:22:02.518534+00:00\n\nOVERVIEW\n--------\nTotal files analyzed: 572\nCode files: 423\nDocumentation files: 30\nTotal dependencies found: 45\n\n\nFILE TYPE DISTRIBUTION\n---------------------\nNo extension: 35\n.typed: 14\n.py: 408\n.txt: 25\n.pem: 1\n.exe: 11\n.md: 5\n.apache: 2\n.bsd: 2\n...."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_212323.json",
+      "size": 1999,
+      "words": 193,
+      "chars": 1889,
+      "lines": 111,
+      "modified": "2025-12-11T21:23:23.796890",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 4,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "{\n  \"report_date\": \"2025-12-11T20:23:23.797561+00:00\",\n  \"total_files_analyzed\": 575,\n  \"file_type_distribution\": {\n    \"\": 35,\n    \".typed\": 14,\n    \".py\": 408,\n    \".txt\": 26,\n    \".pem\": 1,\n    \".exe\": 11,\n    \".md\": 5,\n    \".apache\": 2,\n    \".bsd\": 2,\n    \".rst\": 1,\n    \".cfg\": 1,\n    \".bat\": 3,\n    \".fish\": 1,\n    \".ps1\": 3,\n    \".html\": 7,\n    \".css\": 1,\n    \".sqlite\": 1,\n    \".js\": 1,\n    \".json\": 40,\n    \".png\": 1,\n    \".example\": 1,\n    \".conf\": 1,\n    \".yml\": 1,\n    \".yaml\": 4,\n    \".l..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_212323.txt",
+      "size": 1661,
+      "words": 204,
+      "chars": 1550,
+      "lines": 112,
+      "modified": "2025-12-11T21:23:23.796890",
+      "extension": ".txt",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 4,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "================================================================================\nPROJECT ANALYSIS SUMMARY REPORT\n================================================================================\n\nReport generated on: 2025-12-11T20:23:23.797561+00:00\n\nOVERVIEW\n--------\nTotal files analyzed: 575\nCode files: 423\nDocumentation files: 31\nTotal dependencies found: 45\n\n\nFILE TYPE DISTRIBUTION\n---------------------\nNo extension: 35\n.typed: 14\n.py: 408\n.txt: 26\n.pem: 1\n.exe: 11\n.md: 5\n.apache: 2\n.bsd: 2\n...."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_212408.json",
+      "size": 1999,
+      "words": 193,
+      "chars": 1889,
+      "lines": 111,
+      "modified": "2025-12-11T21:24:08.288998",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 4,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "{\n  \"report_date\": \"2025-12-11T20:24:08.288109+00:00\",\n  \"total_files_analyzed\": 578,\n  \"file_type_distribution\": {\n    \"\": 35,\n    \".typed\": 14,\n    \".py\": 408,\n    \".txt\": 27,\n    \".pem\": 1,\n    \".exe\": 11,\n    \".md\": 5,\n    \".apache\": 2,\n    \".bsd\": 2,\n    \".rst\": 1,\n    \".cfg\": 1,\n    \".bat\": 3,\n    \".fish\": 1,\n    \".ps1\": 3,\n    \".html\": 7,\n    \".css\": 1,\n    \".sqlite\": 1,\n    \".js\": 1,\n    \".json\": 42,\n    \".png\": 1,\n    \".example\": 1,\n    \".conf\": 1,\n    \".yml\": 1,\n    \".yaml\": 4,\n    \".l..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_212408.txt",
+      "size": 1661,
+      "words": 204,
+      "chars": 1550,
+      "lines": 112,
+      "modified": "2025-12-11T21:24:08.288998",
+      "extension": ".txt",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 4,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "================================================================================\nPROJECT ANALYSIS SUMMARY REPORT\n================================================================================\n\nReport generated on: 2025-12-11T20:24:08.288109+00:00\n\nOVERVIEW\n--------\nTotal files analyzed: 578\nCode files: 423\nDocumentation files: 32\nTotal dependencies found: 45\n\n\nFILE TYPE DISTRIBUTION\n---------------------\nNo extension: 35\n.typed: 14\n.py: 408\n.txt: 27\n.pem: 1\n.exe: 11\n.md: 5\n.apache: 2\n.bsd: 2\n...."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_212518.json",
+      "size": 1983,
+      "words": 193,
+      "chars": 1873,
+      "lines": 111,
+      "modified": "2025-12-11T21:25:18.852563",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 5,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "{\n  \"report_date\": \"2025-12-11T20:25:18.856395+00:00\",\n  \"total_files_analyzed\": 581,\n  \"file_type_distribution\": {\n    \"\": 35,\n    \".typed\": 14,\n    \".py\": 408,\n    \".txt\": 28,\n    \".pem\": 1,\n    \".exe\": 11,\n    \".md\": 5,\n    \".apache\": 2,\n    \".bsd\": 2,\n    \".rst\": 1,\n    \".cfg\": 1,\n    \".bat\": 3,\n    \".fish\": 1,\n    \".ps1\": 3,\n    \".html\": 7,\n    \".css\": 1,\n    \".sqlite\": 1,\n    \".js\": 1,\n    \".json\": 44,\n    \".png\": 1,\n    \".example\": 1,\n    \".conf\": 1,\n    \".yml\": 1,\n    \".yaml\": 4,\n    \".l..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_212518.txt",
+      "size": 1645,
+      "words": 204,
+      "chars": 1534,
+      "lines": 112,
+      "modified": "2025-12-11T21:25:18.852563",
+      "extension": ".txt",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 5,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "================================================================================\nPROJECT ANALYSIS SUMMARY REPORT\n================================================================================\n\nReport generated on: 2025-12-11T20:25:18.856395+00:00\n\nOVERVIEW\n--------\nTotal files analyzed: 581\nCode files: 423\nDocumentation files: 33\nTotal dependencies found: 45\n\n\nFILE TYPE DISTRIBUTION\n---------------------\nNo extension: 35\n.typed: 14\n.py: 408\n.txt: 28\n.pem: 1\n.exe: 11\n.md: 5\n.apache: 2\n.bsd: 2\n...."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_212534.json",
+      "size": 1980,
+      "words": 193,
+      "chars": 1870,
+      "lines": 111,
+      "modified": "2025-12-11T21:25:34.026687",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 4,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "{\n  \"report_date\": \"2025-12-11T20:25:34.025633+00:00\",\n  \"total_files_analyzed\": 584,\n  \"file_type_distribution\": {\n    \"\": 35,\n    \".typed\": 14,\n    \".py\": 408,\n    \".txt\": 29,\n    \".pem\": 1,\n    \".exe\": 11,\n    \".md\": 5,\n    \".apache\": 2,\n    \".bsd\": 2,\n    \".rst\": 1,\n    \".cfg\": 1,\n    \".bat\": 3,\n    \".fish\": 1,\n    \".ps1\": 3,\n    \".html\": 7,\n    \".css\": 1,\n    \".sqlite\": 1,\n    \".js\": 1,\n    \".json\": 46,\n    \".png\": 1,\n    \".example\": 1,\n    \".conf\": 1,\n    \".yml\": 1,\n    \".yaml\": 4,\n    \".l..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_212534.txt",
+      "size": 1642,
+      "words": 204,
+      "chars": 1531,
+      "lines": 112,
+      "modified": "2025-12-11T21:25:34.026687",
+      "extension": ".txt",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 4,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "================================================================================\nPROJECT ANALYSIS SUMMARY REPORT\n================================================================================\n\nReport generated on: 2025-12-11T20:25:34.025633+00:00\n\nOVERVIEW\n--------\nTotal files analyzed: 584\nCode files: 423\nDocumentation files: 34\nTotal dependencies found: 45\n\n\nFILE TYPE DISTRIBUTION\n---------------------\nNo extension: 35\n.typed: 14\n.py: 408\n.txt: 29\n.pem: 1\n.exe: 11\n.md: 5\n.apache: 2\n.bsd: 2\n...."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_212550.json",
+      "size": 2023,
+      "words": 193,
+      "chars": 1913,
+      "lines": 111,
+      "modified": "2025-12-11T21:25:50.726479",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 4,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "{\n  \"report_date\": \"2025-12-11T20:25:50.732880+00:00\",\n  \"total_files_analyzed\": 587,\n  \"file_type_distribution\": {\n    \"\": 35,\n    \".typed\": 14,\n    \".py\": 408,\n    \".txt\": 30,\n    \".pem\": 1,\n    \".exe\": 11,\n    \".md\": 5,\n    \".apache\": 2,\n    \".bsd\": 2,\n    \".rst\": 1,\n    \".cfg\": 1,\n    \".bat\": 3,\n    \".fish\": 1,\n    \".ps1\": 3,\n    \".html\": 7,\n    \".css\": 1,\n    \".sqlite\": 1,\n    \".js\": 1,\n    \".json\": 48,\n    \".png\": 1,\n    \".example\": 1,\n    \".conf\": 1,\n    \".yml\": 1,\n    \".yaml\": 4,\n    \".l..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_212550.txt",
+      "size": 1685,
+      "words": 204,
+      "chars": 1574,
+      "lines": 112,
+      "modified": "2025-12-11T21:25:50.726479",
+      "extension": ".txt",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 4,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "================================================================================\nPROJECT ANALYSIS SUMMARY REPORT\n================================================================================\n\nReport generated on: 2025-12-11T20:25:50.732880+00:00\n\nOVERVIEW\n--------\nTotal files analyzed: 587\nCode files: 423\nDocumentation files: 35\nTotal dependencies found: 45\n\n\nFILE TYPE DISTRIBUTION\n---------------------\nNo extension: 35\n.typed: 14\n.py: 408\n.txt: 30\n.pem: 1\n.exe: 11\n.md: 5\n.apache: 2\n.bsd: 2\n...."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_212750.json",
+      "size": 2017,
+      "words": 193,
+      "chars": 1907,
+      "lines": 111,
+      "modified": "2025-12-11T21:27:50.339136",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 4,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "{\n  \"report_date\": \"2025-12-11T20:27:50.340165+00:00\",\n  \"total_files_analyzed\": 590,\n  \"file_type_distribution\": {\n    \"\": 35,\n    \".typed\": 14,\n    \".py\": 408,\n    \".txt\": 31,\n    \".pem\": 1,\n    \".exe\": 11,\n    \".md\": 5,\n    \".apache\": 2,\n    \".bsd\": 2,\n    \".rst\": 1,\n    \".cfg\": 1,\n    \".bat\": 3,\n    \".fish\": 1,\n    \".ps1\": 3,\n    \".html\": 7,\n    \".css\": 1,\n    \".sqlite\": 1,\n    \".js\": 1,\n    \".json\": 50,\n    \".png\": 1,\n    \".example\": 1,\n    \".conf\": 1,\n    \".yml\": 1,\n    \".yaml\": 4,\n    \".l..."
+    },
+    {
+      "path": "UniversityCapital\\analysis\\summary_report_20251211_212750.txt",
+      "size": 1679,
+      "words": 204,
+      "chars": 1568,
+      "lines": 112,
+      "modified": "2025-12-11T21:27:50.341387",
+      "extension": ".txt",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 4,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "================================================================================\nPROJECT ANALYSIS SUMMARY REPORT\n================================================================================\n\nReport generated on: 2025-12-11T20:27:50.340165+00:00\n\nOVERVIEW\n--------\nTotal files analyzed: 590\nCode files: 423\nDocumentation files: 36\nTotal dependencies found: 45\n\n\nFILE TYPE DISTRIBUTION\n---------------------\nNo extension: 35\n.typed: 14\n.py: 408\n.txt: 31\n.pem: 1\n.exe: 11\n.md: 5\n.apache: 2\n.bsd: 2\n...."
+    },
+    {
+      "path": "UniversityCapital\\future_roadmap\\future_roadmap.json",
+      "size": 746,
+      "words": 63,
+      "chars": 715,
+      "lines": 32,
+      "modified": "2025-12-11T21:30:43.450527",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 2,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "{\n  \"timeline\": {\n    \"short_term\": [\n      \"Optimize API performance\",\n      \"Enhance security features\",\n      \"Add user analytics\"\n    ],\n    \"mid_term\": [\n      \"Implement AI/ML capabilities\",\n      \"Expand to mobile platforms\",\n      \"Develop partner integrations\"\n    ],\n    \"long_term\": [\n      \"Blockchain integration\",\n      \"AR/VR features\",\n      \"Global expansion\"\n    ]\n  },\n  \"potential_valuation_increase\": {\n    \"short_term\": \"15-25%\",\n    \"mid_term\": \"50-75%\",\n    \"long_term\": \"150-..."
+    },
+    {
+      "path": "UniversityCapital\\market_analysis\\market_analysis.json",
+      "size": 603,
+      "words": 55,
+      "chars": 577,
+      "lines": 27,
+      "modified": "2025-12-11T21:30:43.448299",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 3,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "{\n  \"analysis_date\": \"2025-12-11T21:30:43.449262\",\n  \"comparable_companies\": [\n    {\n      \"name\": \"Competitor A\",\n      \"valuation\": 5000000,\n      \"employees\": 25,\n      \"revenue\": 2000000\n    },\n    {\n      \"name\": \"Competitor B\",\n      \"valuation\": 12000000,\n      \"employees\": 50,\n      \"revenue\": 5000000\n    }\n  ],\n  \"market_trends\": {\n    \"ai_ml_adoption\": \"High growth (15% YoY)\",\n    \"cloud_services\": \"Mature market (8% YoY)\",\n    \"edge_computing\": \"Emerging (25% YoY)\"\n  },\n  \"valuation_m..."
+    },
+    {
+      "path": "UniversityCapital\\valuations\\valuation_report.json",
+      "size": 2594,
+      "words": 206,
+      "chars": 2497,
+      "lines": 98,
+      "modified": "2025-12-11T21:30:43.450527",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 8,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "{\n  \"valuation_date\": \"2025-12-11T21:30:43.450814\",\n  \"current_valuation\": {\n    \"cost_approach\": 891310.77,\n    \"market_approach\": 4000000.0,\n    \"income_approach\": 18000000,\n    \"weighted_average\": 7267393.231\n  },\n  \"development_costs\": {\n    \"total_hours\": 2061.94,\n    \"total_cost\": 594207.18,\n    \"cost_breakdown\": {\n      \"development\": 245370.74,\n      \"documentation\": 2160.0,\n      \"setup\": 7800,\n      \"testing\": 37918.83,\n      \"devops\": 36865.53\n    },\n    \"hourly_rate\": 288.18,\n    \"te..."
+    },
+    {
+      "path": "regions\\areas.html",
+      "size": 5406,
+      "words": 331,
+      "chars": 5268,
+      "lines": 137,
+      "modified": "2025-12-11T13:46:21.738282",
+      "extension": ".html",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 23,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>areas - KEAN Platform</title>\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\" rel=\"stylesheet\">\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css\">\n    <style>\n        :root {\n            --primary: #2c3e50;\n            --secondary: #e74c3c;\n       ..."
+    },
+    {
+      "path": "regions\\area_community.html",
+      "size": 5329,
+      "words": 317,
+      "chars": 5193,
+      "lines": 137,
+      "modified": "2025-12-11T13:46:21.739279",
+      "extension": ".html",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 32,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>area_community - KEAN Platform</title>\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\" rel=\"stylesheet\">\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css\">\n    <style>\n        :root {\n            --primary: #2c3e50;\n            --secondary: #e74c3c..."
+    },
+    {
+      "path": "regions\\communities.html",
+      "size": 5455,
+      "words": 323,
+      "chars": 5319,
+      "lines": 137,
+      "modified": "2025-12-11T13:46:21.739279",
+      "extension": ".html",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 34,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>communities - KEAN Platform</title>\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\" rel=\"stylesheet\">\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css\">\n    <style>\n        :root {\n            --primary: #2c3e50;\n            --secondary: #e74c3c;\n ..."
+    },
+    {
+      "path": "regions\\pages.html",
+      "size": 5716,
+      "words": 342,
+      "chars": 5578,
+      "lines": 137,
+      "modified": "2025-12-11T13:46:21.739279",
+      "extension": ".html",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 31,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>pages - KEAN Platform</title>\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\" rel=\"stylesheet\">\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css\">\n    <style>\n        :root {\n            --primary: #2c3e50;\n            --secondary: #e74c3c;\n       ..."
+    },
+    {
+      "path": "pages\\forum\\index.html",
+      "size": 10789,
+      "words": 554,
+      "chars": 10570,
+      "lines": 220,
+      "modified": "2025-12-11T09:45:35.289637",
+      "extension": ".html",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 32,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>KEAN Forum - Connect with the Community</title>\n    <link rel=\"stylesheet\" href=\"../../css/style.css\">\n    <link rel=\"stylesheet\" href=\"../../css/forum.css\">\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css\">\n</head>\n<body>\n    <!-- Header -->\n    <header class=\"site-header\">\n      ..."
+    },
+    {
+      "path": "studentsorder\\README.md",
+      "size": 2306,
+      "words": 254,
+      "chars": 2229,
+      "lines": 78,
+      "modified": "2025-12-10T16:20:55.769180",
+      "extension": ".md",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 9,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "# Startup Systems - Student Deployment Package\n\nThis package contains all the necessary components, configurations, and documentation to set up and run the Startup Systems application in a production environment.\n\n## Table of Contents\n\n1. [System Requirements](#system-requirements)\n2. [Quick Start](#quick-start)\n3. [Detailed Setup](#detailed-setup)\n4. [Configuration](#configuration)\n5. [Deployment](#deployment)\n6. [Maintenance](#maintenance)\n7. [Troubleshooting](#troubleshooting)\n8. [Security](#..."
+    },
+    {
+      "path": "studentsorder\\config\\app\\settings.json",
+      "size": 10557,
+      "words": 841,
+      "chars": 10156,
+      "lines": 402,
+      "modified": "2025-12-10T16:21:58.540060",
+      "extension": ".json",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 18,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "{\n  \"app\": {\n    \"name\": \"Startup Systems\",\n    \"version\": \"1.0.0\",\n    \"environment\": \"production\",\n    \"port\": 3000,\n    \"apiUrl\": \"/api/v1\",\n    \"logLevel\": \"info\",\n    \"maxRequestSize\": \"10mb\",\n    \"sessionSecret\": \"change-this-in-production\",\n    \"jwtSecret\": \"change-this-in-production\",\n    \"passwordSaltRounds\": 10,\n    \"rateLimit\": {\n      \"windowMs\": 15 * 60 * 1000,\n      \"max\": 100\n    },\n    \"cors\": {\n      \"origin\": [\"http://localhost:3000\", \"https://yourdomain.com\"],\n      \"methods\":..."
+    },
+    {
+      "path": "studentsorder\\docs\\SETUP.md",
+      "size": 2286,
+      "words": 282,
+      "chars": 2181,
+      "lines": 106,
+      "modified": "2025-12-10T16:21:08.004432",
+      "extension": ".md",
+      "faculty_mentions": {
+        "business": 0,
+        "technology": 17,
+        "arts": 0,
+        "science": 0
+      },
+      "content_preview": "# Startup Systems - Setup Guide\n\nThis guide provides step-by-step instructions for setting up the Startup Systems application.\n\n## Prerequisites\n\n1. **System Requirements**\n   - Windows Server 2019/2022 or Ubuntu 20.04 LTS\n   - Docker 20.10.0 or later\n   - Docker Compose 1.29.0 or later\n   - Git 2.30.0 or later\n   - Node.js 16.x LTS\n   - Python 3.8 or later\n   - PowerShell 7.0 or later (Windows) or Bash (Linux)\n\n2. **Network Requirements**\n   - Port 80 (HTTP)\n   - Port 443 (HTTPS)\n   - Port 2701..."
+    }
+  ]
+}

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEAN - Kleve Emmerich Arnhem Nijmegen</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">KEAN</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#regions">Regions <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="regions/areas.html">Areas</a>
+                            <a href="regions/communities.html">Communities</a>
+                            <a href="regions/area_community.html">Area Community</a>
+                            <a href="regions/pages.html">Pages</a>
+                        </div>
+                    </li>
+                    <li><a href="pages/projects.html">Projects</a></li>
+                    <li><a href="pages/forum">Forum</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="#login" class="btn btn-outline">Log In</a>
+                <a href="#signup" class="btn btn-primary">Sign Up</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Connecting Communities Across Borders</h1>
+            <p>Join the KEAN platform to explore, collaborate, and engage with the cross-border region of Kleve, Emmerich, Arnhem, and Nijmegen.</p>
+            <div class="hero-buttons">
+                <a href="#explore" class="btn btn-primary btn-large">Explore Regions</a>
+                <a href="#learn-more" class="btn btn-outline btn-large">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="image-grid">
+                <div class="image-item" style="background-image: url('assets/images/kleve.jpg');"></div>
+                <div class="image-item" style="background-image: url('assets/images/emmerich.jpg');"></div>
+                <div class="image-item" style="background-image: url('assets/images/arnhem.jpg');"></div>
+                <div class="image-item" style="background-image: url('assets/images/nijmegen.jpg');"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stat-item">
+                <span class="stat-number" data-count="4">0</span>
+                <span class="stat-label">Cities</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="42">0</span>
+                <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="1250">0</span>
+                <span class="stat-label">Community Members</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="15">0</span>
+                <span class="stat-label">Years of Collaboration</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About KEAN</h2>
+                <p>Bridging communities, fostering collaboration, and creating opportunities across borders</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>The KEAN platform is a collaborative initiative that brings together the cities of Kleve, Emmerich, Arnhem, and Nijmegen to promote cross-border cooperation, cultural exchange, and economic development in the region.</p>
+                    <p>Our mission is to create a vibrant, interconnected community where residents, businesses, and organizations can work together to address common challenges and seize shared opportunities.</p>
+                    <a href="#" class="btn btn-primary">Learn More About Us</a>
+                </div>
+                <div class="about-image">
+                    <img src="assets/images/kean-map.png" alt="KEAN Region Map" class="map-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regions Section -->
+    <section class="regions-section" id="regions">
+        <div class="container">
+            <div class="section-header">
+                <h2>Explore Our Regions</h2>
+                <p>Discover the unique character and opportunities in each of our member cities</p>
+            </div>
+            <div class="regions-grid">
+                <div class="region-card">
+                    <div class="region-image" style="background-image: url('assets/images/kleve-card.jpg');">
+                        <div class="region-overlay">
+                            <h3>Kleve</h3>
+                            <p>Germany</p>
+                        </div>
+                    </div>
+                    <div class="region-content">
+                        <p>Historic city known for its beautiful gardens, cultural heritage, and vibrant student life.</p>
+                        <a href="pages/region/kleve.html" class="btn btn-outline">Explore Kleve</a>
+                    </div>
+                </div>
+                <div class="region-card">
+                    <div class="region-image" style="background-image: url('assets/images/emmerich-card.jpg');">
+                        <div class="region-overlay">
+                            <h3>Emmerich</h3>
+                            <p>Germany</p>
+                        </div>
+                    </div>
+                    <div class="region-content">
+                        <p>Riverside city with a rich history, known for its beautiful Rhine promenade and cultural events.</p>
+                        <a href="pages/region/emmerich.html" class="btn btn-outline">Explore Emmerich</a>
+                    </div>
+                </div>
+                <div class="region-card">
+                    <div class="region-image" style="background-image: url('assets/images/arnhem-card.jpg');">
+                        <div class="region-overlay">
+                            <h3>Arnhem</h3>
+                            <p>Netherlands</p>
+                        </div>
+                    </div>
+                    <div class="region-content">
+                        <p>Vibrant city known for its fashion, museums, and the famous Battle of Arnhem during WWII.</p>
+                        <a href="pages/region/arnhem.html" class="btn btn-outline">Explore Arnhem</a>
+                    </div>
+                </div>
+                <div class="region-card">
+                    <div class="region-image" style="background-image: url('assets/images/nijmegen-card.jpg');">
+                        <div class="region-overlay">
+                            <h3>Nijmegen</h3>
+                            <p>Netherlands</p>
+                        </div>
+                    </div>
+                    <div class="region-content">
+                        <p>Oldest city in the Netherlands with a rich history, vibrant culture, and renowned university.</p>
+                        <a href="pages/region/nijmegen.html" class="btn btn-outline">Explore Nijmegen</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Preview Section -->
+    <section class="projects-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <p>Discover collaborative initiatives making a difference in our region</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('assets/images/project1.jpg');"></div>
+                    <div class="project-content">
+                        <span class="project-category">Sustainability</span>
+                        <h3>Green Corridor Initiative</h3>
+                        <p>Creating ecological connections between urban green spaces across borders to support biodiversity.</p>
+                        <a href="pages/projects.html#green-corridor" class="btn btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('assets/images/project2.jpg');"></div>
+                    <div class="project-content">
+                        <span class="project-category">Education</span>
+                        <h3>Cross-Border Student Exchange</h3>
+                        <p>Facilitating educational and cultural exchange programs between schools in the KEAN region.</p>
+                        <a href="pages/projects.html#student-exchange" class="btn btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('assets/images/project3.jpg');"></div>
+                    <div class="project-content">
+                        <span class="project-category">Transportation</span>
+                        <h3>Smart Mobility Network</h3>
+                        <p>Developing integrated, sustainable transportation solutions for seamless cross-border travel.</p>
+                        <a href="pages/projects.html#smart-mobility" class="btn btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="section-footer">
+                <a href="pages/projects.html" class="btn btn-primary">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Forum Preview Section -->
+    <section class="forum-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Community Forum</h2>
+                <p>Join the conversation with residents and stakeholders across the KEAN region</p>
+            </div>
+            <div class="forum-topics">
+                <div class="forum-topic">
+                    <div class="topic-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="topic-content">
+                        <h3><a href="pages/forum/topic.html">Upcoming Cultural Festival in Kleve - Volunteers Needed!</a></h3>
+                        <div class="topic-meta">
+                            <span><i class="far fa-user"></i> MariaSchmidt</span>
+                            <span><i class="far fa-comment"></i> 12 replies</span>
+                            <span><i class="far fa-eye"></i> 245 views</span>
+                            <span><i class="far fa-clock"></i> 2 days ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="forum-topic">
+                    <div class="topic-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="topic-content">
+                        <h3><a href="pages/forum/topic.html">Ideas for Improving Cross-Border Cycling Routes</a></h3>
+                        <div class="topic-meta">
+                            <span><i class="far fa-user"></i> JanvanderBerg</span>
+                            <span><i class="far fa-comment"></i> 8 replies</span>
+                            <span><i class="far fa-eye"></i> 189 views</span>
+                            <span><i class="far fa-clock"></i> 1 week ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="forum-topic">
+                    <div class="topic-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <div class="topic-content">
+                        <h3><a href="pages/forum/topic.html">New to Arnhem - Looking for Local Recommendations</a></h3>
+                        <div class="topic-meta">
+                            <span><i class="far fa-user"></i> ThomasM</span>
+                            <span><i class="far fa-comment"></i> 15 replies</span>
+                            <span><i class="far fa-eye"></i> 320 views</span>
+                            <span><i class="far fa-clock"></i> 3 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-footer">
+                <a href="pages/forum" class="btn btn-primary">Visit Forum</a>
+                <a href="pages/forum/new-topic.html" class="btn btn-outline">Start New Topic</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety Section -->
+    <section class="safety-section">
+        <div class="container">
+            <div class="safety-content">
+                <div class="safety-text">
+                    <h2>Safety First</h2>
+                    <p>Your safety and security are our top priorities. Learn about emergency contacts, safety guidelines, and how we're working to keep our communities safe.</p>
+                    <a href="#safety" class="btn btn-primary">Safety Resources</a>
+                </div>
+                <div class="safety-image">
+                    <img src="assets/images/safety-icon.png" alt="Safety First">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Have questions or want to get involved? We'd love to hear from you.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email Us</h3>
+                            <p><a href="mailto:info@kean-platform.org">info@kean-platform.org</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p>+31 (0)24 123 4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Visit Us</h3>
+                            <p>KEAN Headquarters<br>Markt 1, 6511 AA Nijmegen<br>Netherlands</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="map-container">
+                <div id="kean-map">
+                    <!-- Map will be loaded here via JavaScript -->
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>Interactive Map Loading...</p>
+                    </div>
+                </div>
+                <div class="map-legend">
+                    <h3>KEAN Region</h3>
+                    <ul class="legend-items">
+                        <li><span class="legend-color" style="background-color: #4CAF50;"></span>Kleve</li>
+                        <li><span class="legend-color" style="background-color: #2196F3;"></span>Emmerich</li>
+                        <li><span class="legend-color" style="background-color: #FFC107;"></span>Arnhem</li>
+                        <li><span class="legend-color" style="background-color: #9C27B0;"></span>Nijmegen</li>
+                    </ul>
+                    <div class="map-actions">
+                        <button class="btn btn-outline btn-small"><i class="fas fa-search-location"></i> Find Location</button>
+                        <button class="btn btn-outline btn-small"><i class="fas fa-route"></i> Get Directions</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Stay Updated</h2>
+                    <p>Subscribe to our newsletter for the latest news, events, and updates from the KEAN platform.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-widgets">
+                    <div class="footer-widget">
+                        <h3>About KEAN</h3>
+                        <p>Connecting the cities of Kleve, Emmerich, Arnhem, and Nijmegen through collaboration, culture, and community.</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-widget">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#regions">Regions</a></li>
+                            <li><a href="pages/projects.html">Projects</a></li>
+                            <li><a href="pages/forum">Forum</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-widget">
+                        <h3>Regions</h3>
+                        <ul>
+                            <li><a href="pages/region/kleve.html">Kleve</a></li>
+                            <li><a href="pages/region/emmerich.html">Emmerich</a></li>
+                            <li><a href="pages/region/arnhem.html">Arnhem</a></li>
+                            <li><a href="pages/region/nijmegen.html">Nijmegen</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-widget">
+                        <h3>Contact Info</h3>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> Markt 1, 6511 AA Nijmegen, Netherlands</li>
+                            <li><i class="fas fa-phone"></i> +31 (0)24 123 4567</li>
+                            <li><i class="fas fa-envelope"></i> info@kean-platform.org</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 KEAN Platform. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script>
+        // Initialize any page-specific JavaScript here
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate numbers in stats section
+            const animateNumbers = () => {
+                const statNumbers = document.querySelectorAll('.stat-number');
+                
+                statNumbers.forEach(stat => {
+                    const target = parseInt(stat.getAttribute('data-count'));
+                    const duration = 2000; // 2 seconds
+                    const step = target / (duration / 16); // 60fps
+                    let current = 0;
+                    
+                    const updateNumber = () => {
+                        current += step;
+                        if (current < target) {
+                            stat.textContent = Math.floor(current);
+                            requestAnimationFrame(updateNumber);
+                        } else {
+                            stat.textContent = target.toLocaleString();
+                        }
+                    };
+                    
+                    // Start animation when element is in viewport
+                    const observer = new IntersectionObserver((entries) => {
+                        if (entries[0].isIntersecting) {
+                            updateNumber();
+                            observer.unobserve(stat);
+                        }
+                    });
+                    
+                    observer.observe(stat);
+                });
+            };
+            
+            // Initialize animations
+            animateNumbers();
+            
+            // Mobile menu toggle
+            const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+            const mainNav = document.querySelector('.main-nav');
+            
+            if (mobileMenuToggle && mainNav) {
+                mobileMenuToggle.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    mainNav.classList.toggle('active');
+                    document.body.classList.toggle('menu-open');
+                });
+            }
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80, // Adjust for header height
+                            behavior: 'smooth'
+                        });
+                        
+                        // Close mobile menu if open
+                        if (mainNav && mainNav.classList.contains('active')) {
+                            mobileMenuToggle.classList.remove('active');
+                            mainNav.classList.remove('active');
+                            document.body.classList.remove('menu-open');
+                        }
+                    }
+                });
+            });
+            
+            // Back to top button
+            const backToTopButton = document.getElementById('back-to-top');
+            if (backToTopButton) {
+                window.addEventListener('scroll', () => {
+                    if (window.pageYOffset > 300) {
+                        backToTopButton.classList.add('show');
+                    } else {
+                        backToTopButton.classList.remove('show');
+                    }
+                });
+                
+                backToTopButton.addEventListener('click', () => {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>

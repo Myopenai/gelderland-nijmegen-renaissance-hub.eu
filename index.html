@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEAN - Loading...</title>
+    <!-- Welcome Modal Styles -->
+    <style>
+        /* Welcome Modal */
+        .welcome-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        .modal-content {
+            position: relative;
+            max-width: 90%;
+            max-height: 90vh;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            animation: scaleIn 0.5s ease-out;
+        }
+
+        .modal-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            max-height: 90vh;
+            object-fit: contain;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            background: rgba(0, 0, 0, 0.5);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .close-modal:hover {
+            background: rgba(255, 0, 0, 0.8);
+            transform: rotate(90deg);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes scaleIn {
+            from { transform: scale(0.9); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            overflow: hidden;
+        }
+        
+        .loading-container {
+            text-align: center;
+            padding: 2rem;
+            max-width: 600px;
+        }
+        
+        .logo {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 4rem;
+            font-weight: bold;
+            color: white;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .progress-container {
+            width: 100%;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 2rem 0;
+        }
+        
+        .progress-bar {
+            height: 100%;
+            width: 0;
+            background: #4CAF50;
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+        
+        .cities {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .city {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            backdrop-filter: blur(5px);
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .city:nth-child(1) { animation-delay: 0s; }
+        .city:nth-child(2) { animation-delay: 0.5s; }
+        .city:nth-child(3) { animation-delay: 1s; }
+        .city:nth-child(4) { animation-delay: 1.5s; }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* Make sure modal is above all other content */
+        .welcome-modal {
+            z-index: 9999;
+        }
+        
+        @media (max-width: 600px) {
+            .loading-container {
+                padding: 1rem;
+            }
+            
+            .logo {
+                width: 100px;
+                height: 100px;
+                font-size: 2.5rem;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-container">
+        <div class="logo">KEAN</div>
+        <h1>Welcome to KEAN Platform</h1>
+        <p>Connecting communities across borders</p>
+        
+        <div class="progress-container">
+            <div class="progress-bar" id="progress"></div>
+        </div>
+        
+        <div class="cities">
+            <div class="city">Kleve</div>
+            <div class="city">Emmerich</div>
+            <div class="city">Arnhem</div>
+            <div class="city">Nijmegen</div>
+        </div>
+    </div>
+
+    <!-- Welcome Modal HTML -->
+    <div id="welcomeModal" class="welcome-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img src="pictures/ChatGPT Image 11 dec 2025, 09_21_00.png" alt="Welcome to KEAN Platform" class="modal-img">
+        </div>
+    </div>
+
+    <script>
+        // Show welcome modal on first visit
+        document.addEventListener('DOMContentLoaded', function() {
+            const welcomeModal = document.getElementById('welcomeModal');
+            const closeBtn = document.querySelector('.close-modal');
+            
+            // Check if this is the first visit
+            if (!localStorage.getItem('welcomeShown')) {
+                welcomeModal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            }
+
+            // Close modal and set flag in localStorage
+            function closeModal() {
+                welcomeModal.style.animation = 'fadeOut 0.5s ease-out';
+                setTimeout(() => {
+                    welcomeModal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                    localStorage.setItem('welcomeShown', 'true');
+                }, 400);
+            }
+
+            closeBtn.addEventListener('click', closeModal);
+            welcomeModal.addEventListener('click', function(e) {
+                if (e.target === welcomeModal) {
+                    closeModal();
+                }
+            });
+        });
+
+        // Add fadeOut animation to keyframes
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeOut {
+                from { opacity: 1; }
+                to { opacity: 0; }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Simulate loading progress
+        const progressBar = document.getElementById('progress');
+        let progress = 0;
+        
+        const interval = setInterval(() => {
+            progress += Math.random() * 10;
+            if (progress > 100) {
+                progress = 100;
+                clearInterval(interval);
+                // Redirect to app.html after a short delay
+                setTimeout(() => {
+                    window.location.href = 'app.html';
+                }, 500);
+            }
+            progressBar.style.width = `${progress}%`;
+        }, 100);
+        
+        // Ensure we redirect even if the progress bar gets stuck
+        setTimeout(() => {
+            window.location.href = 'app.html';
+        }, 5000);
+    </script>
+</body>
+</html>

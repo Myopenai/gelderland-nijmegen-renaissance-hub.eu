@@ -1,0 +1,27 @@
+{
+  "analysis_date": "2025-12-11T21:30:43.449262",
+  "comparable_companies": [
+    {
+      "name": "Competitor A",
+      "valuation": 5000000,
+      "employees": 25,
+      "revenue": 2000000
+    },
+    {
+      "name": "Competitor B",
+      "valuation": 12000000,
+      "employees": 50,
+      "revenue": 5000000
+    }
+  ],
+  "market_trends": {
+    "ai_ml_adoption": "High growth (15% YoY)",
+    "cloud_services": "Mature market (8% YoY)",
+    "edge_computing": "Emerging (25% YoY)"
+  },
+  "valuation_multipliers": {
+    "revenue": 5.2,
+    "ebitda": 12.4,
+    "users": 100
+  }
+}
