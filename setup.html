@@ -127,6 +127,17 @@
         </div>
 
         <script>
+        // Register service worker
+        (function() {
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('/sw.js').then(reg => {
+                    console.log('Service worker registered.', reg);
+                }).catch(err => {
+                    console.warn('Service worker registration failed:', err);
+                });
+            }
+        })();
+
         // Load JSZip from CDN then fallback to local copy if CDN fails
         (function loadJSZip(cb) {
             const cdn = 'https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js';
@@ -312,6 +323,7 @@ fi
                 downloadBtn.disabled = false;
             }
         });
+        });
         </script>
     </body>
-    </html>
+</html>
