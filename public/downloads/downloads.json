@@ -1,0 +1,24 @@
+[
+  {
+    "id": "kean-platform-completo",
+    "filename": "kean-platform-completo.zip",
+    "name": "KEAN Platform - Complete Edition",
+    "description": "Full KEAN Platform with all components, documentation, and setup scripts.",
+    "version": "1.0.0",
+    "releaseDate": "2025-12-12",
+    "category": "platform",
+    "tags": ["complete", "all-components", "production-ready"],
+    "notes": "Includes server, frontend, database setup, and regional pages."
+  },
+  {
+    "id": "university-capital-analysis",
+    "filename": "University.zip",
+    "name": "University Capital - Market Analysis & Valuation",
+    "description": "University capital market analysis, valuations, and reports for institutional planning.",
+    "version": "2.1.0",
+    "releaseDate": "2025-12-10",
+    "category": "analysis",
+    "tags": ["valuation", "market-analysis", "university-capital"],
+    "notes": "Contains financial models, analysis documents, and future roadmap."
+  }
+]

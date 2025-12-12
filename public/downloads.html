@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloads - KEAN Platform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: white;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .loading {
+            text-align: center;
+            color: white;
+            font-size: 1.1rem;
+        }
+        .error {
+            background: #da1e28;
+            color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            text-align: center;
+        }
+        .downloads-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .download-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .download-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        .card-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem;
+        }
+        .card-header h2 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        .card-category {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.3);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-bottom: 0.5rem;
+        }
+        .card-body {
+            padding: 1.5rem;
+        }
+        .card-description {
+            color: #555;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+        .card-meta {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 1rem;
+        }
+        .card-meta span {
+            display: inline-block;
+            margin-right: 1rem;
+        }
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .tag {
+            background: #f0f0f0;
+            color: #333;
+            padding: 0.35rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+        .card-notes {
+            background: #f5f5f5;
+            padding: 0.75rem;
+            border-left: 3px solid #667eea;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            color: #555;
+            border-radius: 4px;
+        }
+        .download-btn {
+            display: inline-block;
+            background: #0f62fe;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 600;
+            transition: background 0.2s;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        .download-btn:hover {
+            background: #0050e6;
+        }
+        .empty-state {
+            text-align: center;
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            color: #999;
+        }
+        @media (max-width: 600px) {
+            .downloads-grid {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📥 Download Center</h1>
+        <div id="content" class="loading">Loading downloads...</div>
+    </div>
+
+    <script>
+        (async function() {
+            const content = document.getElementById('content');
+            
+            try {
+                const res = await fetch('/api/downloads');
+                if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                
+                const data = await res.json();
+                const downloads = data.downloads || [];
+                
+                if (downloads.length === 0) {
+                    content.innerHTML = '<div class="empty-state">No downloads available at this time.</div>';
+                    return;
+                }
+                
+                const grid = document.createElement('div');
+                grid.className = 'downloads-grid';
+                
+                downloads.forEach(dl => {
+                    const card = document.createElement('div');
+                    card.className = 'download-card';
+                    
+                    const tagsHtml = dl.tags
+                        ? dl.tags.map(tag => `<span class="tag">${tag}</span>`).join('')
+                        : '';
+                    
+                    card.innerHTML = `
+                        <div class="card-header">
+                            <div class="card-category">${dl.category || 'general'}</div>
+                            <h2>${dl.name}</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-description">${dl.description}</div>
+                            <div class="card-meta">
+                                <span>Version: ${dl.version}</span>
+                                <span>Released: ${new Date(dl.releaseDate).toLocaleDateString()}</span>
+                            </div>
+                            ${tagsHtml ? `<div class="tags">${tagsHtml}</div>` : ''}
+                            ${dl.notes ? `<div class="card-notes">${dl.notes}</div>` : ''}
+                            <a href="/downloads/${dl.filename}" class="download-btn">
+                                ⬇️ Download
+                            </a>
+                        </div>
+                    `;
+                    
+                    grid.appendChild(card);
+                });
+                
+                content.innerHTML = '';
+                content.appendChild(grid);
+                
+            } catch (err) {
+                console.error('Error loading downloads:', err);
+                content.innerHTML = `<div class="error">Failed to load downloads: ${err.message}</div>`;
+            }
+        })();
+    </script>
+</body>
+</html>
