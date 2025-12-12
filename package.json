@@ -1,13 +1,15 @@
 {
-        "name": "kean-platform",
-        "version": "1.0.0",
-        "description": "KEAN Platform - No Terminal Setup",
-        "main": "src/server.js",
-        "scripts": {
-            "start": "node src/server.js"
-        },
-        "dependencies": {
-            "express": "^4.18.2",
-            "dotenv": "^16.0.3"
-        }
-    }
+  "name": "kean-platform",
+  "version": "1.0.1",
+  "description": "KEAN Platform - simple local web app",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "playwright": "^1.43.0"
+  }
+}
