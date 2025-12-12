@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>KEAN Platform</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Welcome to KEAN Platform</h1>
+  <p>Your application is running successfully!</p>
+  <div id="status">Checking server status...</div>
+
+  <script>
+    (async function () {
+      const statusEl = document.getElementById('status');
+      try {
+        const res = await fetch('/api/health', { cache: 'no-store' });
+        if (!res.ok) throw new Error('no-server');
+        const data = await res.json();
+        statusEl.textContent =
+          'Server is up and running! ' + new Date(data.timestamp).toLocaleString();
+      } catch (err) {
+        statusEl.textContent =
+          'Could not connect to server. If you opened this file directly, run start-server.bat first.';
+      }
+    })();
+  </script>
+</body>
+</html>

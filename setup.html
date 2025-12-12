@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEAN Platform - Setup</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #0f62fe;
+            margin-bottom: 1.5rem;
+        }
+        .step {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 6px;
+            border-left: 4px solid #0f62fe;
+        }
+        .code-block {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 1rem;
+            border-radius: 4px;
+            overflow-x: auto;
+            font-family: 'Consolas', 'Monaco', monospace;
+            margin: 1rem 0;
+        }
+        .btn {
+            background: #0f62fe;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.2s;
+        }
+        .btn:hover {
+            background: #0050e6;
+        }
+        .success {
+            color: #198038;
+            font-weight: bold;
+        }
+        .error {
+            color: #da1e28;
+        }
+        .hidden {
+            display: none;
+        }
+        #fileList {
+            margin-top: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        .file-item {
+            padding: 0.5rem;
+            border-bottom: 1px solid #eee;
+            font-family: monospace;
+        }
+        .file-item:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>KEAN Platform - One-Click Setup</h1>
+        
+        <div class="step">
+            <h2>1. Download Required Files</h2>
+            <p>Click the button below to download all necessary files as a ZIP archive.</p>
+            <button id="downloadBtn" class="btn">Download Project Files</button>
+            <p id="downloadStatus"></p>
+        </div>
+
+        <div class="step">
+            <h2>2. Extract the ZIP File</h2>
+            <p>After downloading, extract the ZIP file to your preferred location.</p>
+            <div class="code-block">
+                Right-click the downloaded ZIP file and select "Extract All..."
+            </div>
+        </div>
+
+        <div class="step">
+            <h2>3. Run the Application</h2>
+            <p>Double-click on <code>start-server.bat</code> to launch the application.</p>
+            <p>The application will automatically open in your default web browser.</p>
+            <div id="serverStatus" class="hidden">
+                <p>Server Status: <span id="statusText">Checking...</span></p>
+                <p>Visit: <a id="appUrl" href="#" target="_blank">http://localhost:3000</a></p>
+            </div>
+        </div>
+
+        <div class="step">
+            <h2>4. Project Structure</h2>
+            <p>Your project will have the following structure:</p>
+            <div id="fileList">
+                <div class="file-item">/kean-platform/</div>
+                <div class="file-item">├── src/</div>
+                <div class="file-item">│   ├── server.js</div>
+                <div class="file-item">│   ├── routes/</div>
+                <div class="file-item">│   └── utils/</div>
+                <div class="file-item">├── public/</div>
+                <div class="file-item">│   ├── index.html</div>
+                <div class="file-item">│   └── styles.css</div>
+                <div class="file-item">├── package.json</div>
+                <div class="file-item">└── start-server.bat</div>
+            </div>
+        </div>
+        </div>
+
+        <script>
+        // Load JSZip from CDN then fallback to local copy if CDN fails
+        (function loadJSZip(cb) {
+            const cdn = 'https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js';
+            const local = 'assets/js/jszip.min.js';
+
+            function append(src, onload, onerror) {
+                const s = document.createElement('script');
+                s.src = src;
+                s.onload = onload;
+                s.onerror = onerror;
+                document.head.appendChild(s);
+            }
+
+            append(cdn, () => cb(true), () => {
+                // try local fallback
+                append(local, () => cb(true), () => cb(false));
+            });
+        })(function(loaded) {
+            const downloadBtn = document.getElementById('downloadBtn');
+            const status = document.getElementById('downloadStatus');
+
+            // Start disabled until JSZip is available
+            downloadBtn.disabled = !loaded;
+            if (!loaded) status.innerHTML = '<span class="error">JSZip failed to load (CDN and local). Please add a local copy at assets/js/jszip.min.js or enable network.</span>';
+
+            function enableWhenReady() {
+                if (typeof JSZip !== 'undefined') {
+                    downloadBtn.disabled = false;
+                    status.textContent = '';
+                } else {
+                    setTimeout(enableWhenReady, 100);
+                }
+            }
+            if (loaded) enableWhenReady();
+
+            downloadBtn.addEventListener('click', async () => {
+                if (typeof JSZip === 'undefined') {
+                    status.innerHTML = '<span class="error">JSZip failed to load. Please refresh the page.</span>';
+                    return;
+                }
+
+            try {
+                downloadBtn.disabled = true;
+                status.textContent = 'Preparing download...';
+
+                const zip = new JSZip();
+
+                zip.file("public/index.html", `<!DOCTYPE html>
+    <html>
+    <head>
+        <title>KEAN Platform</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Welcome to KEAN Platform</h1>
+        <p>Your application is running in <strong>serverless</strong> mode (no terminal required).</p>
+        <div id="status">Checking server status...</div>
+        <script>
+        (async function(){
+            const statusEl = document.getElementById('status');
+            try {
+                const res = await fetch('/api/health');
+                if (!res.ok) throw new Error('no-server');
+                const data = await res.json();
+                statusEl.textContent = 'Server is up and running! ' + new Date(data.timestamp).toLocaleString();
+            } catch (err) {
+                // Offline/serverless fallback (works via file:// or static hosting)
+                statusEl.textContent = 'Running in offline/serverless mode — no server required. ' + new Date().toLocaleString();
+            }
+        })();
+        <\/script>
+    </body>
+    </html>`);
+
+                zip.file("public/styles.css", `body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+        line-height: 1.6;
+    }`);
+
+                // Add server script with automatic free-port selection (tries PORT env, 3000..3100, then ephemeral)
+                zip.file("src/server.js", "const fs = require('fs');\nconst express = require('express');\nconst app = express();\nconst portEnv = parseInt(process.env.PORT, 10);\nconst startPort = Number.isFinite(portEnv) ? portEnv : 3000;\nconst maxPort = 3100;\n\napp.use(express.static('public'));\napp.get('/api/health', (req, res) => {\n    res.json({ status: 'OK', timestamp: new Date().toISOString() });\n});\n\nfunction listenOn(p) {\n    return new Promise((resolve, reject) => {\n        const s = app.listen(p, () => resolve(s));\n        s.on('error', reject);\n    });\n}\n\n(async () => {\n    try {\n        let server = null;\n        let chosenPort = null;\n        for (let p = startPort; p <= maxPort; p++) {\n            try {\n                server = await listenOn(p);\n                chosenPort = server.address().port;\n                break;\n            } catch (err) {\n                if (err && err.code === 'EADDRINUSE') continue;\n                throw err;\n            }\n        }\n        if (!chosenPort) {\n            server = await listenOn(0);\n            chosenPort = server.address().port;\n        }\n\n        const url = 'http://localhost:' + chosenPort;\n        console.log('Server running at ' + url);\n        try { fs.writeFileSync('server_url.txt', url); } catch (e) { /* ignore */ }\n    } catch (err) {\n        console.error('Failed to start server:', err);\n        process.exit(1);\n    }\n})();");
+
+                zip.file("package.json", `{
+        "name": "kean-platform",
+        "version": "1.0.0",
+        "description": "KEAN Platform",
+        "main": "src/server.js",
+        "scripts": {
+            "start": "node src/server.js"
+        },
+        "dependencies": {
+            "express": "^4.18.2"
+        }
+    }`);
+
+                // Add Windows start script: installs deps, launches server, waits for server_url.txt and opens browser
+                zip.file("start-server.bat", `@echo off
+echo Installing dependencies...
+npm install
+if %ERRORLEVEL% neq 0 (
+    echo Failed to install dependencies. Please make sure Node.js and npm are installed.
+    pause
+    exit /b 1
+)
+
+echo Starting server...
+start "" cmd /c "node src/server.js"
+
+set URL_FILE=server_url.txt
+set /a COUNT=0
+:waitloop
+if exist %URL_FILE% goto open
+timeout /t 1 >nul
+set /a COUNT+=1
+if %COUNT% GEQ 15 goto fail
+goto waitloop
+:open
+set /p URL=<%URL_FILE%
+start "" %URL%
+goto end
+:fail
+echo Server URL file not found, open the browser manually when the server starts.
+pause
+:end
+`);
+
+                                zip.file("README.txt", `KEAN Platform\r\n\r\nThis archive includes a simple Node server with automatic free-port selection.\r\nTo run:\r\n1) Extract the archive.\r\n2) Double-click start-server.bat to install dependencies and start the server.\r\n3) The script will open your browser when the server reports its port.\r\n\r\nIf you prefer a serverless package (no terminal), use the 'public/index.html' file directly.\r\n`);
+
+                                // Add Linux/macOS starter script
+                                zip.file("start-server.sh", `#!/usr/bin/env bash
+set -e
+echo "Installing dependencies..."
+npm install || { echo "npm install failed. Make sure Node.js and npm are installed."; exit 1; }
+
+echo "Starting server in background..."
+node src/server.js &
+PID=$!
+
+URL_FILE=server_url.txt
+COUNT=0
+while [ ! -f "$URL_FILE" ] && [ $COUNT -lt 15 ]; do
+    sleep 1
+    COUNT=$((COUNT+1))
+done
+
+if [ -f "$URL_FILE" ]; then
+    URL=$(cat "$URL_FILE")
+    echo "Opening $URL"
+    if command -v xdg-open >/dev/null 2>&1; then
+        xdg-open "$URL"
+    elif command -v open >/dev/null 2>&1; then
+        open "$URL"
+    else
+        echo "Please open $URL in your browser"
+    fi
+else
+    echo "Server URL file not found. Server may still be starting. PID=$PID"
+fi
+`);
+
+                const content = await zip.generateAsync({ type: "blob" });
+                const url = URL.createObjectURL(content);
+
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'kean-platform.zip';
+                document.body.appendChild(a);
+                a.click();
+
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+
+                status.innerHTML = '<span class="success">✓ Download complete! Check your downloads folder.</span>';
+
+            } catch (err) {
+                console.error(err);
+                status.innerHTML = '<span class="error">Error creating download. Please try again.</span>';
+                downloadBtn.disabled = false;
+            }
+        });
+        </script>
+    </body>
+    </html>

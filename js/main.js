@@ -153,42 +153,104 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(statsSection);
     }
     
-    // Form submission handling
+    // Form submission handling with improved validation and feedback
     const contactForm = document.querySelector('.contact-form');
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+        contactForm.addEventListener('submit', async function(e) {
             e.preventDefault();
             
-            // Basic form validation
-            const name = this.querySelector('input[name="name"]').value.trim();
-            const email = this.querySelector('input[name="email"]').value.trim();
-            const message = this.querySelector('textarea[name="message"]').value.trim();
-            
-            if (!name || !email || !message) {
-                showNotification('Please fill in all required fields', 'error');
-                return;
-            }
-            
-            if (!isValidEmail(email)) {
-                showNotification('Please enter a valid email address', 'error');
-                return;
-            }
-            
-            // Simulate form submission
+            // Get form elements
+            const nameInput = this.querySelector('input[name="name"]');
+            const emailInput = this.querySelector('input[name="email"]');
+            const subjectInput = this.querySelector('input[name="subject"]');
+            const messageInput = this.querySelector('textarea[name="message"]');
             const submitButton = this.querySelector('button[type="submit"]');
-            const originalText = submitButton.textContent;
             
+            // Trim values
+            const name = nameInput.value.trim();
+            const email = emailInput.value.trim();
+            const subject = subjectInput.value.trim();
+            const message = messageInput.value.trim();
+            
+            // Reset previous errors
+            this.querySelectorAll('.error-message').forEach(el => el.remove());
+            this.querySelectorAll('.error').forEach(el => el.classList.remove('error'));
+            
+            // Validation
+            let isValid = true;
+            
+            if (!name) {
+                showFieldError(nameInput, 'Name is required');
+                isValid = false;
+            }
+            
+            if (!email) {
+                showFieldError(emailInput, 'Email is required');
+                isValid = false;
+            } else if (!isValidEmail(email)) {
+                showFieldError(emailInput, 'Please enter a valid email address');
+                isValid = false;
+            }
+            
+            if (!subject) {
+                showFieldError(subjectInput, 'Subject is required');
+                isValid = false;
+            }
+            
+            if (!message) {
+                showFieldError(messageInput, 'Message is required');
+                isValid = false;
+            }
+            
+            if (!isValid) {
+                showNotification('Please correct the errors in the form', 'error');
+                return;
+            }
+            
+            // Disable submit button and show loading state
+            const originalText = submitButton.textContent;
             submitButton.disabled = true;
             submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
             
-            // Simulate API call
-            setTimeout(() => {
-                showNotification('Your message has been sent successfully!', 'success');
+            try {
+                // In a real application, you would make an API call here
+                // For now, we'll simulate a successful submission
+                await new Promise(resolve => setTimeout(resolve, 1500));
+                
+                // Show success message
+                showNotification('Your message has been sent successfully! We\'ll get back to you soon.', 'success');
+                
+                // Reset form
                 this.reset();
+                
+            } catch (error) {
+                console.error('Error submitting form:', error);
+                showNotification('There was an error sending your message. Please try again later.', 'error');
+            } finally {
+                // Re-enable submit button
                 submitButton.disabled = false;
                 submitButton.textContent = originalText;
-            }, 1500);
+            }
         });
+        
+        // Helper function to show field errors
+        function showFieldError(input, message) {
+            const formGroup = input.closest('.form-group');
+            if (!formGroup) return;
+            
+            // Add error class to input
+            input.classList.add('error');
+            
+            // Add error message
+            const errorElement = document.createElement('div');
+            errorElement.className = 'error-message';
+            errorElement.textContent = message;
+            errorElement.style.color = '#e74c3c';
+            errorElement.style.fontSize = '0.8rem';
+            errorElement.style.marginTop = '0.25rem';
+            
+            formGroup.appendChild(errorElement);
+        }
     }
     
     // Newsletter subscription

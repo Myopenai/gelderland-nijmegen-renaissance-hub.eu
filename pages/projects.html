@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - KEAN Platform</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Projects Page Specific Styles */
+        .projects-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .project-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .project-details {
+            padding: 1.5rem;
+        }
+        
+        .project-details h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        
+        .project-meta {
+            display: flex;
+            justify-content: space-between;
+            margin: 1rem 0;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+        
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+        
+        .tag {
+            background: #e9ecef;
+            color: #495057;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        .project-stats {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid #eee;
+            padding-top: 1rem;
+            margin-top: 1rem;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+        
+        .stat {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .filters {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .search-box {
+            flex: 1;
+            max-width: 400px;
+            position: relative;
+        }
+        
+        .search-box input {
+            width: 100%;
+            padding: 0.75rem 1rem 0.75rem 2.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        
+        .search-box i {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #6c757d;
+        }
+        
+        .filter-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        select {
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: white;
+            min-width: 150px;
+        }
+        
+        @media (max-width: 768px) {
+            .filters {
+                flex-direction: column;
+            }
+            
+            .search-box {
+                max-width: 100%;
+            }
+            
+            .filter-group {
+                width: 100%;
+            }
+            
+            select {
+                flex: 1;
+                min-width: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">KEAN</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../app.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Regions <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="region/kleve.html">Kleve</a>
+                            <a href="region/emmerich.html">Emmerich</a>
+                            <a href="region/arnhem.html">Arnhem</a>
+                            <a href="region/nijmegen.html">Nijmegen</a>
+                        </div>
+                    </li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="forum">Forum</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="#login" class="btn btn-outline">Log In</a>
+                <a href="#signup" class="btn btn-primary">Sign Up</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Projects</h1>
+            <p>Discover the innovative initiatives driving progress in the KEAN region</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+        <div class="container">
+            <div class="projects-intro">
+                <p>Explore our portfolio of projects that bring together communities, businesses, and organizations across Kleve, Emmerich, Arnhem, and Nijmegen. Each project represents our commitment to cross-border collaboration and sustainable development.</p>
+            </div>
+            
+            <!-- Filters -->
+            <div class="filters">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search projects...">
+                </div>
+                <div class="filter-group">
+                    <select id="region-filter">
+                        <option value="">All Regions</option>
+                        <option value="kleve">Kleve</option>
+                        <option value="emmerich">Emmerich</option>
+                        <option value="arnhem">Arnhem</option>
+                        <option value="nijmegen">Nijmegen</option>
+                    </select>
+                    <select id="category-filter">
+                        <option value="">All Categories</option>
+                        <option value="sustainability">Sustainability</option>
+                        <option value="technology">Technology</option>
+                        <option value="culture">Culture</option>
+                        <option value="education">Education</option>
+                        <option value="infrastructure">Infrastructure</option>
+                    </select>
+                    <select id="status-filter">
+                        <option value="">All Statuses</option>
+                        <option value="planning">Planning</option>
+                        <option value="in-progress">In Progress</option>
+                        <option value="completed">Completed</option>
+                    </select>
+                </div>
+            </div>
+            
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('https://source.unsplash.com/random/600x400?europe,architecture,1');"></div>
+                    <div class="project-details">
+                        <span class="tag" style="background-color: #e3f2fd; color: #1976d2;">In Progress</span>
+                        <h3>Cross-Border Cycling Network</h3>
+                        <p>Connecting cycling routes between Kleve and Nijmegen for sustainable transportation.</p>
+                        <div class="project-tags">
+                            <span class="tag">#sustainability</span>
+                            <span class="tag">#infrastructure</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat"><i class="fas fa-map-marker-alt"></i> Kleve, Nijmegen</div>
+                            <div class="stat"><i class="far fa-calendar-alt"></i> Jan 2024 - Dec 2025</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('https://source.unsplash.com/random/600x400?technology,startup,1');"></div>
+                    <div class="project-details">
+                        <span class="tag" style="background-color: #e8f5e9; color: #2e7d32;">Completed</span>
+                        <h3>Digital Innovation Hub</h3>
+                        <p>Creating a collaborative space for tech startups in the Arnhem-Nijmegen region.</p>
+                        <div class="project-tags">
+                            <span class="tag">#technology</span>
+                            <span class="tag">#startups</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat"><i class="fas fa-map-marker-alt"></i> Arnhem, Nijmegen</div>
+                            <div class="stat"><i class="far fa-calendar-alt"></i> Mar 2023 - Nov 2023</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('https://source.unsplash.com/random/600x400?culture,art,1');"></div>
+                    <div class="project-details">
+                        <span class="tag" style="background-color: #fff3e0; color: #ef6c00;">Planning</span>
+                        <h3>Cultural Exchange Program</h3>
+                        <p>Promoting cultural understanding through artist exchanges between Germany and the Netherlands.</p>
+                        <div class="project-tags">
+                            <span class="tag">#culture</span>
+                            <span class="tag">#education</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat"><i class="fas fa-map-marker-alt"></i> All Regions</div>
+                            <div class="stat"><i class="far fa-calendar-alt"></i> Coming 2024</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('https://source.unsplash.com/random/600x400?renewable,energy,1');"></div>
+                    <div class="project-details">
+                        <span class="tag" style="background-color: #e3f2fd; color: #1976d2;">In Progress</span>
+                        <h3>Renewable Energy Initiative</h3>
+                        <p>Implementing solar panel installations across public buildings in the KEAN region.</p>
+                        <div class="project-tags">
+                            <span class="tag">#sustainability</span>
+                            <span class="tag">#energy</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat"><i class="fas fa-map-marker-alt"></i> All Regions</div>
+                            <div class="stat"><i class="far fa-calendar-alt"></i> Jun 2023 - Dec 2025</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('https://source.unsplash.com/random/600x400?education,students,1');"></div>
+                    <div class="project-details">
+                        <span class="tag" style="background-color: #e8f5e9; color: #2e7d32;">Completed</span>
+                        <h3>Student Exchange Program</h3>
+                        <p>Facilitating student exchanges between universities in the KEAN region.</p>
+                        <div class="project-tags">
+                            <span class="tag">#education</span>
+                            <span class="tag">#students</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat"><i class="fas fa-map-marker-alt"></i> All Regions</div>
+                            <div class="stat"><i class="far fa-calendar-alt"></i> Sep 2022 - Jun 2023</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('https://source.unsplash.com/random/600x400?transportation,infrastructure,1');"></div>
+                    <div class="project-details">
+                        <span class="tag" style="background-color: #fff3e0; color: #ef6c00;">Planning</span>
+                        <h3>Public Transport Integration</h3>
+                        <p>Improving cross-border public transportation between Emmerich and Arnhem.</p>
+                        <div class="project-tags">
+                            <span class="tag">#infrastructure</span>
+                            <span class="tag">#transportation</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat"><i class="fas fa-map-marker-alt"></i> Emmerich, Arnhem</div>
+                            <div class="stat"><i class="far fa-calendar-alt"></i> Coming 2024</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pagination -->
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section" style="background-color: #f8f9fa; padding: 4rem 0; margin-top: 4rem;">
+        <div class="container" style="text-align: center;">
+            <h2>Have a Project Idea?</h2>
+            <p>We're always looking for innovative ideas to support the KEAN region.</p>
+            <a href="#contact" class="btn btn-primary" style="margin-top: 1.5rem;">Submit Your Proposal</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About KEAN</h3>
+                    <p>Connecting the cities of Kleve, Emmerich, Arnhem, and Nijmegen through collaboration and community.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Regions</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: publiekszaken@nijmegen.nl</p>
+                    <p>Phone: 14 024 (or 024 329 90 00)</p>
+                    <p>Address: Mariënburg 30, 6511 PS Nijmegen</p>
+                    <p>KEAN - Innovator: D.R.TEL <a href="https://www.tel1.nl" target="_blank">www.tel1.nl</a> +31-613-803-782</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 KEAN Platform. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        // Projects page specific JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Filter functionality
+            const regionFilter = document.getElementById('region-filter');
+            const categoryFilter = document.getElementById('category-filter');
+            const statusFilter = document.getElementById('status-filter');
+            const projectCards = document.querySelectorAll('.project-card');
+            
+            function filterProjects() {
+                const regionValue = regionFilter.value.toLowerCase();
+                const categoryValue = categoryFilter.value.toLowerCase();
+                const statusValue = statusFilter.value.toLowerCase();
+                
+                projectCards.forEach(card => {
+                    const region = card.querySelector('.stat:first-child').textContent.toLowerCase();
+                    const status = card.querySelector('.tag').textContent.toLowerCase();
+                    const categories = Array.from(card.querySelectorAll('.tag:not(.tag:first-child)')).map(tag => 
+                        tag.textContent.replace('#', '').toLowerCase()
+                    );
+                    
+                    const regionMatch = !regionValue || region.includes(regionValue);
+                    const categoryMatch = !categoryValue || categories.some(cat => cat === categoryValue);
+                    const statusMatch = !statusValue || status.includes(statusValue);
+                    
+                    if (regionMatch && categoryMatch && statusMatch) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+            
+            // Add event listeners to filters
+            [regionFilter, categoryFilter, statusFilter].forEach(filter => {
+                if (filter) {
+                    filter.addEventListener('change', filterProjects);
+                }
+            });
+            
+            // Search functionality
+            const searchInput = document.querySelector('.search-box input');
+            if (searchInput) {
+                searchInput.addEventListener('input', function() {
+                    const searchTerm = this.value.toLowerCase();
+                    
+                    projectCards.forEach(card => {
+                        const title = card.querySelector('h3').textContent.toLowerCase();
+                        const description = card.querySelector('p').textContent.toLowerCase();
+                        const isVisible = title.includes(searchTerm) || description.includes(searchTerm);
+                        
+                        if (isVisible) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            }
+            
+            // Back to top button
+            const backToTopBtn = document.getElementById('back-to-top');
+            if (backToTopBtn) {
+                window.addEventListener('scroll', function() {
+                    if (window.pageYOffset > 300) {
+                        backToTopBtn.style.display = 'block';
+                    } else {
+                        backToTopBtn.style.display = 'none';
+                    }
+                });
+                
+                backToTopBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
