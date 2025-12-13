@@ -9,11 +9,6 @@ const portEnv = parseInt(process.env.PORT, 10);
 const startPort = Number.isFinite(portEnv) ? portEnv : 3000;
 const maxPort = 3100;
 
-// Serve static files from absolute path so behaviour is consistent
-const staticPath = path.join(__dirname, '..', 'public');
-app.use(express.static(staticPath));
-console.log('Serving static files from:', staticPath);
-
 // Security headers: stricter in production, relaxed in dev to allow debugging
 if (process.env.NODE_ENV === 'production') {
   app.use(helmet({
@@ -31,6 +26,18 @@ if (process.env.NODE_ENV === 'production') {
   // In development we disable CSP to avoid blocking DevTools and local debug endpoints
   app.use(helmet({ contentSecurityPolicy: false }));
 }
+
+// Serve static files from absolute path so behaviour is consistent
+const staticPath = path.join(__dirname, '..', 'public');
+app.use(express.static(staticPath));
+console.log('Serving static files from:', staticPath);
+
+// Explicit root handler to serve index.html (robust fallback)
+app.get('/', (req, res) => {
+  const indexPath = path.join(staticPath, 'index.html');
+  if (fs.existsSync(indexPath)) return res.sendFile(indexPath);
+  res.status(404).send('Not Found');
+});
 
 app.get('/api/health', (req, res) => {
   res.json({ status: 'OK', timestamp: new Date().toISOString() });
