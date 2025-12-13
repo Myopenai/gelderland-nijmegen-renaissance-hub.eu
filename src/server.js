@@ -2,13 +2,35 @@ require('dotenv').config();
 const fs = require('fs');
 const path = require('path');
 const express = require('express');
+const helmet = require('helmet');
 
 const app = express();
 const portEnv = parseInt(process.env.PORT, 10);
 const startPort = Number.isFinite(portEnv) ? portEnv : 3000;
 const maxPort = 3100;
 
-app.use(express.static('public'));
+// Serve static files from absolute path so behaviour is consistent
+const staticPath = path.join(__dirname, '..', 'public');
+app.use(express.static(staticPath));
+console.log('Serving static files from:', staticPath);
+
+// Security headers: stricter in production, relaxed in dev to allow debugging
+if (process.env.NODE_ENV === 'production') {
+  app.use(helmet({
+    contentSecurityPolicy: {
+      directives: {
+        defaultSrc: ["'self'"],
+        scriptSrc: ["'self'", 'https:'],
+        styleSrc: ["'self'", 'https:', "'unsafe-inline'"],
+        connectSrc: ["'self'", 'ws:', 'wss:'],
+        imgSrc: ["'self'", 'data:', 'https:']
+      }
+    }
+  }));
+} else {
+  // In development we disable CSP to avoid blocking DevTools and local debug endpoints
+  app.use(helmet({ contentSecurityPolicy: false }));
+}
 
 app.get('/api/health', (req, res) => {
   res.json({ status: 'OK', timestamp: new Date().toISOString() });
